@@ -1,0 +1,5 @@
+fastx-toolkit (0.0.13-1) UNRELEASED; urgency=low
+
+  * Initial release (Closes: #nnnn)  <nnnn is the bug number of your ITP>
+
+ -- Charles Plessy <plessy@debian.org>  Mon, 13 Jul 2009 17:06:32 +0900
