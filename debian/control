@@ -2,6 +2,7 @@ Source: fastx-toolkit
 Section: science
 Priority: optional
 Maintainer: Debian Med Packaging Team <debian-med-packaging@lists.alioth.debian.org>
+DM-Upload-Allowed: yes
 Uploaders: Charles Plessy <plessy@debian.org>
 Build-Depends: cdbs, debhelper (>= 8), autotools-dev
 Standards-Version: 3.9.1
@@ -12,14 +13,13 @@ Homepage: http://hannonlab.cshl.edu/fastx_toolkit/
 Package: fastx-toolkit
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
-Description: FASTQ/A short-reads pre-processing tools
- The FASTX-Toolkit is a collection of command line tools for Short-Reads
- FASTA/FASTQ files preprocessing. Next-Generation sequencing machines usually
- produce FASTA or FASTQ files, containing multiple short-reads sequences
- (possibly with quality information). The main processing of such FASTA/FASTQ
- files is mapping (aka aligning) the sequences to reference genomes or other
- databases using specialized programs. Example of such mapping programs are:
- Blat, SHRiMP, LastZ, MAQ and many many others. However, It is sometimes more
- productive to preprocess the FASTA/FASTQ files before mapping the sequences to
- the genome - manipulating the sequences to produce better mapping results. The
- FASTX-Toolkit tools perform some of these preprocessing tasks. 
+Description: FASTQ/A short nucleotide reads pre-processing tools
+ The FASTX-Toolkit is a collection of command line tools for preprocessing
+ short nucleotide reads in FASTA and FASTQ formats, usually produced by
+ Next-Generation sequencing machines. The main processing of such FASTA/FASTQ
+ files is mapping (aligning) the sequences to reference genomes or other
+ databases using specialized programs like BWA, Bowtie and many many others.
+ However, it is sometimes more productive to preprocess the FASTA/FASTQ files
+ before mapping the sequences to the genome—manipulating the sequences to
+ produce better mapping results. The FASTX-Toolkit tools perform some of these
+ preprocessing tasks. 
