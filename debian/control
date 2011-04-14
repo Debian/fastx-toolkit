@@ -4,7 +4,7 @@ Priority: optional
 Maintainer: Debian Med Packaging Team <debian-med-packaging@lists.alioth.debian.org>
 DM-Upload-Allowed: yes
 Uploaders: Charles Plessy <plessy@debian.org>
-Build-Depends: cdbs, debhelper (>= 8), autotools-dev
+Build-Depends: cdbs, debhelper (>= 8), autotools-dev, pkg-config, libgtextutils-dev
 Standards-Version: 3.9.1
 Vcs-Browser: http://git.debian.org/?p=debian-med/fastx-toolkit.git
 Vcs-Git: git://git.debian.org/git/debian-med/fastx-toolkit.git
@@ -18,7 +18,7 @@ Description: FASTQ/A short nucleotide reads pre-processing tools
  short nucleotide reads in FASTA and FASTQ formats, usually produced by
  Next-Generation sequencing machines. The main processing of such FASTA/FASTQ
  files is mapping (aligning) the sequences to reference genomes or other
- databases using specialized programs like BWA, Bowtie and many many others.
+ databases using specialized programs like BWA, Bowtie and many others.
  However, it is sometimes more productive to preprocess the FASTA/FASTQ files
  before mapping the sequences to the genome—manipulating the sequences to
  produce better mapping results. The FASTX-Toolkit tools perform some of these

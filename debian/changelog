@@ -1,5 +1,5 @@
-fastx-toolkit (0.0.13-1) UNRELEASED; urgency=low
+fastx-toolkit (0.0.13-1) unstable; urgency=low
 
-  * Initial release (Closes: #nnnn)  <nnnn is the bug number of your ITP>
+  * Initial release (Closes: #622700)
 
- -- Charles Plessy <plessy@debian.org>  Mon, 13 Jul 2009 17:06:32 +0900
+ -- Charles Plessy <plessy@debian.org>  Thu, 14 Apr 2011 14:00:57 +0900
