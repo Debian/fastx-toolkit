@@ -1,11 +1,11 @@
-fastx-toolkit (0.0.13.1-1) UNRELEASED; urgency=low
+fastx-toolkit (0.0.13.1-1) unstable; urgency=low
 
   * New upstream release (Closes: #626761).
   * Incremented Standards-Version to reflect conformance with Policy 3.9.2
     (debian/control, no changes needed).
   * Corrected Vcs-Git URL (debian/control).
 
- -- Charles Plessy <plessy@debian.org>  Fri, 08 Jul 2011 12:54:19 +0900
+ -- Charles Plessy <plessy@debian.org>  Fri, 08 Jul 2011 13:11:37 +0900
 
 fastx-toolkit (0.0.13-1) unstable; urgency=low
 
