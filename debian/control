@@ -7,7 +7,7 @@ Uploaders: Charles Plessy <plessy@debian.org>
 Build-Depends: cdbs, debhelper (>= 8), autotools-dev, pkg-config, libgtextutils-dev
 Standards-Version: 3.9.2
 Vcs-Browser: http://git.debian.org/?p=debian-med/fastx-toolkit.git
-Vcs-Git: git://git.debian.org/git/debian-med/fastx-toolkit.git
+Vcs-Git: git://git.debian.org/debian-med/fastx-toolkit.git
 Homepage: http://hannonlab.cshl.edu/fastx_toolkit/
 
 Package: fastx-toolkit
