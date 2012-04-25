@@ -1,3 +1,11 @@
+fastx-toolkit (0.0.13.1-2) UNRELEASED; urgency=low
+
+  * debian/control:
+     - Added myself to Uploaders
+     - Standards-Version: 3.9.3 (no changes needed)
+
+ -- Andreas Tille <tille@debian.org>  Wed, 25 Apr 2012 22:31:55 +0200
+
 fastx-toolkit (0.0.13.1-1) unstable; urgency=low
 
   * New upstream release (Closes: #626761).
