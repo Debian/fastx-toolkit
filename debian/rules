@@ -1,6 +1,10 @@
 #!/usr/bin/make -f
 
 pkg := $(shell dpkg-parsechangelog | sed -n 's/^Source: //p')
+ver := $(shell dpkg-parsechangelog | sed -ne 's/^Version: \(\([0-9]\+\):\)\?\(.*\)-.*/\3/p')
+
+mandir := $(CURDIR)/debian/$(pkg)/usr/share/man/man1
+bindir := $(CURDIR)/debian/$(pkg)/usr/bin
 
 %:
 	dh $@
@@ -11,3 +15,92 @@ override_dh_install:
 
 override_dh_installchangelogs:
 	dh_installchangelogs -k NEWS
+
+# Does not help to detect the dependencies for substitution variable ${perl:Depends} :-(
+#override_dh_perl:
+#	dh_perl /usr/bin
+
+override_dh_installman:
+	mkdir -p $(mandir)
+	# The name strings are obtained from
+	#   http://hannonlab.cshl.edu/fastx_toolkit/ (Section "Available Tools")
+	# and
+	#   http://hannonlab.cshl.edu/fastx_toolkit/commandline.html
+	help2man --no-info --no-discard-stderr --version-string='$(ver)' --help-option='-h' \
+	   --name='changes the width of sequences line in a FASTA file' \
+	   $(bindir)/fasta_formatter > $(mandir)/fasta_formatter.1
+	help2man --no-info --no-discard-stderr --version-string='$(ver)' --help-option='-h' \
+	   --name='Convets FASTA sequences from/to RNA/DNA' \
+	   $(bindir)/fasta_nucleotide_changer > $(mandir)/fasta_nucleotide_changer.1
+	help2man --no-info --no-discard-stderr --version-string='$(ver)' --help-option='-h' \
+	   --name="Masks nucleotides with 'N' (or other character) based on quality" \
+	   $(bindir)/fastq_masker > $(mandir)/fastq_masker.1
+
+	# FIXME: The tool `fasta_quality_converter` was NOT described at the URLs above
+	help2man --no-info --no-discard-stderr --version-string='$(ver)' --help-option='-h' \
+	   --name='Converts sequences based on quality' \
+	   $(bindir)/fastq_quality_converter > $(mandir)/fastq_quality_converter.1
+
+	help2man --no-info --no-discard-stderr --version-string='$(ver)' --help-option='-h' \
+	   --name='Filters sequences based on quality' \
+	   $(bindir)/fastq_quality_filter > $(mandir)/fastq_quality_filter.1
+
+# FIXME: For some very strange reason this conversion fails
+#
+#	help2man --no-info --no-discard-stderr --version-string='$(ver)' --help-option='-h' \
+#	   --name='Filters sequences based on quality' \
+#	   $(bindir)/fastq_quality_trimmer > $(mandir)/fastq_quality_trimmer .1
+
+	help2man --no-info --no-discard-stderr --version-string='$(ver)' --help-option='-h' \
+	   --name='Convert FASTQ files to FASTA files' \
+	   $(bindir)/fastq_to_fasta > $(mandir)/fastq_to_fasta.1
+	help2man --no-info --no-discard-stderr --version-string='$(ver)' --help-option='-h' \
+	   --name='FASTQ/A Artifacts Filter' \
+	   $(bindir)/fastx_artifacts_filter > $(mandir)/fastx_artifacts_filter.1
+	help2man --no-info --no-discard-stderr --version-string='$(ver)' --help-option='-h' \
+	   --name='FASTA/Q Clipper' \
+	   $(bindir)/fastx_clipper > $(mandir)/fastx_clipper.1
+	help2man --no-info --no-discard-stderr --version-string='$(ver)' --help-option='-h' \
+	   --name='FASTA/Q Collapser' \
+	   $(bindir)/fastx_collapser > $(mandir)/fastx_collapser.1
+	help2man --no-info --no-discard-stderr --version-string='$(ver)' --help-option='-h' \
+	   --name='FASTX Statistics' \
+	   $(bindir)/fastx_quality_stats > $(mandir)/fastx_quality_stats.1
+	help2man --no-info --no-discard-stderr --version-string='$(ver)' --help-option='-h' \
+	   --name='FASTA/Q Renamer' \
+	   $(bindir)/fastx_renamer > $(mandir)/fastx_renamer.1
+	help2man --no-info --no-discard-stderr --version-string='$(ver)' --help-option='-h' \
+	   --name='FASTQ/A Reverse Complement' \
+	   $(bindir)/fastx_reverse_complement > $(mandir)/fastx_reverse_complement.1
+	help2man --no-info --no-discard-stderr --version-string='$(ver)' --help-option='-h' \
+	   --name='FASTA/Q Trimmer' \
+	   $(bindir)/fastx_trimmer > $(mandir)/fastx_trimmer.1
+	help2man --no-info --no-discard-stderr --version-string='$(ver)' --help-option='-h' \
+	   --name='FASTA/Q Uncollapser' \
+	   $(bindir)/fastx_uncollapser > $(mandir)/fastx_uncollapser.1
+
+	# Perl scripts add the full path to usage advise which needs to be removed
+	# The script fasta_clipping_histogram.pl does not feature a '-h' option
+	help2man --no-info --no-discard-stderr --version-string='$(ver)' -h '' \
+	   --name='Create a Linker Clipping Information Histogram' \
+	   $(bindir)/fasta_clipping_histogram.pl | \
+	   sed -e 's?^usage: .*\([^/]\+\.pl\)?usage: \1?' \
+	   > $(mandir)/fasta_clipping_histogram.pl.1
+	help2man --no-info --no-discard-stderr --version-string='$(ver)' --help-option='-h' \
+	   --name='FASTX Barcode Splitter' \
+	   $(bindir)/fastx_barcode_splitter.pl | \
+	   sed -e 's?^usage: .*\([^/]\+\.pl\)?usage: \1?' \
+	   > $(mandir)/fastx_barcode_splitter.pl.1
+
+	help2man --no-info --no-discard-stderr --version-string='$(ver)' --help-option='-h' \
+	   --name='Solexa-Quality BoxPlot plotter' \
+	   $(bindir)/fastq_quality_boxplot_graph.sh > $(mandir)/fastq_quality_boxplot_graph.sh.1
+	help2man --no-info --no-discard-stderr --version-string='$(ver)' --help-option='-h' \
+	   --name='FASTA/Q Nucleotide Distribution Plotter' \
+	   $(bindir)/fastx_nucleotide_distribution_graph.sh > $(mandir)/fastx_nucleotide_distribution_graph.sh.1
+	help2man --no-info --no-discard-stderr --version-string='$(ver)' --help-option='-h' \
+	   --name='FASTA/Q Nucleotide Distribution Plotter' \
+	   $(bindir)/fastx_nucleotide_distribution_line_graph.sh > $(mandir)/fastx_nucleotide_distribution_line_graph.sh.1
+
+	for man in `find $(mandir) "*.1"` ; do cat debian/manpages_see_also >> $$man ; done
+

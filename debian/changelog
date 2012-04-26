@@ -4,10 +4,14 @@ fastx-toolkit (0.0.13.1-2) UNRELEASED; urgency=low
      - Added myself to Uploaders
      - Standards-Version: 3.9.3 (no changes needed)
      - Add missing dependencies of Perl scripts
+     - Add Build-Depends help2man
+     - Add Perl modules also ad Build-Depends to enable also
+       running help2man on Perl scripts
   * debian/patches/gcc-4.7.patch: Fix build issue with gcc-4.7
     Closes: #667161
-  * debian/rules: convert from cdbs to dh to finally enable hardening
-    flags
+  * debian/rules:
+     - convert from cdbs to dh to finally enable hardening flags
+     - use help2man to creat manpages where possible
   * debhelper 9 (control+compat) to support hardening flags
 
  -- Andreas Tille <tille@debian.org>  Wed, 25 Apr 2012 22:31:55 +0200
