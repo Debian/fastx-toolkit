@@ -13,7 +13,7 @@ Homepage: http://hannonlab.cshl.edu/fastx_toolkit/
 
 Package: fastx-toolkit
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}
+Depends: ${shlibs:Depends}, ${misc:Depends}, libgd-graph-perl, libperlio-gzip-perl
 Description: FASTQ/A short nucleotide reads pre-processing tools
  The FASTX-Toolkit is a collection of command line tools for preprocessing
  short nucleotide reads in FASTA and FASTQ formats, usually produced by

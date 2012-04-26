@@ -3,6 +3,7 @@ fastx-toolkit (0.0.13.1-2) UNRELEASED; urgency=low
   * debian/control:
      - Added myself to Uploaders
      - Standards-Version: 3.9.3 (no changes needed)
+     - Add missing dependencies of Perl scripts
   * debian/patches/gcc-4.7.patch: Fix build issue with gcc-4.7
     Closes: #667161
   * debian/rules: convert from cdbs to dh to finally enable hardening
