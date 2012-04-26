@@ -50,6 +50,8 @@ override_dh_installman:
 #	help2man --no-info --no-discard-stderr --version-string='$(ver)' --help-option='-h' \
 #	   --name='Filters sequences based on quality' \
 #	   $(bindir)/fastq_quality_trimmer > $(mandir)/fastq_quality_trimmer .1
+# lets simply use what works perfectly at command line
+	dh_installman debian/fastq_quality_trimmer.1
 
 	help2man --no-info --no-discard-stderr --version-string='$(ver)' --help-option='-h' \
 	   --name='Convert FASTQ files to FASTA files' \
