@@ -1,4 +1,4 @@
-fastx-toolkit (0.0.13.1-2) UNRELEASED; urgency=low
+fastx-toolkit (0.0.13.1-2) unstable; urgency=low
 
   * debian/control:
      - Added myself to Uploaders
