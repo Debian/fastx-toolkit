@@ -1,51 +1,45 @@
-From buildd@mozart.debian.net Sun Jul 10 05:47:33 2011
-Return-path: <buildd@mozart.debian.net>
-Received: from callisto.debian.net ([80.87.129.151])
+From buildd@rossini.debian.net Thu Apr 26 15:09:18 2012
+Return-path: <buildd@rossini.debian.net>
+Received: from io.ethz.ch ([129.132.80.17] helo=io.debian.net)
 	by grieg.debian.org with esmtps (TLS1.0:RSA_AES_256_CBC_SHA1:32)
-	(Exim 4.72) (envelope-from <buildd@mozart.debian.net>)
-	id 1Qfmrd-0002WQ-Af
-	for logs@buildd.debian.org; Sun, 10 Jul 2011 05:47:33 +0000
-Received: from mozart.debian.net ([10.1.0.1])
-	by callisto.debian.net with esmtp (Exim 4.69)
-	(envelope-from <buildd@mozart.debian.net>)
-	id 1Qfmrb-0005Ep-J7; Sun, 10 Jul 2011 06:47:31 +0100
-Received: from buildd by mozart.debian.net with local (Exim 4.76)
-	(envelope-from <buildd@mozart.debian.net>)
-	id 1Qfmre-0001Gm-0K; Sun, 10 Jul 2011 05:47:34 +0000
-MIME-Version: 1.0
-Content-Transfer-Encoding: binary
-X-Mailer: MIME::Lite 3.027 (F2.78; A2.07; B3.08; Q3.08)
-Date: Sun, 10 Jul 2011 05:47:33 +0000
-From: Build Daemon <buildd@mozart.debian.net>
-To: samuel.thibault@labri.fr, mbanck@gmx.net, logs@buildd.debian-ports.org,
-	logs@buildd.debian.org, debian-hurd-build-logs@lists.alioth.debian.org
-Subject: Log for attempted build of fastx-toolkit_0.0.13.1-1 on hurd-i386
+	(Exim 4.72) (envelope-from <buildd@rossini.debian.net>)
+	id 1SNQJo-0001ve-LK
+	for logs@buildd.debian.org; Thu, 26 Apr 2012 15:09:18 +0000
+Received: from hurd.ethz.ch ([192.33.98.55] helo=rossini.debian.net)
+	by io.debian.net with esmtps (TLS1.0:RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.72) (envelope-from <buildd@rossini.debian.net>)
+	id 1SNQJh-000KN4-Hq; Thu, 26 Apr 2012 17:09:09 +0200
+Received: from buildd by rossini.debian.net with local (Exim 4.72)
+	(envelope-from <buildd@rossini.debian.net>)
+	id 1SNQJg-0001BE-Mn; Thu, 26 Apr 2012 15:09:08 +0000
+Date: Thu, 26 Apr 2012 15:09:08 +0000
+Message-Id: <E1SNQJg-0001BE-Mn@rossini.debian.net>
+From: Build Daemon <buildd@rossini.debian.net>
+To: samuel.thibault@ens-lyon.org, mbanck@gmx.net, logs@buildd.debian-ports.org,
+	logs@buildd.debian.org
+Subject: Log for attempted build of fastx-toolkit_0.0.13.1-2 on hurd-i386
 	(dist=sid)
-Message-Id: <E1Qfmre-0001Gm-0K@mozart.debian.net>
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
 Delivered-To: logs@buildd.debian.org
 
-sbuild (Debian sbuild) 0.62.3 (11 Jun 2011) on mozart.debian.net
+sbuild (Debian sbuild) 0.61.0 (23 Feb 2011) on rossini.debian.net
 
 ╔══════════════════════════════════════════════════════════════════════════════╗
-║ fastx-toolkit 0.0.13.1-1 (hurd-i386)                     10 juil. 2011 05:41 ║
+║ fastx-toolkit 0.0.13.1-2 (hurd-i386)                       26 Apr 2012 15:01 ║
 ╚══════════════════════════════════════════════════════════════════════════════╝
 
 Package: fastx-toolkit
-Version: 0.0.13.1-1
-Source Version: 0.0.13.1-1
-Distribution: sid
+Version: 0.0.13.1-2
+Source Version: 0.0.13.1-2
 Architecture: hurd-i386
-
-I: NOTICE: Log filtering will replace 'build/fastx-toolkit-W_4yeZ/fastx-toolkit-0.0.13.1' with '«PKGBUILDDIR»'
-I: NOTICE: Log filtering will replace 'build/fastx-toolkit-W_4yeZ' with '«BUILDDIR»'
-I: NOTICE: Log filtering will replace 'home/buildd/build/chroot-sid' with '«CHROOT»'
 W: Stripped single quote from command for security: 
     use strict;
     use warnings;
     use POSIX;
     use FileHandle;
 
-    my $lockfile="/var/lock/sbuild";
+    my $lockfile="/var/lib/sbuild/chroot-lock";
     my $try = 0;
 
   repeat:
@@ -88,57 +82,60 @@ W: Stripped single quote from command for security:
 	}
     }
 
-    F->print("fastx-toolkit_0.0.13.1-1 1908 buildd\n");
+    F->print("fastx-toolkit_0.0.13.1-2 1089 buildd\n");
     F->close();
 
     exit 0;
-
-
-┌──────────────────────────────────────────────────────────────────────────────┐
-│ Update chroot                                                                │
-└──────────────────────────────────────────────────────────────────────────────┘
 
 Ign file: ./ InRelease
 Ign file: ./ Release.gpg
 Ign file: ./ Release
 Ign file: ./ Translation-en
-Hit http://ftp.uk.debian.org sid InRelease
-Hit http://ftp.fr.debian.org sid InRelease
+Hit http://ftp.ch.debian.org unstable InRelease
+Hit http://ftp.ch.debian.org experimental InRelease
+Hit http://ftp.fr.debian.org unstable InRelease
+Hit http://ftp.fr.debian.org experimental InRelease
 Ign http://incoming.debian.org  InRelease
-Hit http://ftp.uk.debian.org sid/main Sources/DiffIndex
+Ign http://incoming.debian.org  InRelease
 Ign http://ftp.debian-ports.org unreleased InRelease
 Get:1 http://incoming.debian.org  Release.gpg [836 B]
-Hit http://ftp.uk.debian.org sid/contrib Sources/DiffIndex
-Hit http://ftp.uk.debian.org sid/non-free Sources/DiffIndex
-Hit http://ftp.uk.debian.org sid/main hurd-i386 Packages/DiffIndex
-Hit http://ftp.uk.debian.org sid/contrib hurd-i386 Packages/DiffIndex
-Hit http://ftp.uk.debian.org sid/non-free hurd-i386 Packages/DiffIndex
-Ign http://ftp.uk.debian.org sid/contrib TranslationIndex
-Hit http://ftp.uk.debian.org sid/main TranslationIndex
-Ign http://ftp.uk.debian.org sid/non-free TranslationIndex
-Hit http://ftp.fr.debian.org sid/main Sources/DiffIndex
+Get:2 http://incoming.debian.org  Release.gpg [836 B]
 Hit http://ftp.debian-ports.org unreleased Release.gpg
-Get:2 http://incoming.debian.org  Release [1604 B]
-Hit http://ftp.fr.debian.org sid/contrib Sources/DiffIndex
-Hit http://ftp.fr.debian.org sid/non-free Sources/DiffIndex
-Hit http://ftp.fr.debian.org sid/main hurd-i386 Packages/DiffIndex
+Get:3 http://incoming.debian.org  Release [1601 B]
+Hit http://ftp.ch.debian.org unstable/main Sources/DiffIndex
 Hit http://ftp.debian-ports.org unreleased Release
-Hit http://ftp.fr.debian.org sid/contrib hurd-i386 Packages/DiffIndex
-Hit http://ftp.fr.debian.org sid/non-free hurd-i386 Packages/DiffIndex
-Ign http://ftp.fr.debian.org sid/contrib TranslationIndex
-Hit http://ftp.fr.debian.org sid/main TranslationIndex
-Ign http://ftp.fr.debian.org sid/non-free TranslationIndex
-Ign http://ftp.uk.debian.org sid/contrib Translation-en
-Ign http://ftp.uk.debian.org sid/non-free Translation-en
-Hit http://incoming.debian.org  Sources
-Get:3 http://incoming.debian.org  Packages [225 kB]
+Get:4 http://incoming.debian.org  Release [1623 B]
+Hit http://ftp.ch.debian.org unstable/contrib Sources/DiffIndex
+Hit http://ftp.ch.debian.org unstable/non-free Sources/DiffIndex
+Hit http://ftp.ch.debian.org unstable/main hurd-i386 Packages/DiffIndex
+Hit http://ftp.ch.debian.org unstable/contrib hurd-i386 Packages/DiffIndex
+Ign http://ftp.ch.debian.org unstable/contrib TranslationIndex
+Hit http://ftp.ch.debian.org unstable/main TranslationIndex
+Hit http://ftp.ch.debian.org experimental/main Sources/DiffIndex
+Hit http://ftp.ch.debian.org experimental/contrib Sources/DiffIndex
+Hit http://ftp.ch.debian.org experimental/non-free Sources/DiffIndex
+Hit http://ftp.ch.debian.org unstable/contrib Translation-en
+Hit http://ftp.ch.debian.org unstable/main Translation-en
+Hit http://ftp.fr.debian.org unstable/main Sources/DiffIndex
+Get:5 http://incoming.debian.org  Sources [37.8 kB]
+Hit http://ftp.fr.debian.org unstable/contrib Sources/DiffIndex
+Get:6 http://incoming.debian.org  Packages [354 kB]
+Hit http://ftp.fr.debian.org unstable/non-free Sources/DiffIndex
+Hit http://ftp.fr.debian.org unstable/main hurd-i386 Packages/DiffIndex
+Hit http://ftp.fr.debian.org unstable/contrib hurd-i386 Packages/DiffIndex
+Ign http://ftp.fr.debian.org unstable/contrib TranslationIndex
+Get:7 http://ftp.fr.debian.org unstable/main TranslationIndex [2223 B]
+Hit http://ftp.fr.debian.org experimental/main Sources/DiffIndex
+Hit http://ftp.fr.debian.org experimental/contrib Sources/DiffIndex
+Hit http://ftp.fr.debian.org experimental/non-free Sources/DiffIndex
 Hit http://ftp.debian-ports.org unreleased/main hurd-i386 Packages
-Ign http://ftp.fr.debian.org sid/contrib Translation-en
-Ign http://ftp.fr.debian.org sid/non-free Translation-en
+Get:8 http://ftp.fr.debian.org unstable/contrib Translation-en [37.0 kB]
+Get:9 http://ftp.fr.debian.org unstable/main Translation-en [3943 kB]
 Ign http://ftp.debian-ports.org unreleased/main TranslationIndex
-Ign http://ftp.debian-ports.org unreleased/main Translation-en
+Get:10 http://incoming.debian.org  Sources [1295 B]
 Ign http://incoming.debian.org  Translation-en
-Fetched 227 kB in 1min 47s (2118 B/s)
+Ign http://ftp.debian-ports.org unreleased/main Translation-en
+Fetched 4380 kB in 1min 53s (38.6 kB/s)
 Reading package lists...
 
 ┌──────────────────────────────────────────────────────────────────────────────┐
@@ -159,113 +156,259 @@ Building dependency tree...
 Reading state information...
 NOTICE: 'fastx-toolkit' packaging is maintained in the 'Git' version control system at:
 git://git.debian.org/debian-med/fastx-toolkit.git
-Need to get 1170 kB of source archives.
-Get:1 http://ftp.uk.debian.org/debian/ sid/main fastx-toolkit 0.0.13.1-1 (dsc) [2023 B]
-Get:2 http://ftp.uk.debian.org/debian/ sid/main fastx-toolkit 0.0.13.1-1 (tar) [1153 kB]
-Get:3 http://ftp.uk.debian.org/debian/ sid/main fastx-toolkit 0.0.13.1-1 (diff) [14.3 kB]
-Fetched 1170 kB in 0s (1424 kB/s)
+Need to get 1172 kB of source archives.
+Get:1 http://incoming.debian.org/buildd-unstable/  fastx-toolkit 0.0.13.1-2 (dsc) [1511 B]
+Get:2 http://incoming.debian.org/buildd-unstable/  fastx-toolkit 0.0.13.1-2 (tar) [1153 kB]
+Get:3 http://incoming.debian.org/buildd-unstable/  fastx-toolkit 0.0.13.1-2 (diff) [16.8 kB]
+Fetched 1172 kB in 6s (187 kB/s)
 Download complete and in download only mode
 
 Check arch
 ──────────
 
-Merged Build-Depends: build-essential, fakeroot
-Filtered Build-Depends: build-essential, fakeroot
-dpkg-deb: building package `sbuild-build-depends-core-dummy' in `/«BUILDDIR»/resolver-jTBQDC/apt_archive/sbuild-build-depends-core-dummy.deb'.
-gpg: WARNING: using insecure memory!
-gpg: please see http://www.gnupg.org/faq.html for more information
-OK
-Reading package lists...
 
 ┌──────────────────────────────────────────────────────────────────────────────┐
-│ Install core build dependencies (apt-based resolver)                         │
+│ Install core build dependencies (internal resolver)                          │
 └──────────────────────────────────────────────────────────────────────────────┘
 
-Installing build dependencies
-dpkg-preconfigure: unable to re-open stdin: No such file or directory
+Build-Depends: build-essential, fakeroot
+Checking for already installed dependencies...
+build-essential: already installed (11.5)
+fakeroot: already installed (1.18.2-1)
+Checking for dependency conflicts...
+Installing positive dependencies: 
 Reading package lists...
 Building dependency tree...
 Reading state information...
 The following packages were automatically installed and are no longer required:
-  libpopt0 libept1 libxapian22 liblzo2-2 libboost-iostreams1.46.1 libsysfs2
+  libcwidget3 libsigc++-2.0-0c2a libxapian22 libboost-iostreams1.48.0
 Use 'apt-get autoremove' to remove them.
-The following NEW packages will be installed:
-  sbuild-build-depends-core-dummy
-0 upgraded, 1 newly installed, 0 to remove and 26 not upgraded.
-Need to get 0 B/714 B of archives.
-After this operation, 0 B of additional disk space will be used.
-WARNING: The following packages cannot be authenticated!
-  sbuild-build-depends-core-dummy
-Authentication warning overridden.
-Selecting previously deselected package sbuild-build-depends-core-dummy.
-(Reading database ... 14824 files and directories currently installed.)
-Unpacking sbuild-build-depends-core-dummy (from .../sbuild-build-depends-core-dummy.deb) ...
-Setting up sbuild-build-depends-core-dummy (0.invalid.0) ...
-Merged Build-Depends: base-files, base-passwd, bash, coreutils, dash, debianutils, diffutils, dpkg, e2fsprogs, findutils, grep, gzip, hostname, hurd, ncurses-base, ncurses-bin, perl-base, sed, sysvinit-utils, sysvinit, tar, bsdutils, util-linux, libc0.3-dev | libc-dev, gcc (>= 4:4.4.3), g++ (>= 4:4.4.3), make, dpkg-dev (>= 1.13.5), hurd-dev, cdbs, debhelper (>= 8), autotools-dev, pkg-config, libgtextutils-dev
-Filtered Build-Depends: base-files, base-passwd, bash, coreutils, dash, debianutils, diffutils, dpkg, e2fsprogs, findutils, grep, gzip, hostname, hurd, ncurses-base, ncurses-bin, perl-base, sed, sysvinit-utils, sysvinit, tar, bsdutils, util-linux, libc0.3-dev, gcc (>= 4:4.4.3), g++ (>= 4:4.4.3), make, dpkg-dev (>= 1.13.5), hurd-dev, cdbs, debhelper (>= 8), autotools-dev, pkg-config, libgtextutils-dev
-dpkg-deb: building package `sbuild-build-depends-fastx-toolkit-dummy' in `/«BUILDDIR»/resolver-Kca06I/apt_archive/sbuild-build-depends-fastx-toolkit-dummy.deb'.
-gpg: WARNING: using insecure memory!
-gpg: please see http://www.gnupg.org/faq.html for more information
-OK
-Reading package lists...
-
-┌──────────────────────────────────────────────────────────────────────────────┐
-│ Install fastx-toolkit build dependencies (apt-based resolver)                │
-└──────────────────────────────────────────────────────────────────────────────┘
-
-Installing build dependencies
+0 upgraded, 0 newly installed, 0 to remove and 66 not upgraded.
+Removing negative dependencies: 
 Reading package lists...
 Building dependency tree...
 Reading state information...
 The following packages were automatically installed and are no longer required:
-  libept1 libxapian22 liblzo2-2 libboost-iostreams1.46.1 libsysfs2
+  libcwidget3 libsigc++-2.0-0c2a libxapian22 libboost-iostreams1.48.0
+Use 'apt-get autoremove' to remove them.
+0 upgraded, 0 newly installed, 0 to remove and 66 not upgraded.
+Checking correctness of dependencies...
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Install fastx-toolkit build dependencies (internal resolver)                 │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Build-Depends: base-files, base-passwd, bash, coreutils, dash, debianutils, diffutils, dpkg, e2fsprogs, findutils, grep, gzip, hostname, hurd, ncurses-base, ncurses-bin, perl-base, sed, sysvinit-utils, sysvinit, tar, bsdutils, util-linux, libc0.3-dev | libc-dev, gcc (>= 4:4.4.3), g++ (>= 4:4.4.3), make, dpkg-dev (>= 1.13.5), hurd-dev, debhelper (>= 9), autotools-dev, pkg-config, libgtextutils-dev, help2man, libgd-graph-perl, libperlio-gzip-perl
+Checking for already installed dependencies...
+base-files: already installed (6.5)
+base-passwd: already installed (3.5.23)
+bash: already installed (4.2-2)
+coreutils: already installed (8.13-3)
+dash: already installed (0.5.7-2)
+debianutils: already installed (4.0.4)
+diffutils: already installed (1:3.0-1)
+dpkg: already installed (1.16.2)
+e2fsprogs: already installed (1.42.2-2)
+findutils: already installed (4.4.2-1+b1)
+grep: already installed (2.9-2)
+gzip: already installed (1.3.12-9)
+hostname: already installed (3.06)
+hurd: already installed (20120408-3)
+ncurses-base: already installed (5.9-2)
+ncurses-bin: already installed (5.9-6)
+perl-base: already installed (5.14.2-9)
+sed: already installed (4.2.1-9)
+sysvinit-utils: already installed (2.88dsf-13.11)
+sysvinit: already installed (2.88dsf-13.11)
+tar: already installed (1.26-2)
+bsdutils: already installed (1:2.19.1-5)
+util-linux: already installed (2.19.1-5)
+libc0.3-dev: already installed (2.13-31~0)
+gcc: already installed (4:4.6.3-4 >= 4:4.4.3 is satisfied)
+g++: already installed (4:4.6.1-3 >= 4:4.4.3 is satisfied)
+make: already installed (3.81-8.1)
+dpkg-dev: already installed (1.16.2 >= 1.13.5 is satisfied)
+hurd-dev: already installed (20120408-3)
+debhelper: missing
+Using default version 9.20120419
+autotools-dev: missing
+pkg-config: missing
+libgtextutils-dev: missing
+help2man: missing
+libgd-graph-perl: missing
+libperlio-gzip-perl: missing
+Checking for dependency conflicts...
+Installing positive dependencies: debhelper autotools-dev pkg-config libgtextutils-dev help2man libgd-graph-perl libperlio-gzip-perl
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following packages were automatically installed and are no longer required:
+  libcwidget3 libsigc++-2.0-0c2a libxapian22 libboost-iostreams1.48.0
 Use 'apt-get autoremove' to remove them.
 The following extra packages will be installed:
-  autotools-dev cdbs libgtextutils-dev libgtextutils0 pkg-config
+  file fontconfig-config gettext gettext-base html2text intltool-debian
+  libcroco3 libexpat1 libffi5 libfontconfig1 libfreetype6 libgd-gd2-perl
+  libgd-text-perl libgd2-xpm libglib2.0-0 libgtextutils0 libjpeg8 libmagic1
+  libunistring0 libx11-6 libx11-data libxau6 libxcb1 libxdmcp6 libxml2 libxpm4
+  po-debconf ttf-dejavu-core ucf
 Suggested packages:
-  devscripts
+  dh-make gettext-doc ttf-dustin libgd-tools libmail-box-perl
+Recommended packages:
+  autopoint libglib2.0-data shared-mime-info xml-core libmail-sendmail-perl
 The following NEW packages will be installed:
-  autotools-dev cdbs libgtextutils-dev libgtextutils0 pkg-config
-  sbuild-build-depends-fastx-toolkit-dummy
-0 upgraded, 6 newly installed, 0 to remove and 26 not upgraded.
-Need to get 47.2 kB/255 kB of archives.
-After this operation, 1049 kB of additional disk space will be used.
+  autotools-dev debhelper file fontconfig-config gettext gettext-base help2man
+  html2text intltool-debian libcroco3 libexpat1 libffi5 libfontconfig1
+  libfreetype6 libgd-gd2-perl libgd-graph-perl libgd-text-perl libgd2-xpm
+  libglib2.0-0 libgtextutils-dev libgtextutils0 libjpeg8 libmagic1
+  libperlio-gzip-perl libunistring0 libx11-6 libx11-data libxau6 libxcb1
+  libxdmcp6 libxml2 libxpm4 pkg-config po-debconf ttf-dejavu-core ucf
+0 upgraded, 36 newly installed, 0 to remove and 66 not upgraded.
+Need to get 732 kB/12.3 MB of archives.
+After this operation, 31.5 MB of additional disk space will be used.
 WARNING: The following packages cannot be authenticated!
-  autotools-dev cdbs libgtextutils0 libgtextutils-dev pkg-config
-  sbuild-build-depends-fastx-toolkit-dummy
+  libmagic1 libxml2 libffi5 libglib2.0-0 libcroco3 libexpat1 libfreetype6 ucf
+  ttf-dejavu-core fontconfig-config libfontconfig1 libjpeg8 libunistring0
+  libxau6 libxdmcp6 libxcb1 libx11-data libx11-6 libxpm4 file gettext-base
+  autotools-dev html2text gettext intltool-debian po-debconf debhelper
+  help2man libgd2-xpm libgtextutils0 libgtextutils-dev libperlio-gzip-perl
+  pkg-config libgd-gd2-perl libgd-text-perl libgd-graph-perl
 Authentication warning overridden.
-Get:1 http://ftp.uk.debian.org/debian/ sid/main libgtextutils0 hurd-i386 0.6.2-1 [21.1 kB]
-Get:2 http://ftp.uk.debian.org/debian/ sid/main libgtextutils-dev hurd-i386 0.6.2-1 [26.1 kB]
-dpkg-preconfigure: unable to re-open stdin: No such file or directory
-Fetched 47.2 kB in 0s (248 kB/s)
-Selecting previously deselected package autotools-dev.
-(Reading database ... 14824 files and directories currently installed.)
-Unpacking autotools-dev (from .../autotools-dev_20110511.1_all.deb) ...
-Selecting previously deselected package cdbs.
-Unpacking cdbs (from .../archives/cdbs_0.4.94_all.deb) ...
-Selecting previously deselected package libgtextutils0.
+Get:1 http://ftp.ch.debian.org/debian/ unstable/main libgd2-xpm hurd-i386 2.0.36~rc1~dfsg-6+b2 [231 kB]
+Get:2 http://ftp.ch.debian.org/debian/ unstable/main libgtextutils0 hurd-i386 0.6.2-1 [21.1 kB]
+Get:3 http://ftp.ch.debian.org/debian/ unstable/main libgtextutils-dev hurd-i386 0.6.2-1 [26.1 kB]
+Get:4 http://ftp.ch.debian.org/debian/ unstable/main libperlio-gzip-perl hurd-i386 0.18-1+b2 [19.0 kB]
+Get:5 http://ftp.ch.debian.org/debian/ unstable/main libgd-text-perl all 0.86-8 [42.4 kB]
+Get:6 http://ftp.ch.debian.org/debian/ unstable/main libgd-graph-perl all 1.44-6 [393 kB]
+
+Extracting templates from packages: 83%
+Extracting templates from packages: 100%
+Preconfiguring packages ...
+Fetched 732 kB in 0s (1430 kB/s)
+Selecting previously unselected package libmagic1:hurd-i386.
+(Reading database ... 14307 files and directories currently installed.)
+Unpacking libmagic1:hurd-i386 (from .../libmagic1_5.11-1_hurd-i386.deb) ...
+Selecting previously unselected package libxml2:hurd-i386.
+Unpacking libxml2:hurd-i386 (from .../libxml2_2.7.8.dfsg-9_hurd-i386.deb) ...
+Selecting previously unselected package libffi5:hurd-i386.
+Unpacking libffi5:hurd-i386 (from .../libffi5_3.0.10-3_hurd-i386.deb) ...
+Selecting previously unselected package libglib2.0-0:hurd-i386.
+Unpacking libglib2.0-0:hurd-i386 (from .../libglib2.0-0_2.32.0-4_hurd-i386.deb) ...
+Selecting previously unselected package libcroco3:hurd-i386.
+Unpacking libcroco3:hurd-i386 (from .../libcroco3_0.6.5-1_hurd-i386.deb) ...
+Selecting previously unselected package libexpat1:hurd-i386.
+Unpacking libexpat1:hurd-i386 (from .../libexpat1_2.1.0-1_hurd-i386.deb) ...
+Selecting previously unselected package libfreetype6:hurd-i386.
+Unpacking libfreetype6:hurd-i386 (from .../libfreetype6_2.4.9-1_hurd-i386.deb) ...
+Selecting previously unselected package ucf.
+Moving old data out of the way
+Unpacking ucf (from .../ucf_3.0025+nmu3_all.deb) ...
+Selecting previously unselected package ttf-dejavu-core.
+Unpacking ttf-dejavu-core (from .../ttf-dejavu-core_2.33-2_all.deb) ...
+Selecting previously unselected package fontconfig-config.
+Unpacking fontconfig-config (from .../fontconfig-config_2.8.0-3.1_all.deb) ...
+Selecting previously unselected package libfontconfig1:hurd-i386.
+Unpacking libfontconfig1:hurd-i386 (from .../libfontconfig1_2.8.0-3.1_hurd-i386.deb) ...
+Selecting previously unselected package libjpeg8:hurd-i386.
+Unpacking libjpeg8:hurd-i386 (from .../libjpeg8_8d-1_hurd-i386.deb) ...
+Selecting previously unselected package libunistring0:hurd-i386.
+Unpacking libunistring0:hurd-i386 (from .../libunistring0_0.9.3-5_hurd-i386.deb) ...
+Selecting previously unselected package libxau6:hurd-i386.
+Unpacking libxau6:hurd-i386 (from .../libxau6_1%3a1.0.7-1_hurd-i386.deb) ...
+Selecting previously unselected package libxdmcp6:hurd-i386.
+Unpacking libxdmcp6:hurd-i386 (from .../libxdmcp6_1%3a1.1.1-1_hurd-i386.deb) ...
+Selecting previously unselected package libxcb1:hurd-i386.
+Unpacking libxcb1:hurd-i386 (from .../libxcb1_1.8.1-1_hurd-i386.deb) ...
+Selecting previously unselected package libx11-data.
+Unpacking libx11-data (from .../libx11-data_2%3a1.4.99.901-1_all.deb) ...
+Selecting previously unselected package libx11-6:hurd-i386.
+Unpacking libx11-6:hurd-i386 (from .../libx11-6_2%3a1.4.99.901-1_hurd-i386.deb) ...
+Selecting previously unselected package libxpm4:hurd-i386.
+Unpacking libxpm4:hurd-i386 (from .../libxpm4_1%3a3.5.10-1_hurd-i386.deb) ...
+Selecting previously unselected package file.
+Unpacking file (from .../file_5.11-1_hurd-i386.deb) ...
+Selecting previously unselected package gettext-base.
+Unpacking gettext-base (from .../gettext-base_0.18.1.1-5_hurd-i386.deb) ...
+Selecting previously unselected package autotools-dev.
+Unpacking autotools-dev (from .../autotools-dev_20120210.1_all.deb) ...
+Selecting previously unselected package html2text.
+Unpacking html2text (from .../html2text_1.3.2a-15+b1_hurd-i386.deb) ...
+Selecting previously unselected package gettext.
+Unpacking gettext (from .../gettext_0.18.1.1-5_hurd-i386.deb) ...
+Selecting previously unselected package intltool-debian.
+Unpacking intltool-debian (from .../intltool-debian_0.35.0+20060710.1_all.deb) ...
+Selecting previously unselected package po-debconf.
+Unpacking po-debconf (from .../po-debconf_1.0.16+nmu2_all.deb) ...
+Selecting previously unselected package debhelper.
+Unpacking debhelper (from .../debhelper_9.20120419_all.deb) ...
+Selecting previously unselected package help2man.
+Unpacking help2man (from .../help2man_1.40.9_hurd-i386.deb) ...
+Selecting previously unselected package libgd2-xpm.
+Unpacking libgd2-xpm (from .../libgd2-xpm_2.0.36~rc1~dfsg-6+b2_hurd-i386.deb) ...
+Selecting previously unselected package libgtextutils0.
 Unpacking libgtextutils0 (from .../libgtextutils0_0.6.2-1_hurd-i386.deb) ...
-Selecting previously deselected package libgtextutils-dev.
+Selecting previously unselected package libgtextutils-dev.
 Unpacking libgtextutils-dev (from .../libgtextutils-dev_0.6.2-1_hurd-i386.deb) ...
-Selecting previously deselected package pkg-config.
+Selecting previously unselected package libperlio-gzip-perl.
+Unpacking libperlio-gzip-perl (from .../libperlio-gzip-perl_0.18-1+b2_hurd-i386.deb) ...
+Selecting previously unselected package pkg-config.
 Unpacking pkg-config (from .../pkg-config_0.26-1_hurd-i386.deb) ...
-Selecting previously deselected package sbuild-build-depends-fastx-toolkit-dummy.
-Unpacking sbuild-build-depends-fastx-toolkit-dummy (from .../sbuild-build-depends-fastx-toolkit-dummy.deb) ...
+Selecting previously unselected package libgd-gd2-perl.
+Unpacking libgd-gd2-perl (from .../libgd-gd2-perl_1%3a2.46-3+b1_hurd-i386.deb) ...
+Selecting previously unselected package libgd-text-perl.
+Unpacking libgd-text-perl (from .../libgd-text-perl_0.86-8_all.deb) ...
+Selecting previously unselected package libgd-graph-perl.
+Unpacking libgd-graph-perl (from .../libgd-graph-perl_1.44-6_all.deb) ...
 Processing triggers for man-db ...
-Setting up autotools-dev (20110511.1) ...
-Setting up cdbs (0.4.94) ...
+Processing triggers for install-info ...
+Setting up libmagic1:hurd-i386 (5.11-1) ...
+Setting up libxml2:hurd-i386 (2.7.8.dfsg-9) ...
+Setting up libffi5:hurd-i386 (3.0.10-3) ...
+Setting up libglib2.0-0:hurd-i386 (2.32.0-4) ...
+No schema files found: doing nothing.
+Setting up libcroco3:hurd-i386 (0.6.5-1) ...
+Setting up libexpat1:hurd-i386 (2.1.0-1) ...
+Setting up libfreetype6:hurd-i386 (2.4.9-1) ...
+Setting up ucf (3.0025+nmu3) ...
+Setting up ttf-dejavu-core (2.33-2) ...
+Setting up fontconfig-config (2.8.0-3.1) ...
+Setting up libfontconfig1:hurd-i386 (2.8.0-3.1) ...
+Setting up libjpeg8:hurd-i386 (8d-1) ...
+Setting up libunistring0:hurd-i386 (0.9.3-5) ...
+Setting up libxau6:hurd-i386 (1:1.0.7-1) ...
+Setting up libxdmcp6:hurd-i386 (1:1.1.1-1) ...
+Setting up libxcb1:hurd-i386 (1.8.1-1) ...
+Setting up libx11-data (2:1.4.99.901-1) ...
+Setting up libx11-6:hurd-i386 (2:1.4.99.901-1) ...
+Setting up libxpm4:hurd-i386 (1:3.5.10-1) ...
+Setting up file (5.11-1) ...
+Setting up gettext-base (0.18.1.1-5) ...
+Setting up autotools-dev (20120210.1) ...
+Setting up html2text (1.3.2a-15+b1) ...
+Setting up gettext (0.18.1.1-5) ...
+Setting up intltool-debian (0.35.0+20060710.1) ...
+Setting up po-debconf (1.0.16+nmu2) ...
+Setting up debhelper (9.20120419) ...
+Setting up help2man (1.40.9) ...
+Setting up libgd2-xpm (2.0.36~rc1~dfsg-6+b2) ...
 Setting up libgtextutils0 (0.6.2-1) ...
 Setting up libgtextutils-dev (0.6.2-1) ...
+Setting up libperlio-gzip-perl (0.18-1+b2) ...
 Setting up pkg-config (0.26-1) ...
-Setting up sbuild-build-depends-fastx-toolkit-dummy (0.invalid.0) ...
-
-┌──────────────────────────────────────────────────────────────────────────────┐
-│ Build environment                                                            │
-└──────────────────────────────────────────────────────────────────────────────┘
-
+Setting up libgd-gd2-perl (1:2.46-3+b1) ...
+Setting up libgd-text-perl (0.86-8) ...
+Setting up libgd-graph-perl (1.44-6) ...
+Removing negative dependencies: 
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following packages were automatically installed and are no longer required:
+  libcwidget3 libsigc++-2.0-0c2a libxapian22 libboost-iostreams1.48.0
+Use 'apt-get autoremove' to remove them.
+0 upgraded, 0 newly installed, 0 to remove and 66 not upgraded.
+Checking correctness of dependencies...
 Kernel: GNU 0.3 hurd-i386 (i686-AT386)
-Toolchain package versions: binutils_2.21.52.20110606-2+hurd.2 dpkg-dev_1.16.0.3 g++-4.5_4.5.3-3 g++-4.6_4.6.1-1+hurd.1 gcc-4.4_4.4.6-4+hurd.1 gcc-4.5_4.5.3-3 gcc-4.6_4.6.1-1+hurd.1 gnumach-dev_2:1.3.99.dfsg.git20110305-1 hurd-dev_20110519-3 libc0.3-dev_2.13-10 libstdc++6_4.6.1-1+hurd.1 libstdc++6-4.5-dev_4.5.3-3 libstdc++6-4.6-dev_4.6.1-1+hurd.1
-Package versions: adduser_3.112+nmu2 apt_0.8.14.1 apt-utils_0.8.14.1 autopoint_0.18.1.1-3 autotools-dev_20110511.1 base-files_6.4 base-passwd_3.5.22 bash_4.1-3+hurd.1 binutils_2.21.52.20110606-2+hurd.2 bsdmainutils_8.2.2 bsdutils_1:2.16.2-0 build-essential_11.5 bzip2_1.0.5-6 ca-certificates_20110502 cdbs_0.4.94 coreutils_8.5-1 cpio_2.11-7 cpp_4:4.6.0-6 cpp-4.4_4.4.6-4+hurd.1 cpp-4.5_4.5.3-3 cpp-4.6_4.6.1-1+hurd.1 cron_3.0pl1-116 dash_0.5.5.1-7.4 debconf_1.5.39 debfoster_2.6-2 debhelper_8.9.0 debian-archive-keyring_2010.08.28 debian-ports-archive-keyring_2011.01.12 debianutils_4.0.2 deborphan_1.7.28.5 dialog_1.1-20110302-1 diffutils_1:3.0-1 dpkg_1.16.0.3 dpkg-dev_1.16.0.3 e2fslibs_1.42~WIP-2011-07-02-1 e2fsprogs_1.42~WIP-2011-07-02-1 fakeroot_1.15.1-1 file_5.03-5+b1 findutils_4.4.2-1+b1 fontconfig_2.8.0-2.2 fontconfig-config_2.8.0-3 g++_4:4.6.0-6 g++-4.5_4.5.3-3 g++-4.6_4.6.1-1+hurd.1 gawk_1:3.1.7.dfsg-5 gcc_4:4.6.0-6 gcc-4.4_4.4.6-4+hurd.1 gcc-4.4-base_4.4.6-4+hurd.1 gcc-4.5_4.5.3-3 gcc-4.5-base_4.5.3-3 gcc-4.6_4.6.1-1+hurd.1 gcc-4.6-base_4.6.1-1+hurd.1 gettext_0.18.1.1-3 gettext-base_0.18.1.1-3 gfortran_4:4.6.0-6 gfortran-4.6_4.6.1-1+hurd.1 git_1:1.7.5.4-1 git-man_1:1.7.5.4-1 gnumach-dev_2:1.3.99.dfsg.git20110305-1 gnupg_1.4.11-3 gobjc-4.4_4.4.6-4+hurd.1 gpgv_1.4.11-3 grep_2.8-2 groff-base_1.21-6 gzip_1.3.12-9 hostname_3.06 html2text_1.3.2a-15+b1 hurd_20110519-3 hurd-dev_20110519-3 initscripts_2.88dsf-13.7 insserv_1.14.0-2.1 install-info_4.13a.dfsg.1-6 intltool-debian_0.35.0+20060710.1 libacl1_2.2.47-3 libattr1_1:2.4.46-2 libblkid1_2.16.2-0 libboost-iostreams1.46.1_1.46.1-6 libbsd0_0.3.0-1 libbz2-1.0_1.0.5-6 libc-bin_2.13-10 libc-dev-bin_2.13-10 libc0.3_2.13-10 libc0.3-dev_2.13-10 libc0.3-xen_2.13-10 libcloog-ppl0_0.15.9-3 libcomerr2_1.42~WIP-2011-07-02-1 libcroco3_0.6.2-1 libcurl3-gnutls_7.21.6-3 libdb5.1_5.1.25-11 libdigest-sha1-perl_2.13-2 libdpkg-perl_1.16.0.3 libelfg0_0.8.13-3 libept1_1.0.5 liberror-perl_0.17-1 libexpat1_2.0.1-7 libfontconfig1_2.8.0-3 libfreetype6_2.4.4-2 libgcc1_1:4.6.1-1+hurd.1 libgcrypt11_1.4.6-7 libgdbm3_1.8.3-10 libgfortran3_4.6.1-1+hurd.1 libglib2.0-0_2.28.6-1 libglib2.0-data_2.28.6-1 libgmp10_2:5.0.1+dfsg-7 libgmpxx4ldbl_2:5.0.1+dfsg-7 libgnutls26_2.10.4-2 libgomp1_4.6.1-1+hurd.1 libgpg-error0_1.10-0.3 libgtextutils-dev_0.6.2-1 libgtextutils0_0.6.2-1 libidn11_1.22-1+b1 libldap-2.4-2_2.4.25-1 liblocale-gettext-perl_1.05-6+b1 liblzma2_5.0.0-2 liblzo2-2_2.04-1 libmagic1_5.03-5+b1 libmpc2_0.9-3 libmpfr4_3.0.1-4 libncurses5_5.9-1 libncursesw5_5.9-1 libobjc2_4.5.3-3 libpam-modules_1.1.2-3 libpam-runtime_1.1.2-3 libpam0g_1.1.3-2 libparted0debian1_2.3-3+hurd.1 libpcre3_8.12-3+b1 libpipeline1_1.2.0-3 libpng12-0_1.2.44-3 libpopt0_1.16-1 libppl-c4_0.11.2-3 libppl9_0.11.2-3 libpthread-stubs0_0.3-2.1 libpthread-stubs0-dev_0.3-2.1 libpwl5_0.11.2-3 libquadmath0_4.6.1-1+hurd.1 libreadline6_6.2-2 librtmp0_2.3-2 libsasl2-2_2.1.24~rc1.dfsg1+cvs2011-05-23-4 libsasl2-modules_2.1.24~rc1.dfsg1+cvs2011-05-23-4 libslang2_2.2.4-2 libss2_1.41.12-4 libssl0.9.8_0.9.8o-7+b1 libssl1.0.0_1.0.0d-3 libstdc++6_4.6.1-1+hurd.1 libstdc++6-4.5-dev_4.5.3-3 libstdc++6-4.6-dev_4.6.1-1+hurd.1 libsysfs2_2.1.0+repack-1 libtasn1-3_2.9-4 libtext-iconv-perl_1.7-2+b1 libtimedate-perl_1.2000-1 libunistring0_0.9.3-4 libuuid1_2.16.2-0 libxapian22_1.2.3-2 libxml2_2.7.8.dfsg-3 lsb-base_3.2-27 lynx-cur_2.8.8dev.9-2+b1 make_3.81-8.1 man-db_2.6.0.2-1 mawk_1.3.3-15 mime-support_3.51-1 multiarch-support_2.13-7 ncurses-base_5.9-1 ncurses-bin_5.9-1 netbase_4.45 netcat-traditional_1.10-39 openssl_1.0.0d-3 passwd_1:4.1.4.2+svn3283-3 patch_2.6.1-2 perl_5.12.3-6 perl-base_5.12.3-6 perl-modules_5.12.3-6 pkg-config_0.26-1 po-debconf_1.0.16+nmu1 procps_1:3.2.8-10 psmisc_22.3-1 random-egd_0.5-0+hurd.1 readline-common_6.2-2 sbuild-build-depends-core-dummy_0.invalid.0 sbuild-build-depends-fastx-toolkit-dummy_0.invalid.0 sed_4.2.1-9 sensible-utils_0.0.6 sgml-base_1.26+nmu1 shared-mime-info_0.90-1 sudo_1.7.2p7-1 sysv-rc_2.88dsf-13.7 sysvinit_2.88dsf-13.10 sysvinit-utils_2.88dsf-13.10 tar_1.25-2 ttf-bitstream-vera_1.10-8 ttf-freefont_20100919-1 type-handling_0.2.23 tzdata_2011g-1 ucf_3.0025+nmu2 util-linux_2.16.2-0 xml-core_0.13 xz-utils_5.0.0-2 zlib1g_1:1.2.3.4.dfsg-3
+Toolchain package versions: binutils_2.22-5+hurd.1 dpkg-dev_1.16.2 g++-4.6_4.6.3-1+hurd.3 gcc-4.6_4.6.3-1+hurd.3 gnumach-dev_2:1.3.99.dfsg.git20111010-1 hurd-dev_20120408-3 libc0.3-dev_2.13-31~0 libstdc++6_4.7.0-4 libstdc++6-4.6-dev_4.6.3-1+hurd.3
+Package versions: adduser_3.113 apt_0.8.15.10 apt-utils_0.9.0 autotools-dev_20120210.1 base-files_6.5 base-passwd_3.5.23 bash_4.2-2 binutils_2.22-5+hurd.1 bsdmainutils_8.2.3 bsdutils_1:2.19.1-5 build-essential_11.5 bzip2_1.0.6-1 coreutils_8.13-3 cpio_2.11-7 cpp_4:4.6.3-4 cpp-4.6_4.6.3-1+hurd.3 dash_0.5.7-2 debconf_1.5.41 debfoster_2.7-1.1 debhelper_9.20120419 debian-archive-keyring_2010.08.28 debian-ports-archive-keyring_2012.01.08 debianutils_4.0.4 diffutils_1:3.0-1 dpkg_1.16.2 dpkg-dev_1.16.2 e2fslibs_1.42.2-2 e2fsprogs_1.42.2-2 fakeroot_1.18.2-1 file_5.11-1 findutils_4.4.2-1+b1 fontconfig-config_2.8.0-3.1 g++_4:4.6.1-3 g++-4.6_4.6.3-1+hurd.3 gawk_1:3.1.8+dfsg-0.1 gcc_4:4.6.3-4 gcc-4.2-base_4.2.4-6+b1 gcc-4.4-base_4.4.6-11 gcc-4.5-base_4.5.3-12 gcc-4.6_4.6.3-1+hurd.3 gcc-4.6-base_4.6.3-1+hurd.3 gcc-4.7-base_4.7.0-4 gettext_0.18.1.1-5 gettext-base_0.18.1.1-5 gnumach-dev_2:1.3.99.dfsg.git20111010-1 gnupg_1.4.11-3 gpgv_1.4.11-3 grep_2.9-2 groff-base_1.21-7 gzip_1.3.12-9 help2man_1.40.9 hostname_3.06 html2text_1.3.2a-15+b1 hurd_20120408-3 hurd-dev_20120408-3 ifupdown_0.6.9+hurd.1 inetutils-tools_2:1.8-3 initscripts_2.88dsf-13.11 insserv_1.14.0-2.1 install-info_4.13a.dfsg.1-8 intltool-debian_0.35.0+20060710.1 libacl1_2.2.51-5 libapt-inst1.5_0.9.2 libapt-pkg4.12_0.9.2 libattr1_1:2.4.46-5 libblkid1_2.20.1-3 libboost-iostreams1.46.1_1.46.1-8 libboost-iostreams1.48.0_1.48.0-3 libboost-iostreams1.49.0_1.49.0-2 libbz2-1.0_1.0.6-1 libc-bin_2.13-31~0 libc-dev-bin_2.13-31~0 libc0.3_2.13-31~0 libc0.3-dev_2.13-31~0 libc0.3-xen_2.13-31~0 libclass-isa-perl_0.36-2 libcomerr2_1.42.2-2 libcroco3_0.6.5-1 libcwidget3_0.5.16-3.1 libdb5.1_5.1.29-1 libdpkg-perl_1.16.2 libexpat1_2.1.0-1 libffi5_3.0.10-3 libfile-fcntllock-perl_0.14-1+b1 libfontconfig1_2.8.0-3.1 libfreetype6_2.4.9-1 libfribidi0_0.19.2-1 libgc1c2_1:7.1-8 libgcc1_1:4.7.0-4 libgcrypt11_1.5.0-3 libgd-gd2-perl_1:2.46-3+b1 libgd-graph-perl_1.44-6 libgd-text-perl_0.86-8 libgd2-xpm_2.0.36~rc1~dfsg-6+b2 libgdbm3_1.8.3-10 libglib2.0-0_2.32.0-4 libgmp10_2:5.0.4+dfsg-1 libgnutls26_2.12.18-1 libgomp1_4.7.0-4 libgpg-error0_1.10-3 libgtextutils-dev_0.6.2-1 libgtextutils0_0.6.2-1 libident_0.22-3 libidn11_1.24-2 libjpeg8_8d-1 libldap-2.4-2_2.4.28-1.1 liblocale-gettext-perl_1.05-7+b1 liblzma2_5.1.1alpha+20110809-2 liblzma5_5.1.1alpha+20110809-3 libmagic1_5.11-1 libmpc2_0.9-4 libmpfr4_3.1.0-4 libncurses5_5.9-6 libncursesw5_5.9-6 libnewt0.52_0.52.14-7 libp11-kit0_0.12-3 libpam-modules_1.1.3-4 libpam-modules-bin_1.1.3-4 libpam-runtime_1.1.3-4 libpam0g_1.1.3-7 libparted0debian1_2.3-9.1 libpcre3_1:8.30-4 libperlio-gzip-perl_0.18-1+b2 libpipeline1_1.2.0-5 libpng12-0_1.2.49-1 libpopt0_1.16-3 libpthread-stubs0_0.3-3 libpthread-stubs0-dev_0.3-3 libquadmath0_4.7.0-4 libreadline6_6.2-8 libsasl2-2_2.1.25.dfsg1-4 libsasl2-modules_2.1.25.dfsg1-4 libsigc++-2.0-0c2a_2.2.10-0.1 libsigsegv2_2.9-4 libslang2_2.2.4-7 libss2_1.42-1 libssl0.9.8_0.9.8o-7+b1 libssl1.0.0_1.0.1a-3 libstdc++6_4.7.0-4 libstdc++6-4.6-dev_4.6.3-1+hurd.3 libswitch-perl_2.16-2 libsysfs2_2.1.0+repack-1 libtasn1-3_2.12-1 libtext-charwidth-perl_0.04-7+b1 libtext-iconv-perl_1.7-4+b1 libtext-wrapi18n-perl_0.06-7 libtimedate-perl_1.2000-1 libtinfo5_5.9-6 libunistring0_0.9.3-5 libusb-0.1-4_2:0.1.12-21+hurd.1 libuuid1_2.20.1-4 libx11-6_2:1.4.99.901-1 libx11-data_2:1.4.99.901-1 libxapian22_1.2.8-1 libxau6_1:1.0.7-1 libxcb1_1.8.1-1 libxdmcp6_1:1.1.1-1 libxml2_2.7.8.dfsg-9 libxpm4_1:3.5.10-1 lsb-base_3.2-28 make_3.81-8.1 man-db_2.6.0.2-2 mawk_1.3.3-15 multiarch-support_2.13-21 ncurses-base_5.9-2 ncurses-bin_5.9-6 netbase_4.46 netcat-traditional_1.10-39 original-awk_2011-08-10-1 passwd_1:4.1.4.2+svn3283-3 patch_2.6.1-2 perl_5.14.2-9 perl-base_5.14.2-9 perl-modules_5.14.2-9 pkg-config_0.26-1 po-debconf_1.0.16+nmu2 procps_1:3.2.8-11 psmisc_22.16-1+hurd.1 readline-common_6.2-7 sed_4.2.1-9 sensible-utils_0.0.6 sudo_1.8.3p2-1 sysv-rc_2.88dsf-13.11 sysvinit_2.88dsf-13.11 sysvinit-utils_2.88dsf-13.11 tar_1.26-2 ttf-dejavu-core_2.33-2 tzdata_2011l-1 ucf_3.0025+nmu3 util-linux_2.19.1-5 wget_1.13-1 whiptail_0.52.11-2.1 xz-utils_5.1.1alpha+20110809-2 zlib1g_1:1.2.6.dfsg-2
 
 ┌──────────────────────────────────────────────────────────────────────────────┐
 │ Build                                                                        │
@@ -276,91 +419,35 @@ Unpack source
 ─────────────
 
 gpgv: keyblock resource `/home/buildd/.gnupg/trustedkeys.gpg': file open error
-gpgv: Signature made Fri Jul  8 04:45:07 2011 UTC using RSA key ID 2295D502
+gpgv: Signature made Thu Apr 26 14:22:18 2012 UTC using DSA key ID C09FD35A
 gpgv: Can't check signature: public key not found
-dpkg-source: warning: failed to verify signature on ./fastx-toolkit_0.0.13.1-1.dsc
+dpkg-source: warning: failed to verify signature on ./fastx-toolkit_0.0.13.1-2.dsc
 dpkg-source: info: extracting fastx-toolkit in fastx-toolkit-0.0.13.1
 dpkg-source: info: unpacking fastx-toolkit_0.0.13.1.orig.tar.bz2
-dpkg-source: info: unpacking fastx-toolkit_0.0.13.1-1.debian.tar.gz
+dpkg-source: info: unpacking fastx-toolkit_0.0.13.1-2.debian.tar.gz
+dpkg-source: info: applying gcc-4.7.patch
 
 Check disc space
 ────────────────
 
-Sufficient free space for build
-
-User Environment
-────────────────
-
-HOME=/home/buildd
-LOGNAME=buildd
-OLDPWD=/
-PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/X11R6/bin
-PWD=/«PKGBUILDDIR»
-SHELL=/bin/sh
-SUDO_COMMAND=/usr/sbin/chroot /«CHROOT» su buildd -s /bin/sh -c cd '/«PKGBUILDDIR»' && 'env'
-SUDO_GID=105
-SUDO_UID=60000
-SUDO_USER=buildd
-TERM=rxvt-unicode
-USER=buildd
-USERNAME=root
 
 dpkg-buildpackage
 ─────────────────
 
-dpkg-buildpackage: export CFLAGS from dpkg-buildflags (origin: vendor): -g -O2
-dpkg-buildpackage: export CPPFLAGS from dpkg-buildflags (origin: vendor): 
-dpkg-buildpackage: export CXXFLAGS from dpkg-buildflags (origin: vendor): -g -O2
-dpkg-buildpackage: export FFLAGS from dpkg-buildflags (origin: vendor): -g -O2
-dpkg-buildpackage: export LDFLAGS from dpkg-buildflags (origin: vendor): 
 dpkg-buildpackage: source package fastx-toolkit
-dpkg-buildpackage: source version 0.0.13.1-1
+dpkg-buildpackage: source version 0.0.13.1-2
  dpkg-source --before-build fastx-toolkit-0.0.13.1
 dpkg-buildpackage: host architecture hurd-i386
  /usr/bin/fakeroot debian/rules clean
-test -x debian/rules
-dh_testroot
-rm -f debian/stamp-makefile-build debian/stamp-makefile-install
-/usr/bin/make  -C .  -k distclean
-make[1]: *** No rule to make target `distclean'.
-make: [makefile-clean] Error 2 (ignored)
-make[1]: Entering directory `/«PKGBUILDDIR»'
-make[1]: Leaving directory `/«PKGBUILDDIR»'
-rm -f debian/stamp-autotools
-rmdir --ignore-fail-on-non-empty .
-rmdir: failed to remove `.': Invalid argument
-make: [makefile-clean] Error 1 (ignored)
-for i in ./config/config.guess ./config/config.sub  ; do \
-		if test -e $i.cdbs-orig ; then \
-			mv $i.cdbs-orig $i ; \
-		fi ; \
-	done
-dh_clean 
- debian/rules build
-rm -f debian/stamp-autotools-files
-test -x debian/rules
-mkdir -p "."
-if test -e /usr/share/misc/config.guess ; then \
-		for i in ./config/config.guess ; do \
-			if ! test -e $i.cdbs-orig ; then \
-				mv $i $i.cdbs-orig ; \
-				cp --remove-destination /usr/share/misc/config.guess $i ; \
-			fi ; \
-		done ; \
-	fi
-if test -e /usr/share/misc/config.sub ; then \
-		for i in ./config/config.sub ; do \
-			if ! test -e $i.cdbs-orig ; then \
-				mv $i $i.cdbs-orig ; \
-				cp --remove-destination /usr/share/misc/config.sub $i ; \
-			fi ; \
-		done ; \
-	fi
-touch debian/stamp-autotools-files
-chmod a+x /«PKGBUILDDIR»/./configure
-mkdir -p .
-cd . &&   CFLAGS="-g -O2 -g -O2 -Wall" CXXFLAGS="-g -O2 -g -O2 -Wall" CPPFLAGS="" LDFLAGS="" /«PKGBUILDDIR»/./configure --build=i486-gnu  --prefix=/usr --includedir="\${prefix}/include" --mandir="\${prefix}/share/man" --infodir="\${prefix}/share/info" --sysconfdir=/etc --localstatedir=/var --libexecdir="\${prefix}/lib/fastx-toolkit" --srcdir=. --disable-maintainer-mode --disable-dependency-tracking --disable-silent-rules    
-configure: WARNING: unrecognized options: --disable-maintainer-mode, --disable-silent-rules
+dh clean
+   dh_testdir
+   dh_auto_clean
+   dh_clean
+ debian/rules build-arch
+dh build-arch
+   dh_testdir -a
+   dh_auto_configure -a
+configure: WARNING: unrecognized options: --disable-maintainer-mode
 checking for a BSD-compatible install... /usr/bin/install -c
 checking whether build environment is sane... yes
 checking for a thread-safe mkdir -p... /bin/mkdir -p
@@ -484,93 +571,139 @@ config.status: creating build_scripts/Makefile
 config.status: creating config.h
 config.status: executing depfiles commands
 config.status: executing libtool commands
-configure: WARNING: unrecognized options: --disable-maintainer-mode, --disable-silent-rules
-touch debian/stamp-autotools
-/usr/bin/make  -C .  
-make[1]: Entering directory `/«PKGBUILDDIR»'
-/usr/bin/make  all-recursive
-make[2]: Entering directory `/«PKGBUILDDIR»'
+configure: WARNING: unrecognized options: --disable-maintainer-mode
+   dh_auto_build -a
+make[1]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-2-hurd-i386-3yXjXC/fastx-toolkit-0.0.13.1'
+make  all-recursive
+make[2]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-2-hurd-i386-3yXjXC/fastx-toolkit-0.0.13.1'
 Making all in m4
-make[3]: Entering directory `/«PKGBUILDDIR»/m4'
+make[3]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-2-hurd-i386-3yXjXC/fastx-toolkit-0.0.13.1/m4'
 make[3]: Nothing to be done for `all'.
-make[3]: Leaving directory `/«PKGBUILDDIR»/m4'
+make[3]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-2-hurd-i386-3yXjXC/fastx-toolkit-0.0.13.1/m4'
 Making all in src
-make[3]: Entering directory `/«PKGBUILDDIR»/src'
+make[3]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-2-hurd-i386-3yXjXC/fastx-toolkit-0.0.13.1/src'
 Making all in libfastx
-make[4]: Entering directory `/«PKGBUILDDIR»/src/libfastx'
-gcc -DHAVE_CONFIG_H -I. -I../..     -g -O2 -g -O2 -Wall -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -c chomp.c
-gcc -DHAVE_CONFIG_H -I. -I../..     -g -O2 -g -O2 -Wall -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -c fastx.c
+make[4]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-2-hurd-i386-3yXjXC/fastx-toolkit-0.0.13.1/src/libfastx'
+gcc -DHAVE_CONFIG_H -I. -I../..   -D_FORTIFY_SOURCE=2  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Wformat-security -Werror=format-security -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -c chomp.c
+gcc -DHAVE_CONFIG_H -I. -I../..   -D_FORTIFY_SOURCE=2  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Wformat-security -Werror=format-security -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -c fastx.c
 In file included from fastx.c:29:0:
 fastx.h:106:23: error: 'PATH_MAX' undeclared here (not in a function)
 make[4]: *** [fastx.o] Error 1
 make[3]: *** [all-recursive] Error 1
 make[2]: *** [all-recursive] Error 1
 make[1]: *** [all] Error 2
-make: *** [debian/stamp-makefile-build] Error 2
-dpkg-buildpackage: error: debian/rules build gave error exit status 2
-make[4]: Leaving directory `/«PKGBUILDDIR»/src/libfastx'
-make[3]: Leaving directory `/«PKGBUILDDIR»/src'
-make[2]: Leaving directory `/«PKGBUILDDIR»'
-make[1]: Leaving directory `/«PKGBUILDDIR»'
+dh_auto_build: make -j1 returned exit code 2
+make: *** [build-arch] Error 2
+dpkg-buildpackage: error: debian/rules build-arch gave error exit status 2
+make[4]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-2-hurd-i386-3yXjXC/fastx-toolkit-0.0.13.1/src/libfastx'
+make[3]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-2-hurd-i386-3yXjXC/fastx-toolkit-0.0.13.1/src'
+make[2]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-2-hurd-i386-3yXjXC/fastx-toolkit-0.0.13.1'
+make[1]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-2-hurd-i386-3yXjXC/fastx-toolkit-0.0.13.1'
 ────────────────────────────────────────────────────────────────────────────────
-Build finished at 20110710-0547
-
-Finished
-────────
-
-E: Build failure (dpkg-buildpackage died)
-
-┌──────────────────────────────────────────────────────────────────────────────┐
-│ Cleanup                                                                      │
-└──────────────────────────────────────────────────────────────────────────────┘
-
-Purging /«BUILDDIR»
+Build finished at 20120426-1508
+FAILED [dpkg-buildpackage died]
+────────────────────────────────────────────────────────────────────────────────
+Purging /home/buildd/build/chroot-sid/build/buildd-fastx-toolkit_0.0.13.1-2-hurd-i386-3yXjXC
 Reading package lists...
 Building dependency tree...
 Reading state information...
 The following packages were automatically installed and are no longer required:
-  libept1 libxapian22 liblzo2-2 libboost-iostreams1.46.1 libsysfs2
+  libcwidget3 libsigc++-2.0-0c2a libxapian22 libboost-iostreams1.48.0
 Use 'apt-get autoremove' to remove them.
-0 upgraded, 0 newly installed, 0 to remove and 26 not upgraded.
+0 upgraded, 0 newly installed, 0 to remove and 66 not upgraded.
 Reading package lists...
 Building dependency tree...
 Reading state information...
 The following packages were automatically installed and are no longer required:
-  libpopt0 libept1 libxapian22 liblzo2-2 libboost-iostreams1.46.1 libsysfs2
+  libcwidget3 libsigc++-2.0-0c2a libxapian22 libboost-iostreams1.48.0
 Use 'apt-get autoremove' to remove them.
 The following packages will be REMOVED:
-  autotools-dev* cdbs* libgtextutils-dev* libgtextutils0* pkg-config*
-  sbuild-build-depends-core-dummy* sbuild-build-depends-fastx-toolkit-dummy*
-0 upgraded, 0 newly installed, 7 to remove and 26 not upgraded.
-After this operation, 1049 kB disk space will be freed.
-(Reading database ... 14935 files and directories currently installed.)
-Removing sbuild-build-depends-fastx-toolkit-dummy ...
+  autotools-dev* debhelper* file* fontconfig-config* gettext* gettext-base*
+  help2man* html2text* intltool-debian* libcroco3* libexpat1* libffi5*
+  libfontconfig1* libfreetype6* libgd-gd2-perl* libgd-graph-perl*
+  libgd-text-perl* libgd2-xpm* libglib2.0-0* libgtextutils-dev*
+  libgtextutils0* libjpeg8* libmagic1* libperlio-gzip-perl* libunistring0*
+  libx11-6* libx11-data* libxau6* libxcb1* libxdmcp6* libxml2* libxpm4*
+  pkg-config* po-debconf* ttf-dejavu-core* ucf*
+0 upgraded, 0 newly installed, 36 to remove and 66 not upgraded.
+After this operation, 31.5 MB disk space will be freed.
+(Reading database ... 15884 files and directories currently installed.)
 Removing autotools-dev ...
-Removing cdbs ...
+Removing debhelper ...
+Removing file ...
+Removing libgd-graph-perl ...
+Removing libgd-text-perl ...
+Removing libgd-gd2-perl ...
+Removing libgd2-xpm ...
+Purging configuration files for libgd2-xpm ...
+Removing libfontconfig1:hurd-i386 ...
+Purging configuration files for libfontconfig1:hurd-i386 ...
+Removing fontconfig-config ...
+Purging configuration files for fontconfig-config ...
+Removing po-debconf ...
+Removing intltool-debian ...
+Removing gettext ...
+Removing gettext-base ...
+Removing help2man ...
+Removing html2text ...
+Purging configuration files for html2text ...
+Removing libcroco3:hurd-i386 ...
+Purging configuration files for libcroco3:hurd-i386 ...
+Removing libexpat1:hurd-i386 ...
+Purging configuration files for libexpat1:hurd-i386 ...
+Removing pkg-config ...
+Removing libglib2.0-0:hurd-i386 ...
+Purging configuration files for libglib2.0-0:hurd-i386 ...
+Removing libffi5:hurd-i386 ...
+Purging configuration files for libffi5:hurd-i386 ...
+Removing libfreetype6:hurd-i386 ...
+Purging configuration files for libfreetype6:hurd-i386 ...
 Removing libgtextutils-dev ...
 Removing libgtextutils0 ...
 Purging configuration files for libgtextutils0 ...
-Removing pkg-config ...
-Removing sbuild-build-depends-core-dummy ...
+Removing libjpeg8:hurd-i386 ...
+Removing libmagic1:hurd-i386 ...
+Purging configuration files for libmagic1:hurd-i386 ...
+Removing libperlio-gzip-perl ...
+Removing libunistring0:hurd-i386 ...
+Purging configuration files for libunistring0:hurd-i386 ...
+Removing libxpm4:hurd-i386 ...
+Purging configuration files for libxpm4:hurd-i386 ...
+Removing libx11-6:hurd-i386 ...
+Purging configuration files for libx11-6:hurd-i386 ...
+Removing libx11-data ...
+Removing libxcb1:hurd-i386 ...
+Purging configuration files for libxcb1:hurd-i386 ...
+Removing libxau6:hurd-i386 ...
+Purging configuration files for libxau6:hurd-i386 ...
+Removing libxdmcp6:hurd-i386 ...
+Purging configuration files for libxdmcp6:hurd-i386 ...
+Removing libxml2:hurd-i386 ...
+Purging configuration files for libxml2:hurd-i386 ...
+Removing ttf-dejavu-core ...
+Removing ucf ...
+Purging configuration files for ucf ...
 Processing triggers for man-db ...
+Processing triggers for install-info ...
 
 ┌──────────────────────────────────────────────────────────────────────────────┐
 │ Summary                                                                      │
 └──────────────────────────────────────────────────────────────────────────────┘
 
 Architecture: hurd-i386
-Build-Space: 4152
-Build-Time: 94
+Build-Space: 4180
+Build-Time: 114
 Distribution: sid
 Fail-Stage: build
-Install-Time: 90
-Job: fastx-toolkit_0.0.13.1-1
+Install-Time: 132
+Job: fastx-toolkit_0.0.13.1-2
 Package: fastx-toolkit
-Package-Time: 335
-Source-Version: 0.0.13.1-1
-Space: 4152
+Package-Time: 404
+Source-Version: 0.0.13.1-2
+Space: 4180
 Status: attempted
-Version: 0.0.13.1-1
+Version: 0.0.13.1-2
 ────────────────────────────────────────────────────────────────────────────────
-Finished at 20110710-0547
-Build needed 00:05:35, 4152k disc space
+Finished at 20120426-1508
+Build needed 00:06:44, 4180k disc space
+

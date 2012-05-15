@@ -1,70 +1,69 @@
-From buildd@poulenc.debian.org Fri Jul 08 05:11:22 2011
-Return-path: <buildd@poulenc.debian.org>
-Received: from kokkonen.debian.org ([2001:41b8:202:deb:1a1a:0:52c3:4b61])
+From buildd@parry.debian.org Thu Apr 26 15:04:11 2012
+Return-path: <buildd@parry.debian.org>
+Received: from merikanto.debian.org ([2001:858:2:2:216:35ff:fec4:a49a])
 	from C=NA, ST=NA, L=Ankh Morpork, O=Debian SMTP, OU=Debian SMTP CA,
-	CN=kokkonen.debian.org,
-	EMAIL=hostmaster@kokkonen.debian.org (verified)
+	CN=merikanto.debian.org,
+	EMAIL=hostmaster@merikanto.debian.org (verified)
 	by grieg.debian.org with esmtps (TLS1.0:RSA_AES_256_CBC_SHA1:32)
-	(Exim 4.72) (envelope-from <buildd@poulenc.debian.org>)
-	id 1Qf3LW-0003kM-O9
-	for logs@buildd.debian.org; Fri, 08 Jul 2011 05:11:22 +0000
-Received: from poulenc.ynic.york.ac.uk ([144.32.168.77]
-	helo=poulenc.debian.org)
+	(Exim 4.72) (envelope-from <buildd@parry.debian.org>)
+	id 1SNQEs-0001Bg-Vg
+	for logs@buildd.debian.org; Thu, 26 Apr 2012 15:04:11 +0000
+Received: from parry.debian.org ([140.211.15.153])
 	from C=NA, ST=NA, L=Ankh Morpork, O=Debian SMTP, OU=Debian SMTP CA,
-	CN=poulenc.debian.org, EMAIL=hostmaster@poulenc.debian.org (verified)
-	by kokkonen.debian.org with esmtps (TLS1.0:RSA_AES_256_CBC_SHA1:32)
-	(Exim 4.72) (envelope-from <buildd@poulenc.debian.org>)
-	id 1Qf3LP-0001DH-VU; Fri, 08 Jul 2011 05:11:16 +0000
-Received: from buildd by poulenc.debian.org with local (Exim 4.72)
-	(envelope-from <buildd@poulenc.debian.org>)
-	id 1Qf3LP-0003ng-7v; Fri, 08 Jul 2011 05:11:15 +0000
-Message-Id: <E1Qf3LP-0003ng-7v@poulenc.debian.org>
-MIME-Version: 1.0
-Content-Transfer-Encoding: binary
-X-Mailer: MIME::Lite 3.027 (F2.77; B3.08; Q3.08)
-Date: Fri, 8 Jul 2011 05:11:15 +0000
-From: buildd on poulenc <buildd@poulenc.debian.org>
+	CN=parry.debian.org, EMAIL=hostmaster@parry.debian.org (verified)
+	by merikanto.debian.org with esmtps (TLS1.0:RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.72) (envelope-from <buildd@parry.debian.org>)
+	id 1SNQEq-0006Oi-QW; Thu, 26 Apr 2012 15:04:09 +0000
+Received: from buildd by parry.debian.org with local (Exim 4.72)
+	(envelope-from <buildd@parry.debian.org>)
+	id 1SNQEu-0000Hv-1d; Thu, 26 Apr 2012 15:04:12 +0000
+Date: Thu, 26 Apr 2012 15:04:12 +0000
+Message-Id: <E1SNQEu-0000Hv-1d@parry.debian.org>
+From: buildd on parry <buildd@parry.debian.org>
 To: phil+buildd@philkern.de,logs@buildd.debian.org
-Subject: Log for successful build of fastx-toolkit_0.0.13.1-1 on powerpc
+Subject: Log for successful build of fastx-toolkit_0.0.13.1-2 on powerpc
 	(dist=sid)
-Key-Id: 205E9E83
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
 Delivered-To: logs@buildd.debian.org
 
-sbuild (Debian sbuild) 0.61.0 (23 Feb 2011) on poulenc.debian.org
+sbuild (Debian sbuild) 0.61.0 (23 Feb 2011) on parry.debian.org
 
 ╔══════════════════════════════════════════════════════════════════════════════╗
-║ fastx-toolkit 0.0.13.1-1 (powerpc)                         08 Jul 2011 05:09 ║
+║ fastx-toolkit 0.0.13.1-2 (powerpc)                         26 Apr 2012 15:01 ║
 ╚══════════════════════════════════════════════════════════════════════════════╝
 
 Package: fastx-toolkit
-Version: 0.0.13.1-1
-Source Version: 0.0.13.1-1
+Version: 0.0.13.1-2
+Source Version: 0.0.13.1-2
 Architecture: powerpc
-Get:1 http://ftp.uk.debian.org unstable InRelease [146 kB]
-Get:2 http://incoming.debian.org unstable InRelease [146 kB]
-Get:3 http://ftp.uk.debian.org unstable/main Sources [5359 kB]
+Get:1 http://debian.osuosl.org unstable InRelease [210 kB]
+Get:2 http://debian.osuosl.org unstable/main Sources [6247 kB]
+Get:3 http://incoming.debian.org unstable InRelease [210 kB]
+Get:4 http://debian.osuosl.org unstable/contrib Sources [53.9 kB]
+Get:5 http://debian.osuosl.org unstable/non-free Sources [97.9 kB]
+Get:6 http://debian.osuosl.org unstable/main powerpc Packages [5889 kB]
+Get:7 http://debian.osuosl.org unstable/contrib powerpc Packages [36.9 kB]
+Ign http://debian.osuosl.org unstable/contrib TranslationIndex
+Get:8 http://debian.osuosl.org unstable/main TranslationIndex [2223 B]
+Get:9 http://debian.osuosl.org unstable/contrib Translation-en [37.0 kB]
+Get:10 http://debian.osuosl.org unstable/main Translation-en [3943 kB]
 Ign http://incoming.debian.org  InRelease
-Get:4 http://incoming.debian.org  Release.gpg [836 B]
-Get:5 http://incoming.debian.org unstable/main Sources [5359 kB]
-Get:6 http://ftp.uk.debian.org unstable/contrib Sources [52.2 kB]
-Get:7 http://ftp.uk.debian.org unstable/non-free Sources [95.0 kB]
-Get:8 http://ftp.uk.debian.org unstable/main powerpc Packages [7402 kB]
-Get:9 http://ftp.uk.debian.org unstable/contrib powerpc Packages [53.5 kB]
-Ign http://ftp.uk.debian.org unstable/contrib TranslationIndex
-Get:10 http://ftp.uk.debian.org unstable/main TranslationIndex [2045 B]
-Ign http://ftp.uk.debian.org unstable/contrib Translation-en
-Get:11 http://incoming.debian.org unstable/contrib Sources [52.2 kB]
-Get:12 http://incoming.debian.org unstable/non-free Sources [95.0 kB]
-Get:13 http://incoming.debian.org unstable/main powerpc Packages [7402 kB]
-Get:14 http://incoming.debian.org unstable/contrib powerpc Packages [53.5 kB]
+Get:11 http://incoming.debian.org  Release.gpg [836 B]
+Get:12 http://incoming.debian.org unstable/main Sources [6252 kB]
+Get:13 http://incoming.debian.org unstable/contrib Sources [53.9 kB]
+Get:14 http://incoming.debian.org unstable/non-free Sources [97.9 kB]
+Get:15 http://incoming.debian.org unstable/main powerpc Packages [5888 kB]
+Get:16 http://incoming.debian.org unstable/contrib powerpc Packages [36.9 kB]
 Ign http://incoming.debian.org unstable/contrib TranslationIndex
-Get:15 http://incoming.debian.org unstable/main TranslationIndex [2045 B]
-Get:16 http://incoming.debian.org  Release [1604 B]
-Get:17 http://incoming.debian.org  Sources [28.2 kB]
-Get:18 http://incoming.debian.org  Packages [297 kB]
-Ign http://incoming.debian.org unstable/contrib Translation-en
+Get:17 http://incoming.debian.org unstable/main TranslationIndex [2223 B]
+Get:18 http://incoming.debian.org  Release [1601 B]
+Get:19 http://incoming.debian.org unstable/contrib Translation-en [37.0 kB]
+Get:20 http://incoming.debian.org unstable/main Translation-en [3943 kB]
+Get:21 http://incoming.debian.org  Sources [37.8 kB]
+Get:22 http://incoming.debian.org  Packages [354 kB]
 Ign http://incoming.debian.org  Translation-en
-Fetched 26.5 MB in 22s (1174 kB/s)
+Fetched 33.4 MB in 10s (3132 kB/s)
 Reading package lists...
 
 ┌──────────────────────────────────────────────────────────────────────────────┐
@@ -85,11 +84,11 @@ Building dependency tree...
 Reading state information...
 NOTICE: 'fastx-toolkit' packaging is maintained in the 'Git' version control system at:
 git://git.debian.org/debian-med/fastx-toolkit.git
-Need to get 1170 kB of source archives.
-Get:1 http://incoming.debian.org/buildd-unstable/  fastx-toolkit 0.0.13.1-1 (dsc) [2023 B]
-Get:2 http://incoming.debian.org/buildd-unstable/  fastx-toolkit 0.0.13.1-1 (tar) [1153 kB]
-Get:3 http://incoming.debian.org/buildd-unstable/  fastx-toolkit 0.0.13.1-1 (diff) [14.3 kB]
-Fetched 1170 kB in 1s (748 kB/s)
+Need to get 1172 kB of source archives.
+Get:1 http://incoming.debian.org/buildd-unstable/  fastx-toolkit 0.0.13.1-2 (dsc) [1511 B]
+Get:2 http://incoming.debian.org/buildd-unstable/  fastx-toolkit 0.0.13.1-2 (tar) [1153 kB]
+Get:3 http://incoming.debian.org/buildd-unstable/  fastx-toolkit 0.0.13.1-2 (diff) [16.8 kB]
+Fetched 1172 kB in 1s (951 kB/s)
 Download complete and in download only mode
 
 Check arch
@@ -103,192 +102,272 @@ Check arch
 Build-Depends: build-essential, fakeroot
 Checking for already installed dependencies...
 build-essential: already installed (11.5)
-fakeroot: already installed (1.16-1)
+fakeroot: already installed (1.18.2-1)
 Checking for dependency conflicts...
 Installing positive dependencies: 
 Reading package lists...
 Building dependency tree...
 Reading state information...
-0 upgraded, 0 newly installed, 0 to remove and 1 not upgraded.
+0 upgraded, 0 newly installed, 0 to remove and 42 not upgraded.
 Removing negative dependencies: 
 Reading package lists...
 Building dependency tree...
 Reading state information...
-0 upgraded, 0 newly installed, 0 to remove and 1 not upgraded.
+0 upgraded, 0 newly installed, 0 to remove and 42 not upgraded.
 Checking correctness of dependencies...
 
 ┌──────────────────────────────────────────────────────────────────────────────┐
 │ Install fastx-toolkit build dependencies (internal resolver)                 │
 └──────────────────────────────────────────────────────────────────────────────┘
 
-Build-Depends: base-files, base-passwd, bash, coreutils, dash, debianutils, diffutils, dpkg, e2fsprogs, findutils, grep, gzip, hostname, ncurses-base, ncurses-bin, perl-base, sed, login, sysvinit-utils, sysvinit, tar, bsdutils, mount, util-linux, libc6-dev | libc-dev, gcc (>= 4:4.4.3), g++ (>= 4:4.4.3), make, dpkg-dev (>= 1.13.5), cdbs, debhelper (>= 8), autotools-dev, pkg-config, libgtextutils-dev
+Build-Depends: base-files, base-passwd, bash, coreutils, dash, debianutils, diffutils, dpkg, e2fsprogs, findutils, grep, gzip, hostname, ncurses-base, ncurses-bin, perl-base, sed, login, sysvinit-utils, sysvinit, tar, bsdutils, mount, util-linux, libc6-dev | libc-dev, gcc (>= 4:4.4.3), g++ (>= 4:4.4.3), make, dpkg-dev (>= 1.13.5), debhelper (>= 9), autotools-dev, pkg-config, libgtextutils-dev, help2man, libgd-graph-perl, libperlio-gzip-perl
 Checking for already installed dependencies...
-base-files: already installed (6.4)
-base-passwd: already installed (3.5.22)
-bash: already installed (4.1-3)
-coreutils: already installed (8.5-1)
-dash: already installed (0.5.5.1-7.4)
-debianutils: already installed (4.0.2)
-diffutils: already installed (1:3.0-1)
-dpkg: already installed (1.16.0.3)
-e2fsprogs: already installed (1.42~WIP-2011-07-02-1)
-findutils: already installed (4.4.2-1+b1)
-grep: already installed (2.8-2)
-gzip: already installed (1.3.12-9)
-hostname: already installed (3.06)
-ncurses-base: already installed (5.9-1)
-ncurses-bin: already installed (5.9-1)
-perl-base: already installed (5.12.4-1)
+base-files: already installed (6.7)
+base-passwd: already installed (3.5.24)
+bash: already installed (4.2-1)
+coreutils: already installed (8.13-3.1)
+dash: already installed (0.5.7-3)
+debianutils: already installed (4.2.1)
+diffutils: already installed (1:3.2-2)
+dpkg: already installed (1.16.2)
+e2fsprogs: already installed (1.42.1-2)
+findutils: already installed (4.4.2-4)
+grep: already installed (2.10-1)
+gzip: already installed (1.4-5)
+hostname: already installed (3.11)
+ncurses-base: already installed (5.9-4)
+ncurses-bin: already installed (5.9-4)
+perl-base: already installed (5.14.2-9)
 sed: already installed (4.2.1-9)
-login: already installed (1:4.1.4.2+svn3283-3)
-sysvinit-utils: already installed (2.88dsf-13.10)
-sysvinit: already installed (2.88dsf-13.10)
-tar: already installed (1.25-3)
-bsdutils: already installed (1:2.19.1-2)
-mount: already installed (2.19.1-2)
-util-linux: already installed (2.19.1-2)
-libc6-dev: already installed (2.13-10)
-gcc: already installed (4:4.6.0-6 >= 4:4.4.3 is satisfied)
-g++: already installed (4:4.6.0-6 >= 4:4.4.3 is satisfied)
+login: already installed (1:4.1.5-1)
+sysvinit-utils: already installed (2.88dsf-22.1)
+sysvinit: already installed (2.88dsf-22.1)
+tar: already installed (1.26-4)
+bsdutils: already installed (1:2.20.1-4)
+mount: already installed (2.20.1-4)
+util-linux: already installed (2.20.1-4)
+libc6-dev: already installed (2.13-27)
+gcc: already installed (4:4.6.2-4 >= 4:4.4.3 is satisfied)
+g++: already installed (4:4.6.2-4 >= 4:4.4.3 is satisfied)
 make: already installed (3.81-8.1)
-dpkg-dev: already installed (1.16.0.3 >= 1.13.5 is satisfied)
-cdbs: missing
+dpkg-dev: already installed (1.16.2 >= 1.13.5 is satisfied)
 debhelper: missing
-Using default version 8.9.0
+Using default version 9.20120419
 autotools-dev: missing
 pkg-config: missing
 libgtextutils-dev: missing
+help2man: missing
+libgd-graph-perl: missing
+libperlio-gzip-perl: missing
 Checking for dependency conflicts...
-Installing positive dependencies: cdbs debhelper autotools-dev pkg-config libgtextutils-dev
+Installing positive dependencies: debhelper autotools-dev pkg-config libgtextutils-dev help2man libgd-graph-perl libperlio-gzip-perl
 Reading package lists...
 Building dependency tree...
 Reading state information...
 The following extra packages will be installed:
-  bsdmainutils file gettext gettext-base groff-base html2text intltool-debian
-  libcroco3 libglib2.0-0 libgtextutils0 libmagic1 libpcre3 libpipeline1
-  libpopt0 libunistring0 libxml2 man-db po-debconf
+  bsdmainutils file fontconfig-config gettext gettext-base groff-base
+  html2text intltool-debian libcroco3 libexpat1 libffi5 libfontconfig1
+  libfreetype6 libgd-gd2-perl libgd-text-perl libgd2-xpm libglib2.0-0
+  libgtextutils0 libjpeg8 libmagic1 libpipeline1 libpng12-0 libpopt0
+  libunistring0 libx11-6 libx11-data libxau6 libxcb1 libxdmcp6 libxml2 libxpm4
+  man-db po-debconf ttf-dejavu-core
 Suggested packages:
-  wamerican wordlist whois vacation devscripts dh-make gettext-doc groff less
-  www-browser libmail-box-perl
+  wamerican wordlist whois vacation dh-make gettext-doc groff ttf-dustin
+  libgd-tools less www-browser libmail-box-perl
 Recommended packages:
   curl wget lynx-cur autopoint libglib2.0-data shared-mime-info xml-core
   libmail-sendmail-perl
 The following NEW packages will be installed:
-  autotools-dev bsdmainutils cdbs debhelper file gettext gettext-base
-  groff-base html2text intltool-debian libcroco3 libglib2.0-0
-  libgtextutils-dev libgtextutils0 libmagic1 libpcre3 libpipeline1 libpopt0
-  libunistring0 libxml2 man-db pkg-config po-debconf
-0 upgraded, 23 newly installed, 0 to remove and 1 not upgraded.
-Need to get 9404 kB of archives.
-After this operation, 29.4 MB of additional disk space will be used.
-Get:1 http://ftp.uk.debian.org/debian/ unstable/main libpipeline1 powerpc 1.2.0-3 [37.2 kB]
-Get:2 http://ftp.uk.debian.org/debian/ unstable/main bsdmainutils powerpc 8.2.3 [207 kB]
-Get:3 http://ftp.uk.debian.org/debian/ unstable/main groff-base powerpc 1.21-6 [1179 kB]
-Get:4 http://ftp.uk.debian.org/debian/ unstable/main libpopt0 powerpc 1.16-1 [55.6 kB]
-Get:5 http://ftp.uk.debian.org/debian/ unstable/main man-db powerpc 2.6.0.2-1 [1020 kB]
-Get:6 http://ftp.uk.debian.org/debian/ unstable/main libmagic1 powerpc 5.04-5+b1 [240 kB]
-Get:7 http://ftp.uk.debian.org/debian/ unstable/main file powerpc 5.04-5+b1 [49.9 kB]
-Get:8 http://ftp.uk.debian.org/debian/ unstable/main gettext-base powerpc 0.18.1.1-3 [141 kB]
-Get:9 http://ftp.uk.debian.org/debian/ unstable/main libpcre3 powerpc 8.12-3 [258 kB]
-Get:10 http://ftp.uk.debian.org/debian/ unstable/main libxml2 powerpc 2.7.8.dfsg-3 [837 kB]
-Get:11 http://ftp.uk.debian.org/debian/ unstable/main autotools-dev all 20110511.1 [73.8 kB]
-Get:12 http://ftp.uk.debian.org/debian/ unstable/main html2text powerpc 1.3.2a-15 [105 kB]
-Get:13 http://ftp.uk.debian.org/debian/ unstable/main libglib2.0-0 powerpc 2.28.6-1 [1611 kB]
-Get:14 http://ftp.uk.debian.org/debian/ unstable/main libcroco3 powerpc 0.6.2-1 [128 kB]
-Get:15 http://ftp.uk.debian.org/debian/ unstable/main libunistring0 powerpc 0.9.3-4 [422 kB]
-Get:16 http://ftp.uk.debian.org/debian/ unstable/main gettext powerpc 0.18.1.1-3 [2046 kB]
-Get:17 http://ftp.uk.debian.org/debian/ unstable/main intltool-debian all 0.35.0+20060710.1 [30.8 kB]
-Get:18 http://ftp.uk.debian.org/debian/ unstable/main po-debconf all 1.0.16+nmu1 [223 kB]
-Get:19 http://ftp.uk.debian.org/debian/ unstable/main debhelper all 8.9.0 [559 kB]
-Get:20 http://ftp.uk.debian.org/debian/ unstable/main cdbs all 0.4.94 [75.5 kB]
-Get:21 http://ftp.uk.debian.org/debian/ unstable/main libgtextutils0 powerpc 0.6.2-1 [21.2 kB]
-Get:22 http://ftp.uk.debian.org/debian/ unstable/main libgtextutils-dev powerpc 0.6.2-1 [25.6 kB]
-Get:23 http://ftp.uk.debian.org/debian/ unstable/main pkg-config powerpc 0.26-1 [58.1 kB]
+  autotools-dev bsdmainutils debhelper file fontconfig-config gettext
+  gettext-base groff-base help2man html2text intltool-debian libcroco3
+  libexpat1 libffi5 libfontconfig1 libfreetype6 libgd-gd2-perl
+  libgd-graph-perl libgd-text-perl libgd2-xpm libglib2.0-0 libgtextutils-dev
+  libgtextutils0 libjpeg8 libmagic1 libperlio-gzip-perl libpipeline1
+  libpng12-0 libpopt0 libunistring0 libx11-6 libx11-data libxau6 libxcb1
+  libxdmcp6 libxml2 libxpm4 man-db pkg-config po-debconf ttf-dejavu-core
+0 upgraded, 41 newly installed, 0 to remove and 42 not upgraded.
+Need to get 14.8 MB of archives.
+After this operation, 38.3 MB of additional disk space will be used.
+Get:1 http://debian.osuosl.org/debian/ unstable/main libpipeline1 powerpc 1.2.1-1 [38.5 kB]
+Get:2 http://debian.osuosl.org/debian/ unstable/main libpopt0 powerpc 1.16-3 [56.7 kB]
+Get:3 http://debian.osuosl.org/debian/ unstable/main libmagic1 powerpc 5.11-1 [257 kB]
+Get:4 http://debian.osuosl.org/debian/ unstable/main libxml2 powerpc 2.7.8.dfsg-9 [843 kB]
+Get:5 http://debian.osuosl.org/debian/ unstable/main libffi5 powerpc 3.0.10-3 [25.5 kB]
+Get:6 http://debian.osuosl.org/debian/ unstable/main libglib2.0-0 powerpc 2.32.0-4 [2019 kB]
+Get:7 http://debian.osuosl.org/debian/ unstable/main libcroco3 powerpc 0.6.5-1 [143 kB]
+Get:8 http://debian.osuosl.org/debian/ unstable/main libexpat1 powerpc 2.1.0-1 [142 kB]
+Get:9 http://debian.osuosl.org/debian/ unstable/main libfreetype6 powerpc 2.4.9-1 [432 kB]
+Get:10 http://debian.osuosl.org/debian/ unstable/main ttf-dejavu-core all 2.33-2 [1552 kB]
+Get:11 http://debian.osuosl.org/debian/ unstable/main fontconfig-config all 2.8.0-3.1 [219 kB]
+Get:12 http://debian.osuosl.org/debian/ unstable/main libfontconfig1 powerpc 2.8.0-3.1 [281 kB]
+Get:13 http://debian.osuosl.org/debian/ unstable/main libjpeg8 powerpc 8d-1 [130 kB]
+Get:14 http://debian.osuosl.org/debian/ unstable/main libpng12-0 powerpc 1.2.49-1 [185 kB]
+Get:15 http://debian.osuosl.org/debian/ unstable/main libunistring0 powerpc 0.9.3-5 [421 kB]
+Get:16 http://debian.osuosl.org/debian/ unstable/main libxau6 powerpc 1:1.0.7-1 [18.5 kB]
+Get:17 http://debian.osuosl.org/debian/ unstable/main libxdmcp6 powerpc 1:1.1.1-1 [25.9 kB]
+Get:18 http://debian.osuosl.org/debian/ unstable/main libxcb1 powerpc 1.8.1-1 [45.3 kB]
+Get:19 http://debian.osuosl.org/debian/ unstable/main libx11-data all 2:1.4.99.901-1 [186 kB]
+Get:20 http://debian.osuosl.org/debian/ unstable/main libx11-6 powerpc 2:1.4.99.901-1 [875 kB]
+Get:21 http://debian.osuosl.org/debian/ unstable/main libxpm4 powerpc 1:3.5.10-1 [48.5 kB]
+Get:22 http://debian.osuosl.org/debian/ unstable/main bsdmainutils powerpc 9.0.1 [208 kB]
+Get:23 http://debian.osuosl.org/debian/ unstable/main groff-base powerpc 1.21-7 [1179 kB]
+Get:24 http://debian.osuosl.org/debian/ unstable/main man-db powerpc 2.6.1-2 [1054 kB]
+Get:25 http://debian.osuosl.org/debian/ unstable/main file powerpc 5.11-1 [53.1 kB]
+Get:26 http://debian.osuosl.org/debian/ unstable/main gettext-base powerpc 0.18.1.1-5 [132 kB]
+Get:27 http://debian.osuosl.org/debian/ unstable/main autotools-dev all 20120210.1 [72.7 kB]
+Get:28 http://debian.osuosl.org/debian/ unstable/main html2text powerpc 1.3.2a-15 [105 kB]
+Get:29 http://debian.osuosl.org/debian/ unstable/main gettext powerpc 0.18.1.1-5 [2036 kB]
+Get:30 http://debian.osuosl.org/debian/ unstable/main intltool-debian all 0.35.0+20060710.1 [30.8 kB]
+Get:31 http://debian.osuosl.org/debian/ unstable/main po-debconf all 1.0.16+nmu2 [224 kB]
+Get:32 http://debian.osuosl.org/debian/ unstable/main debhelper all 9.20120419 [694 kB]
+Get:33 http://debian.osuosl.org/debian/ unstable/main help2man powerpc 1.40.9 [95.1 kB]
+Get:34 http://debian.osuosl.org/debian/ unstable/main libgd2-xpm powerpc 2.0.36~rc1~dfsg-6+b1 [230 kB]
+Get:35 http://debian.osuosl.org/debian/ unstable/main libgtextutils0 powerpc 0.6.2-1 [21.2 kB]
+Get:36 http://debian.osuosl.org/debian/ unstable/main libgtextutils-dev powerpc 0.6.2-1 [25.6 kB]
+Get:37 http://debian.osuosl.org/debian/ unstable/main libperlio-gzip-perl powerpc 0.18-1+b3 [18.8 kB]
+Get:38 http://debian.osuosl.org/debian/ unstable/main pkg-config powerpc 0.26-1 [58.1 kB]
+Get:39 http://debian.osuosl.org/debian/ unstable/main libgd-gd2-perl powerpc 1:2.46-3+b1 [197 kB]
+Get:40 http://debian.osuosl.org/debian/ unstable/main libgd-text-perl all 0.86-8 [42.4 kB]
+Get:41 http://debian.osuosl.org/debian/ unstable/main libgd-graph-perl all 1.44-6 [393 kB]
 debconf: delaying package configuration, since apt-utils is not installed
-Fetched 9404 kB in 2s (4550 kB/s)
-Selecting previously deselected package libpipeline1.
-(Reading database ... 10624 files and directories currently installed.)
-Unpacking libpipeline1 (from .../libpipeline1_1.2.0-3_powerpc.deb) ...
-Selecting previously deselected package bsdmainutils.
-Unpacking bsdmainutils (from .../bsdmainutils_8.2.3_powerpc.deb) ...
-Selecting previously deselected package groff-base.
-Unpacking groff-base (from .../groff-base_1.21-6_powerpc.deb) ...
-Selecting previously deselected package libpopt0.
-Unpacking libpopt0 (from .../libpopt0_1.16-1_powerpc.deb) ...
-Selecting previously deselected package man-db.
-Unpacking man-db (from .../man-db_2.6.0.2-1_powerpc.deb) ...
-Selecting previously deselected package libmagic1.
-Unpacking libmagic1 (from .../libmagic1_5.04-5+b1_powerpc.deb) ...
-Selecting previously deselected package file.
-Unpacking file (from .../file_5.04-5+b1_powerpc.deb) ...
-Selecting previously deselected package gettext-base.
-Unpacking gettext-base (from .../gettext-base_0.18.1.1-3_powerpc.deb) ...
-Selecting previously deselected package libpcre3.
-Unpacking libpcre3 (from .../libpcre3_8.12-3_powerpc.deb) ...
-Selecting previously deselected package libxml2.
-Unpacking libxml2 (from .../libxml2_2.7.8.dfsg-3_powerpc.deb) ...
-Selecting previously deselected package autotools-dev.
-Unpacking autotools-dev (from .../autotools-dev_20110511.1_all.deb) ...
-Selecting previously deselected package html2text.
+Fetched 14.8 MB in 2s (5947 kB/s)
+Selecting previously unselected package libpipeline1:powerpc.
+(Reading database ... 10945 files and directories currently installed.)
+Unpacking libpipeline1:powerpc (from .../libpipeline1_1.2.1-1_powerpc.deb) ...
+Selecting previously unselected package libpopt0:powerpc.
+Unpacking libpopt0:powerpc (from .../libpopt0_1.16-3_powerpc.deb) ...
+Selecting previously unselected package libmagic1:powerpc.
+Unpacking libmagic1:powerpc (from .../libmagic1_5.11-1_powerpc.deb) ...
+Selecting previously unselected package libxml2:powerpc.
+Unpacking libxml2:powerpc (from .../libxml2_2.7.8.dfsg-9_powerpc.deb) ...
+Selecting previously unselected package libffi5:powerpc.
+Unpacking libffi5:powerpc (from .../libffi5_3.0.10-3_powerpc.deb) ...
+Selecting previously unselected package libglib2.0-0:powerpc.
+Unpacking libglib2.0-0:powerpc (from .../libglib2.0-0_2.32.0-4_powerpc.deb) ...
+Selecting previously unselected package libcroco3:powerpc.
+Unpacking libcroco3:powerpc (from .../libcroco3_0.6.5-1_powerpc.deb) ...
+Selecting previously unselected package libexpat1:powerpc.
+Unpacking libexpat1:powerpc (from .../libexpat1_2.1.0-1_powerpc.deb) ...
+Selecting previously unselected package libfreetype6:powerpc.
+Unpacking libfreetype6:powerpc (from .../libfreetype6_2.4.9-1_powerpc.deb) ...
+Selecting previously unselected package ttf-dejavu-core.
+Unpacking ttf-dejavu-core (from .../ttf-dejavu-core_2.33-2_all.deb) ...
+Selecting previously unselected package fontconfig-config.
+Unpacking fontconfig-config (from .../fontconfig-config_2.8.0-3.1_all.deb) ...
+Selecting previously unselected package libfontconfig1:powerpc.
+Unpacking libfontconfig1:powerpc (from .../libfontconfig1_2.8.0-3.1_powerpc.deb) ...
+Selecting previously unselected package libjpeg8:powerpc.
+Unpacking libjpeg8:powerpc (from .../libjpeg8_8d-1_powerpc.deb) ...
+Selecting previously unselected package libpng12-0:powerpc.
+Unpacking libpng12-0:powerpc (from .../libpng12-0_1.2.49-1_powerpc.deb) ...
+Selecting previously unselected package libunistring0:powerpc.
+Unpacking libunistring0:powerpc (from .../libunistring0_0.9.3-5_powerpc.deb) ...
+Selecting previously unselected package libxau6:powerpc.
+Unpacking libxau6:powerpc (from .../libxau6_1%3a1.0.7-1_powerpc.deb) ...
+Selecting previously unselected package libxdmcp6:powerpc.
+Unpacking libxdmcp6:powerpc (from .../libxdmcp6_1%3a1.1.1-1_powerpc.deb) ...
+Selecting previously unselected package libxcb1:powerpc.
+Unpacking libxcb1:powerpc (from .../libxcb1_1.8.1-1_powerpc.deb) ...
+Selecting previously unselected package libx11-data.
+Unpacking libx11-data (from .../libx11-data_2%3a1.4.99.901-1_all.deb) ...
+Selecting previously unselected package libx11-6:powerpc.
+Unpacking libx11-6:powerpc (from .../libx11-6_2%3a1.4.99.901-1_powerpc.deb) ...
+Selecting previously unselected package libxpm4:powerpc.
+Unpacking libxpm4:powerpc (from .../libxpm4_1%3a3.5.10-1_powerpc.deb) ...
+Selecting previously unselected package bsdmainutils.
+Unpacking bsdmainutils (from .../bsdmainutils_9.0.1_powerpc.deb) ...
+Selecting previously unselected package groff-base.
+Unpacking groff-base (from .../groff-base_1.21-7_powerpc.deb) ...
+Selecting previously unselected package man-db.
+Unpacking man-db (from .../man-db_2.6.1-2_powerpc.deb) ...
+Selecting previously unselected package file.
+Unpacking file (from .../file_5.11-1_powerpc.deb) ...
+Selecting previously unselected package gettext-base.
+Unpacking gettext-base (from .../gettext-base_0.18.1.1-5_powerpc.deb) ...
+Selecting previously unselected package autotools-dev.
+Unpacking autotools-dev (from .../autotools-dev_20120210.1_all.deb) ...
+Selecting previously unselected package html2text.
 Unpacking html2text (from .../html2text_1.3.2a-15_powerpc.deb) ...
-Selecting previously deselected package libglib2.0-0.
-Unpacking libglib2.0-0 (from .../libglib2.0-0_2.28.6-1_powerpc.deb) ...
-Selecting previously deselected package libcroco3.
-Unpacking libcroco3 (from .../libcroco3_0.6.2-1_powerpc.deb) ...
-Selecting previously deselected package libunistring0.
-Unpacking libunistring0 (from .../libunistring0_0.9.3-4_powerpc.deb) ...
-Selecting previously deselected package gettext.
-Unpacking gettext (from .../gettext_0.18.1.1-3_powerpc.deb) ...
-Selecting previously deselected package intltool-debian.
+Selecting previously unselected package gettext.
+Unpacking gettext (from .../gettext_0.18.1.1-5_powerpc.deb) ...
+Selecting previously unselected package intltool-debian.
 Unpacking intltool-debian (from .../intltool-debian_0.35.0+20060710.1_all.deb) ...
-Selecting previously deselected package po-debconf.
-Unpacking po-debconf (from .../po-debconf_1.0.16+nmu1_all.deb) ...
-Selecting previously deselected package debhelper.
-Unpacking debhelper (from .../debhelper_8.9.0_all.deb) ...
-Selecting previously deselected package cdbs.
-Unpacking cdbs (from .../archives/cdbs_0.4.94_all.deb) ...
-Selecting previously deselected package libgtextutils0.
+Selecting previously unselected package po-debconf.
+Unpacking po-debconf (from .../po-debconf_1.0.16+nmu2_all.deb) ...
+Selecting previously unselected package debhelper.
+Unpacking debhelper (from .../debhelper_9.20120419_all.deb) ...
+Selecting previously unselected package help2man.
+Unpacking help2man (from .../help2man_1.40.9_powerpc.deb) ...
+Selecting previously unselected package libgd2-xpm.
+Unpacking libgd2-xpm (from .../libgd2-xpm_2.0.36~rc1~dfsg-6+b1_powerpc.deb) ...
+Selecting previously unselected package libgtextutils0.
 Unpacking libgtextutils0 (from .../libgtextutils0_0.6.2-1_powerpc.deb) ...
-Selecting previously deselected package libgtextutils-dev.
+Selecting previously unselected package libgtextutils-dev.
 Unpacking libgtextutils-dev (from .../libgtextutils-dev_0.6.2-1_powerpc.deb) ...
-Selecting previously deselected package pkg-config.
+Selecting previously unselected package libperlio-gzip-perl.
+Unpacking libperlio-gzip-perl (from .../libperlio-gzip-perl_0.18-1+b3_powerpc.deb) ...
+Selecting previously unselected package pkg-config.
 Unpacking pkg-config (from .../pkg-config_0.26-1_powerpc.deb) ...
-Setting up libpipeline1 (1.2.0-3) ...
-Setting up bsdmainutils (8.2.3) ...
+Selecting previously unselected package libgd-gd2-perl.
+Unpacking libgd-gd2-perl (from .../libgd-gd2-perl_1%3a2.46-3+b1_powerpc.deb) ...
+Selecting previously unselected package libgd-text-perl.
+Unpacking libgd-text-perl (from .../libgd-text-perl_0.86-8_all.deb) ...
+Selecting previously unselected package libgd-graph-perl.
+Unpacking libgd-graph-perl (from .../libgd-graph-perl_1.44-6_all.deb) ...
+Setting up libpipeline1:powerpc (1.2.1-1) ...
+Setting up libpopt0:powerpc (1.16-3) ...
+Setting up libmagic1:powerpc (5.11-1) ...
+Setting up libxml2:powerpc (2.7.8.dfsg-9) ...
+Setting up libffi5:powerpc (3.0.10-3) ...
+Setting up libglib2.0-0:powerpc (2.32.0-4) ...
+No schema files found: doing nothing.
+Setting up libcroco3:powerpc (0.6.5-1) ...
+Setting up libexpat1:powerpc (2.1.0-1) ...
+Setting up libfreetype6:powerpc (2.4.9-1) ...
+Setting up ttf-dejavu-core (2.33-2) ...
+Setting up fontconfig-config (2.8.0-3.1) ...
+Setting up libfontconfig1:powerpc (2.8.0-3.1) ...
+Setting up libjpeg8:powerpc (8d-1) ...
+Setting up libpng12-0:powerpc (1.2.49-1) ...
+Setting up libunistring0:powerpc (0.9.3-5) ...
+Setting up libxau6:powerpc (1:1.0.7-1) ...
+Setting up libxdmcp6:powerpc (1:1.1.1-1) ...
+Setting up libxcb1:powerpc (1.8.1-1) ...
+Setting up libx11-data (2:1.4.99.901-1) ...
+Setting up libx11-6:powerpc (2:1.4.99.901-1) ...
+Setting up libxpm4:powerpc (1:3.5.10-1) ...
+Setting up bsdmainutils (9.0.1) ...
 update-alternatives: using /usr/bin/bsd-write to provide /usr/bin/write (write) in auto mode.
 update-alternatives: using /usr/bin/bsd-from to provide /usr/bin/from (from) in auto mode.
-Setting up groff-base (1.21-6) ...
-Setting up libpopt0 (1.16-1) ...
-Setting up man-db (2.6.0.2-1) ...
+Setting up groff-base (1.21-7) ...
+Setting up man-db (2.6.1-2) ...
 Building database of manual pages ...
-Setting up libmagic1 (5.04-5+b1) ...
-Setting up file (5.04-5+b1) ...
-Setting up gettext-base (0.18.1.1-3) ...
-Setting up libpcre3 (8.12-3) ...
-Setting up libxml2 (2.7.8.dfsg-3) ...
-Setting up autotools-dev (20110511.1) ...
+Setting up file (5.11-1) ...
+Setting up gettext-base (0.18.1.1-5) ...
+Setting up autotools-dev (20120210.1) ...
 Setting up html2text (1.3.2a-15) ...
-Setting up libglib2.0-0 (2.28.6-1) ...
-No schema files found: doing nothing.
-Setting up libcroco3 (0.6.2-1) ...
-Setting up libunistring0 (0.9.3-4) ...
-Setting up gettext (0.18.1.1-3) ...
+Setting up gettext (0.18.1.1-5) ...
 Setting up intltool-debian (0.35.0+20060710.1) ...
-Setting up po-debconf (1.0.16+nmu1) ...
-Setting up debhelper (8.9.0) ...
-Setting up cdbs (0.4.94) ...
+Setting up po-debconf (1.0.16+nmu2) ...
+Setting up debhelper (9.20120419) ...
+Setting up help2man (1.40.9) ...
+Setting up libgd2-xpm (2.0.36~rc1~dfsg-6+b1) ...
 Setting up libgtextutils0 (0.6.2-1) ...
 Setting up libgtextutils-dev (0.6.2-1) ...
+Setting up libperlio-gzip-perl (0.18-1+b3) ...
 Setting up pkg-config (0.26-1) ...
+Setting up libgd-gd2-perl (1:2.46-3+b1) ...
+Setting up libgd-text-perl (0.86-8) ...
+Setting up libgd-graph-perl (1.44-6) ...
 Removing negative dependencies: 
 Reading package lists...
 Building dependency tree...
 Reading state information...
-0 upgraded, 0 newly installed, 0 to remove and 1 not upgraded.
+0 upgraded, 0 newly installed, 0 to remove and 42 not upgraded.
 Checking correctness of dependencies...
 Kernel: Linux 2.6.32-5-powerpc64 powerpc (ppc64)
-Toolchain package versions: binutils_2.21.52.20110703-1 dpkg-dev_1.16.0.3 g++-4.6_4.6.1-2 gcc-4.6_4.6.1-2 libc6-dev_2.13-10 libstdc++6_4.6.1-2 libstdc++6-4.6-dev_4.6.1-2 linux-libc-dev_2.6.39-3
-Package versions: apt_0.8.15.1 autotools-dev_20110511.1 base-files_6.4 base-passwd_3.5.22 bash_4.1-3 binutils_2.21.52.20110703-1 bsdmainutils_8.2.3 bsdutils_1:2.19.1-2 build-essential_11.5 bzip2_1.0.5-6 cdbs_0.4.94 coreutils_8.5-1 cpp_4:4.6.0-6 cpp-4.6_4.6.1-2 dash_0.5.5.1-7.4 debconf_1.5.40 debfoster_2.7-1.1 debhelper_8.9.0 debian-archive-keyring_2010.08.28 debianutils_4.0.2 diffutils_1:3.0-1 dpkg_1.16.0.3 dpkg-dev_1.16.0.3 e2fslibs_1.42~WIP-2011-07-02-1 e2fsprogs_1.42~WIP-2011-07-02-1 fakeroot_1.16-1 file_5.04-5+b1 findutils_4.4.2-1+b1 g++_4:4.6.0-6 g++-4.6_4.6.1-2 gcc_4:4.6.0-6 gcc-4.6_4.6.1-2 gcc-4.6-base_4.6.1-2 gettext_0.18.1.1-3 gettext-base_0.18.1.1-3 gnupg_1.4.11-3 gpgv_1.4.11-3 grep_2.8-2 groff-base_1.21-6 gzip_1.3.12-9 hostname_3.06 html2text_1.3.2a-15 initscripts_2.88dsf-13.10 insserv_1.14.0-2.1 intltool-debian_0.35.0+20060710.1 libacl1_2.2.51-2 libattr1_1:2.4.46-2 libblkid1_2.19.1-2 libbz2-1.0_1.0.5-6 libc-bin_2.13-10 libc-dev-bin_2.13-10 libc6_2.13-10 libc6-dev_2.13-10 libcloog-ppl0_0.15.9-3 libcomerr2_1.42~WIP-2011-07-02-1 libcroco3_0.6.2-1 libdb5.1_5.1.25-10 libdpkg-perl_1.16.0.3 libgc1c2_1:7.1-8 libgcc1_1:4.6.1-2 libgdbm3_1.8.3-10 libglib2.0-0_2.28.6-1 libgmp10_2:5.0.1+dfsg-7 libgmpxx4ldbl_2:5.0.1+dfsg-7 libgomp1_4.6.1-2 libgtextutils-dev_0.6.2-1 libgtextutils0_0.6.2-1 liblzma2_5.0.0-2 libmagic1_5.04-5+b1 libmount1_2.19.1-2 libmpc2_0.9-3 libmpfr4_3.0.1-4 libncurses5_5.9-1 libpam-modules_1.1.3-2 libpam-modules-bin_1.1.3-2 libpam-runtime_1.1.3-2 libpam0g_1.1.3-2 libpcre3_8.12-3 libpipeline1_1.2.0-3 libpopt0_1.16-1 libppl-c4_0.11.2-3 libppl9_0.11.2-3 libpwl5_0.11.2-3 libreadline6_6.2-2 libselinux1_2.0.98-1.1 libsepol1_2.0.42-1 libslang2_2.2.4-2 libss2_1.42~WIP-2011-07-02-1 libstdc++6_4.6.1-2 libstdc++6-4.6-dev_4.6.1-2 libtimedate-perl_1.2000-1 libunistring0_0.9.3-4 libusb-0.1-4_2:0.1.12-17 libuuid1_2.19.1-2 libxml2_2.7.8.dfsg-3 linux-libc-dev_2.6.39-3 login_1:4.1.4.2+svn3283-3 lsb-base_3.2-27 make_3.81-8.1 man-db_2.6.0.2-1 mawk_1.3.3-15 mount_2.19.1-2 multiarch-support_2.13-10 ncurses-base_5.9-1 ncurses-bin_5.9-1 passwd_1:4.1.4.2+svn3283-3 patch_2.6.1-2 perl_5.12.4-1 perl-base_5.12.4-1 perl-modules_5.12.4-1 pkg-config_0.26-1 po-debconf_1.0.16+nmu1 readline-common_6.2-2 sed_4.2.1-9 sensible-utils_0.0.6 sudo_1.7.4p6-1 sysv-rc_2.88dsf-13.10 sysvinit_2.88dsf-13.10 sysvinit-utils_2.88dsf-13.10 tar_1.25-3 tzdata_2011h-3 util-linux_2.19.1-2 xz-utils_5.0.0-2 zlib1g_1:1.2.3.4.dfsg-3
+Toolchain package versions: binutils_2.22-6 dpkg-dev_1.16.2 g++-4.6_4.6.3-1 gcc-4.6_4.6.3-1 libc6-dev_2.13-27 libstdc++6_4.6.3-1 libstdc++6-4.6-dev_4.6.3-1 linux-libc-dev_3.2.12-1
+Package versions: apt_0.8.15.10 autotools-dev_20120210.1 base-files_6.7 base-passwd_3.5.24 bash_4.2-1 binutils_2.22-6 bsdmainutils_9.0.1 bsdutils_1:2.20.1-4 build-essential_11.5 bzip2_1.0.6-1 coreutils_8.13-3.1 cpp_4:4.6.2-4 cpp-4.6_4.6.3-1 dash_0.5.7-3 debconf_1.5.42 debconf-i18n_1.5.42 debfoster_2.7-1.1 debhelper_9.20120419 debian-archive-keyring_2010.08.28 debianutils_4.2.1 diffutils_1:3.2-2 dpkg_1.16.2 dpkg-dev_1.16.2 e2fslibs_1.42.1-2 e2fsprogs_1.42.1-2 fakeroot_1.18.2-1 file_5.11-1 findutils_4.4.2-4 fontconfig-config_2.8.0-3.1 g++_4:4.6.2-4 g++-4.6_4.6.3-1 gcc_4:4.6.2-4 gcc-4.4-base_4.4.7-1 gcc-4.5-base_4.5.3-12 gcc-4.6_4.6.3-1 gcc-4.6-base_4.6.3-1 gettext_0.18.1.1-5 gettext-base_0.18.1.1-5 gnupg_1.4.12-4 gpgv_1.4.12-4 grep_2.10-1 groff-base_1.21-7 gzip_1.4-5 help2man_1.40.9 hostname_3.11 html2text_1.3.2a-15 initscripts_2.88dsf-22.1 insserv_1.14.0-2.2 intltool-debian_0.35.0+20060710.1 libacl1_2.2.51-5 libattr1_1:2.4.46-5 libblkid1_2.20.1-4 libbz2-1.0_1.0.6-1 libc-bin_2.13-27 libc-dev-bin_2.13-27 libc6_2.13-27 libc6-dev_2.13-27 libclass-isa-perl_0.36-3 libcomerr2_1.42.1-2 libcroco3_0.6.5-1 libdb5.1_5.1.29-1 libdpkg-perl_1.16.2 libexpat1_2.1.0-1 libffi5_3.0.10-3 libfile-fcntllock-perl_0.14-1+b1 libfontconfig1_2.8.0-3.1 libfreetype6_2.4.9-1 libgc1c2_1:7.1-8 libgcc1_1:4.6.3-1 libgd-gd2-perl_1:2.46-3+b1 libgd-graph-perl_1.44-6 libgd-text-perl_0.86-8 libgd2-xpm_2.0.36~rc1~dfsg-6+b1 libgdbm3_1.8.3-10 libglib2.0-0_2.32.0-4 libgmp10_2:5.0.4+dfsg-1 libgomp1_4.6.3-1 libgtextutils-dev_0.6.2-1 libgtextutils0_0.6.2-1 libjpeg8_8d-1 liblocale-gettext-perl_1.05-7+b1 liblzma5_5.1.1alpha+20110809-3 libmagic1_5.11-1 libmount1_2.20.1-4 libmpc2_0.9-4 libmpfr4_3.1.0-4 libncurses5_5.9-4 libpam-modules_1.1.3-7 libpam-modules-bin_1.1.3-7 libpam-runtime_1.1.3-7 libpam0g_1.1.3-7 libpcre3_8.12-4 libperlio-gzip-perl_0.18-1+b3 libpipeline1_1.2.1-1 libpng12-0_1.2.49-1 libpopt0_1.16-3 libreadline6_6.2-8 libselinux1_2.1.9-2 libsemanage-common_2.1.6-2 libsemanage1_2.1.6-2 libsepol1_2.1.4-2 libslang2_2.2.4-7 libss2_1.42.1-2 libstdc++6_4.6.3-1 libstdc++6-4.6-dev_4.6.3-1 libswitch-perl_2.16-2 libtext-charwidth-perl_0.04-7+b1 libtext-iconv-perl_1.7-5 libtext-wrapi18n-perl_0.06-7 libtimedate-perl_1.2000-1 libtinfo5_5.9-4 libunistring0_0.9.3-5 libusb-0.1-4_2:0.1.12-20 libustr-1.0-1_1.0.4-2 libuuid1_2.20.1-4 libx11-6_2:1.4.99.901-1 libx11-data_2:1.4.99.901-1 libxau6_1:1.0.7-1 libxcb1_1.8.1-1 libxdmcp6_1:1.1.1-1 libxml2_2.7.8.dfsg-9 libxpm4_1:3.5.10-1 linux-libc-dev_3.2.12-1 login_1:4.1.5-1 lsb-base_3.2+Debian31 make_3.81-8.1 man-db_2.6.1-2 mawk_1.3.3-16 mount_2.20.1-4 multiarch-support_2.13-27 ncurses-base_5.9-4 ncurses-bin_5.9-4 passwd_1:4.1.5-1 patch_2.6.1-3 perl_5.14.2-9 perl-base_5.14.2-9 perl-modules_5.14.2-9 pkg-config_0.26-1 po-debconf_1.0.16+nmu2 readline-common_6.2-8 sed_4.2.1-9 sensible-utils_0.0.6 sudo_1.8.3p2-1 sysv-rc_2.88dsf-22.1 sysvinit_2.88dsf-22.1 sysvinit-utils_2.88dsf-22.1 tar_1.26-4 ttf-dejavu-core_2.33-2 tzdata_2012b-1 ucf_3.0025+nmu2 util-linux_2.20.1-4 xz-utils_5.1.1alpha+20110809-3 zlib1g_1:1.2.6.dfsg-2
 
 ┌──────────────────────────────────────────────────────────────────────────────┐
 │ Build                                                                        │
@@ -299,12 +378,13 @@ Unpack source
 ─────────────
 
 gpgv: keyblock resource `/home/buildd/.gnupg/trustedkeys.gpg': file open error
-gpgv: Signature made Fri Jul  8 04:45:07 2011 UTC using RSA key ID 2295D502
+gpgv: Signature made Thu Apr 26 14:22:18 2012 UTC using DSA key ID C09FD35A
 gpgv: Can't check signature: public key not found
-dpkg-source: warning: failed to verify signature on ./fastx-toolkit_0.0.13.1-1.dsc
+dpkg-source: warning: failed to verify signature on ./fastx-toolkit_0.0.13.1-2.dsc
 dpkg-source: info: extracting fastx-toolkit in fastx-toolkit-0.0.13.1
 dpkg-source: info: unpacking fastx-toolkit_0.0.13.1.orig.tar.bz2
-dpkg-source: info: unpacking fastx-toolkit_0.0.13.1-1.debian.tar.gz
+dpkg-source: info: unpacking fastx-toolkit_0.0.13.1-2.debian.tar.gz
+dpkg-source: info: applying gcc-4.7.patch
 
 Check disc space
 ────────────────
@@ -313,59 +393,20 @@ Check disc space
 dpkg-buildpackage
 ─────────────────
 
-dpkg-buildpackage: export CFLAGS from dpkg-buildflags (origin: vendor): -g -O2
-dpkg-buildpackage: export CPPFLAGS from dpkg-buildflags (origin: vendor): 
-dpkg-buildpackage: export CXXFLAGS from dpkg-buildflags (origin: vendor): -g -O2
-dpkg-buildpackage: export FFLAGS from dpkg-buildflags (origin: vendor): -g -O2
-dpkg-buildpackage: export LDFLAGS from dpkg-buildflags (origin: vendor): 
 dpkg-buildpackage: source package fastx-toolkit
-dpkg-buildpackage: source version 0.0.13.1-1
+dpkg-buildpackage: source version 0.0.13.1-2
  dpkg-source --before-build fastx-toolkit-0.0.13.1
 dpkg-buildpackage: host architecture powerpc
  fakeroot debian/rules clean
-test -x debian/rules
-dh_testroot
-rm -f debian/stamp-makefile-build debian/stamp-makefile-install
-/usr/bin/make  -C .  -k distclean
-make[1]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1'
-make[1]: *** No rule to make target `distclean'.
-make[1]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1'
-make: [makefile-clean] Error 2 (ignored)
-rm -f debian/stamp-autotools
-rmdir --ignore-fail-on-non-empty .
-rmdir: failed to remove `.': Invalid argument
-make: [makefile-clean] Error 1 (ignored)
-for i in ./config/config.guess ./config/config.sub  ; do \
-		if test -e $i.cdbs-orig ; then \
-			mv $i.cdbs-orig $i ; \
-		fi ; \
-	done
-dh_clean 
-rm -f debian/stamp-autotools-files
- debian/rules build
-test -x debian/rules
-mkdir -p "."
-if test -e /usr/share/misc/config.guess ; then \
-		for i in ./config/config.guess ; do \
-			if ! test -e $i.cdbs-orig ; then \
-				mv $i $i.cdbs-orig ; \
-				cp --remove-destination /usr/share/misc/config.guess $i ; \
-			fi ; \
-		done ; \
-	fi
-if test -e /usr/share/misc/config.sub ; then \
-		for i in ./config/config.sub ; do \
-			if ! test -e $i.cdbs-orig ; then \
-				mv $i $i.cdbs-orig ; \
-				cp --remove-destination /usr/share/misc/config.sub $i ; \
-			fi ; \
-		done ; \
-	fi
-touch debian/stamp-autotools-files
-chmod a+x /build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/./configure
-mkdir -p .
-cd . &&   CFLAGS="-g -O2 -g -O2 -Wall" CXXFLAGS="-g -O2 -g -O2 -Wall" CPPFLAGS="" LDFLAGS="" /build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/./configure --build=powerpc-linux-gnu  --prefix=/usr --includedir="\${prefix}/include" --mandir="\${prefix}/share/man" --infodir="\${prefix}/share/info" --sysconfdir=/etc --localstatedir=/var --libexecdir="\${prefix}/lib/fastx-toolkit" --srcdir=. --disable-maintainer-mode --disable-dependency-tracking --disable-silent-rules    
-configure: WARNING: unrecognized options: --disable-maintainer-mode, --disable-silent-rules
+dh clean
+   dh_testdir
+   dh_auto_clean
+   dh_clean
+ debian/rules build-arch
+dh build-arch
+   dh_testdir -a
+   dh_auto_configure -a
+configure: WARNING: unrecognized options: --disable-maintainer-mode
 checking for a BSD-compatible install... /usr/bin/install -c
 checking whether build environment is sane... yes
 checking for a thread-safe mkdir -p... /bin/mkdir -p
@@ -490,563 +531,771 @@ config.status: creating build_scripts/Makefile
 config.status: creating config.h
 config.status: executing depfiles commands
 config.status: executing libtool commands
-configure: WARNING: unrecognized options: --disable-maintainer-mode, --disable-silent-rules
-touch debian/stamp-autotools
-/usr/bin/make  -C .  
-make[1]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1'
-/usr/bin/make  all-recursive
-make[2]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1'
+configure: WARNING: unrecognized options: --disable-maintainer-mode
+   dh_auto_build -a
+make[1]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1'
+make  all-recursive
+make[2]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1'
 Making all in m4
-make[3]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/m4'
+make[3]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/m4'
 make[3]: Nothing to be done for `all'.
-make[3]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/m4'
+make[3]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/m4'
 Making all in src
-make[3]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/src'
+make[3]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/src'
 Making all in libfastx
-make[4]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/src/libfastx'
-gcc -DHAVE_CONFIG_H -I. -I../..     -g -O2 -g -O2 -Wall -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -c chomp.c
-gcc -DHAVE_CONFIG_H -I. -I../..     -g -O2 -g -O2 -Wall -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -c fastx.c
-gcc -DHAVE_CONFIG_H -I. -I../..     -g -O2 -g -O2 -Wall -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -c fastx_args.c
-g++ -DHAVE_CONFIG_H -I. -I../..     -g -O2 -g -O2 -Wall -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -DDEBUG -g -O1 -c -o sequence_alignment.o sequence_alignment.cpp
+make[4]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/src/libfastx'
+gcc -DHAVE_CONFIG_H -I. -I../..   -D_FORTIFY_SOURCE=2  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Wformat-security -Werror=format-security -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -c chomp.c
+gcc -DHAVE_CONFIG_H -I. -I../..   -D_FORTIFY_SOURCE=2  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Wformat-security -Werror=format-security -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -c fastx.c
+gcc -DHAVE_CONFIG_H -I. -I../..   -D_FORTIFY_SOURCE=2  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Wformat-security -Werror=format-security -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -c fastx_args.c
+g++ -DHAVE_CONFIG_H -I. -I../..   -D_FORTIFY_SOURCE=2  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Wformat-security -Werror=format-security -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -DDEBUG -g -O1 -c -o sequence_alignment.o sequence_alignment.cpp
 rm -f libfastx.a
 ar cru libfastx.a chomp.o fastx.o fastx_args.o sequence_alignment.o 
 ranlib libfastx.a
-make[4]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/src/libfastx'
+make[4]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/src/libfastx'
 Making all in fastx_clipper
-make[4]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/src/fastx_clipper'
-g++ -DHAVE_CONFIG_H -I. -I../..   -I../libfastx   -g -O2 -g -O2 -Wall -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -DDEBUG -g -O1 -c -o fastx_clipper.o fastx_clipper.cpp
-/bin/bash ../../libtool --tag=CXX   --mode=link g++  -g -O2 -g -O2 -Wall -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -DDEBUG -g -O1   -o fastx_clipper fastx_clipper.o ../libfastx/libfastx.a  
-libtool: link: g++ -g -O2 -g -O2 -Wall -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -DDEBUG -g -O1 -o fastx_clipper fastx_clipper.o  ../libfastx/libfastx.a
-make[4]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/src/fastx_clipper'
+make[4]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/src/fastx_clipper'
+g++ -DHAVE_CONFIG_H -I. -I../..   -I../libfastx -D_FORTIFY_SOURCE=2  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Wformat-security -Werror=format-security -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -DDEBUG -g -O1 -c -o fastx_clipper.o fastx_clipper.cpp
+/bin/bash ../../libtool --tag=CXX   --mode=link g++  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Wformat-security -Werror=format-security -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -DDEBUG -g -O1  -Wl,-z,relro -o fastx_clipper fastx_clipper.o ../libfastx/libfastx.a  
+libtool: link: g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Wformat-security -Werror=format-security -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -DDEBUG -g -O1 -Wl,-z -Wl,relro -o fastx_clipper fastx_clipper.o  ../libfastx/libfastx.a
+make[4]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/src/fastx_clipper'
 Making all in fastx_trimmer
-make[4]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/src/fastx_trimmer'
-gcc -DHAVE_CONFIG_H -I. -I../..   -I../libfastx   -g -O2 -g -O2 -Wall -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -c fastx_trimmer.c
-/bin/bash ../../libtool --tag=CC   --mode=link gcc  -g -O2 -g -O2 -Wall -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1   -o fastx_trimmer fastx_trimmer.o ../libfastx/libfastx.a  
-libtool: link: gcc -g -O2 -g -O2 -Wall -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -o fastx_trimmer fastx_trimmer.o  ../libfastx/libfastx.a
-make[4]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/src/fastx_trimmer'
+make[4]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/src/fastx_trimmer'
+gcc -DHAVE_CONFIG_H -I. -I../..   -I../libfastx -D_FORTIFY_SOURCE=2  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Wformat-security -Werror=format-security -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -c fastx_trimmer.c
+/bin/bash ../../libtool --tag=CC   --mode=link gcc  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Wformat-security -Werror=format-security -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1  -Wl,-z,relro -o fastx_trimmer fastx_trimmer.o ../libfastx/libfastx.a  
+libtool: link: gcc -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Wformat-security -Werror=format-security -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -Wl,-z -Wl,relro -o fastx_trimmer fastx_trimmer.o  ../libfastx/libfastx.a
+make[4]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/src/fastx_trimmer'
 Making all in fastx_quality_stats
-make[4]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/src/fastx_quality_stats'
-gcc -DHAVE_CONFIG_H -I. -I../..   -I../libfastx   -g -O2 -g -O2 -Wall -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -c fastx_quality_stats.c
-/bin/bash ../../libtool --tag=CC   --mode=link gcc  -g -O2 -g -O2 -Wall -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1   -o fastx_quality_stats fastx_quality_stats.o ../libfastx/libfastx.a  
-libtool: link: gcc -g -O2 -g -O2 -Wall -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -o fastx_quality_stats fastx_quality_stats.o  ../libfastx/libfastx.a
-make[4]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/src/fastx_quality_stats'
+make[4]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/src/fastx_quality_stats'
+gcc -DHAVE_CONFIG_H -I. -I../..   -I../libfastx -D_FORTIFY_SOURCE=2  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Wformat-security -Werror=format-security -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -c fastx_quality_stats.c
+/bin/bash ../../libtool --tag=CC   --mode=link gcc  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Wformat-security -Werror=format-security -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1  -Wl,-z,relro -o fastx_quality_stats fastx_quality_stats.o ../libfastx/libfastx.a  
+libtool: link: gcc -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Wformat-security -Werror=format-security -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -Wl,-z -Wl,relro -o fastx_quality_stats fastx_quality_stats.o  ../libfastx/libfastx.a
+make[4]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/src/fastx_quality_stats'
 Making all in fastq_quality_converter
-make[4]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/src/fastq_quality_converter'
-gcc -DHAVE_CONFIG_H -I. -I../..   -I../libfastx   -g -O2 -g -O2 -Wall -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -c fastq_quality_converter.c
-/bin/bash ../../libtool --tag=CC   --mode=link gcc  -g -O2 -g -O2 -Wall -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1   -o fastq_quality_converter fastq_quality_converter.o ../libfastx/libfastx.a  
-libtool: link: gcc -g -O2 -g -O2 -Wall -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -o fastq_quality_converter fastq_quality_converter.o  ../libfastx/libfastx.a
-make[4]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/src/fastq_quality_converter'
+make[4]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/src/fastq_quality_converter'
+gcc -DHAVE_CONFIG_H -I. -I../..   -I../libfastx -D_FORTIFY_SOURCE=2  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Wformat-security -Werror=format-security -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -c fastq_quality_converter.c
+/bin/bash ../../libtool --tag=CC   --mode=link gcc  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Wformat-security -Werror=format-security -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1  -Wl,-z,relro -o fastq_quality_converter fastq_quality_converter.o ../libfastx/libfastx.a  
+libtool: link: gcc -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Wformat-security -Werror=format-security -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -Wl,-z -Wl,relro -o fastq_quality_converter fastq_quality_converter.o  ../libfastx/libfastx.a
+make[4]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/src/fastq_quality_converter'
 Making all in fastq_to_fasta
-make[4]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/src/fastq_to_fasta'
-gcc -DHAVE_CONFIG_H -I. -I../..   -I../libfastx   -g -O2 -g -O2 -Wall -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -c fastq_to_fasta.c
-/bin/bash ../../libtool --tag=CC   --mode=link gcc  -g -O2 -g -O2 -Wall -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1   -o fastq_to_fasta fastq_to_fasta.o ../libfastx/libfastx.a  
-libtool: link: gcc -g -O2 -g -O2 -Wall -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -o fastq_to_fasta fastq_to_fasta.o  ../libfastx/libfastx.a
-make[4]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/src/fastq_to_fasta'
+make[4]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/src/fastq_to_fasta'
+gcc -DHAVE_CONFIG_H -I. -I../..   -I../libfastx -D_FORTIFY_SOURCE=2  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Wformat-security -Werror=format-security -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -c fastq_to_fasta.c
+/bin/bash ../../libtool --tag=CC   --mode=link gcc  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Wformat-security -Werror=format-security -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1  -Wl,-z,relro -o fastq_to_fasta fastq_to_fasta.o ../libfastx/libfastx.a  
+libtool: link: gcc -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Wformat-security -Werror=format-security -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -Wl,-z -Wl,relro -o fastq_to_fasta fastq_to_fasta.o  ../libfastx/libfastx.a
+make[4]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/src/fastq_to_fasta'
 Making all in fastq_quality_filter
-make[4]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/src/fastq_quality_filter'
-gcc -DHAVE_CONFIG_H -I. -I../..   -I../libfastx   -g -O2 -g -O2 -Wall -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -c fastq_quality_filter.c
-/bin/bash ../../libtool --tag=CC   --mode=link gcc  -g -O2 -g -O2 -Wall -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1   -o fastq_quality_filter fastq_quality_filter.o ../libfastx/libfastx.a  
-libtool: link: gcc -g -O2 -g -O2 -Wall -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -o fastq_quality_filter fastq_quality_filter.o  ../libfastx/libfastx.a
-make[4]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/src/fastq_quality_filter'
+make[4]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/src/fastq_quality_filter'
+gcc -DHAVE_CONFIG_H -I. -I../..   -I../libfastx -D_FORTIFY_SOURCE=2  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Wformat-security -Werror=format-security -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -c fastq_quality_filter.c
+/bin/bash ../../libtool --tag=CC   --mode=link gcc  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Wformat-security -Werror=format-security -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1  -Wl,-z,relro -o fastq_quality_filter fastq_quality_filter.o ../libfastx/libfastx.a  
+libtool: link: gcc -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Wformat-security -Werror=format-security -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -Wl,-z -Wl,relro -o fastq_quality_filter fastq_quality_filter.o  ../libfastx/libfastx.a
+make[4]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/src/fastq_quality_filter'
 Making all in fastq_quality_trimmer
-make[4]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/src/fastq_quality_trimmer'
-gcc -DHAVE_CONFIG_H -I. -I../..   -I../libfastx   -g -O2 -g -O2 -Wall -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -c fastq_quality_trimmer.c
-/bin/bash ../../libtool --tag=CC   --mode=link gcc  -g -O2 -g -O2 -Wall -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1   -o fastq_quality_trimmer fastq_quality_trimmer.o ../libfastx/libfastx.a  
-libtool: link: gcc -g -O2 -g -O2 -Wall -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -o fastq_quality_trimmer fastq_quality_trimmer.o  ../libfastx/libfastx.a
-make[4]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/src/fastq_quality_trimmer'
+make[4]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/src/fastq_quality_trimmer'
+gcc -DHAVE_CONFIG_H -I. -I../..   -I../libfastx -D_FORTIFY_SOURCE=2  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Wformat-security -Werror=format-security -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -c fastq_quality_trimmer.c
+/bin/bash ../../libtool --tag=CC   --mode=link gcc  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Wformat-security -Werror=format-security -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1  -Wl,-z,relro -o fastq_quality_trimmer fastq_quality_trimmer.o ../libfastx/libfastx.a  
+libtool: link: gcc -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Wformat-security -Werror=format-security -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -Wl,-z -Wl,relro -o fastq_quality_trimmer fastq_quality_trimmer.o  ../libfastx/libfastx.a
+make[4]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/src/fastq_quality_trimmer'
 Making all in fastx_artifacts_filter
-make[4]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/src/fastx_artifacts_filter'
-gcc -DHAVE_CONFIG_H -I. -I../..   -I../libfastx   -g -O2 -g -O2 -Wall -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -c fastx_artifacts_filter.c
-/bin/bash ../../libtool --tag=CC   --mode=link gcc  -g -O2 -g -O2 -Wall -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1   -o fastx_artifacts_filter fastx_artifacts_filter.o ../libfastx/libfastx.a  
-libtool: link: gcc -g -O2 -g -O2 -Wall -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -o fastx_artifacts_filter fastx_artifacts_filter.o  ../libfastx/libfastx.a
-make[4]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/src/fastx_artifacts_filter'
+make[4]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/src/fastx_artifacts_filter'
+gcc -DHAVE_CONFIG_H -I. -I../..   -I../libfastx -D_FORTIFY_SOURCE=2  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Wformat-security -Werror=format-security -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -c fastx_artifacts_filter.c
+/bin/bash ../../libtool --tag=CC   --mode=link gcc  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Wformat-security -Werror=format-security -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1  -Wl,-z,relro -o fastx_artifacts_filter fastx_artifacts_filter.o ../libfastx/libfastx.a  
+libtool: link: gcc -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Wformat-security -Werror=format-security -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -Wl,-z -Wl,relro -o fastx_artifacts_filter fastx_artifacts_filter.o  ../libfastx/libfastx.a
+make[4]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/src/fastx_artifacts_filter'
 Making all in fastx_reverse_complement
-make[4]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/src/fastx_reverse_complement'
-gcc -DHAVE_CONFIG_H -I. -I../..   -I../libfastx   -g -O2 -g -O2 -Wall -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -c fastx_reverse_complement.c
-/bin/bash ../../libtool --tag=CC   --mode=link gcc  -g -O2 -g -O2 -Wall -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1   -o fastx_reverse_complement fastx_reverse_complement.o ../libfastx/libfastx.a  
-libtool: link: gcc -g -O2 -g -O2 -Wall -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -o fastx_reverse_complement fastx_reverse_complement.o  ../libfastx/libfastx.a
-make[4]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/src/fastx_reverse_complement'
+make[4]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/src/fastx_reverse_complement'
+gcc -DHAVE_CONFIG_H -I. -I../..   -I../libfastx -D_FORTIFY_SOURCE=2  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Wformat-security -Werror=format-security -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -c fastx_reverse_complement.c
+/bin/bash ../../libtool --tag=CC   --mode=link gcc  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Wformat-security -Werror=format-security -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1  -Wl,-z,relro -o fastx_reverse_complement fastx_reverse_complement.o ../libfastx/libfastx.a  
+libtool: link: gcc -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Wformat-security -Werror=format-security -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -Wl,-z -Wl,relro -o fastx_reverse_complement fastx_reverse_complement.o  ../libfastx/libfastx.a
+make[4]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/src/fastx_reverse_complement'
 Making all in fastx_collapser
-make[4]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/src/fastx_collapser'
-g++ -DHAVE_CONFIG_H -I. -I../..   -I../libfastx   -g -O2 -g -O2 -Wall -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -DDEBUG -g -O1 -c -o fastx_collapser.o fastx_collapser.cpp
-/bin/bash ../../libtool --tag=CXX   --mode=link g++  -g -O2 -g -O2 -Wall -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -DDEBUG -g -O1   -o fastx_collapser fastx_collapser.o ../libfastx/libfastx.a  
-libtool: link: g++ -g -O2 -g -O2 -Wall -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -DDEBUG -g -O1 -o fastx_collapser fastx_collapser.o  ../libfastx/libfastx.a
-make[4]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/src/fastx_collapser'
+make[4]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/src/fastx_collapser'
+g++ -DHAVE_CONFIG_H -I. -I../..   -I../libfastx -D_FORTIFY_SOURCE=2  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Wformat-security -Werror=format-security -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -DDEBUG -g -O1 -c -o fastx_collapser.o fastx_collapser.cpp
+/bin/bash ../../libtool --tag=CXX   --mode=link g++  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Wformat-security -Werror=format-security -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -DDEBUG -g -O1  -Wl,-z,relro -o fastx_collapser fastx_collapser.o ../libfastx/libfastx.a  
+libtool: link: g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Wformat-security -Werror=format-security -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -DDEBUG -g -O1 -Wl,-z -Wl,relro -o fastx_collapser fastx_collapser.o  ../libfastx/libfastx.a
+make[4]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/src/fastx_collapser'
 Making all in fastx_uncollapser
-make[4]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/src/fastx_uncollapser'
-g++ -DHAVE_CONFIG_H -I. -I../.. -I/usr/include/gtextutils   -I../libfastx  -I../libfastx   -g -O2 -g -O2 -Wall -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -DDEBUG -g -O1 -c -o fastx_uncollapser.o fastx_uncollapser.cpp
-/bin/bash ../../libtool --tag=CXX   --mode=link g++  -g -O2 -g -O2 -Wall -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -DDEBUG -g -O1   -o fastx_uncollapser fastx_uncollapser.o -lgtextutils   ../libfastx/libfastx.a  
-libtool: link: g++ -g -O2 -g -O2 -Wall -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -DDEBUG -g -O1 -o fastx_uncollapser fastx_uncollapser.o  -lgtextutils ../libfastx/libfastx.a
-make[4]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/src/fastx_uncollapser'
+make[4]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/src/fastx_uncollapser'
+g++ -DHAVE_CONFIG_H -I. -I../.. -I/usr/include/gtextutils   -I../libfastx  -I../libfastx -D_FORTIFY_SOURCE=2  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Wformat-security -Werror=format-security -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -DDEBUG -g -O1 -c -o fastx_uncollapser.o fastx_uncollapser.cpp
+/bin/bash ../../libtool --tag=CXX   --mode=link g++  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Wformat-security -Werror=format-security -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -DDEBUG -g -O1  -Wl,-z,relro -o fastx_uncollapser fastx_uncollapser.o -lgtextutils   ../libfastx/libfastx.a  
+libtool: link: g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Wformat-security -Werror=format-security -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -DDEBUG -g -O1 -Wl,-z -Wl,relro -o fastx_uncollapser fastx_uncollapser.o  -lgtextutils ../libfastx/libfastx.a
+make[4]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/src/fastx_uncollapser'
 Making all in seqalign_test
-make[4]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/src/seqalign_test'
-g++ -DHAVE_CONFIG_H -I. -I../..   -I../libfastx   -g -O2 -g -O2 -Wall -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -DDEBUG -g -O1 -c -o seqalign_test.o seqalign_test.cpp
-/bin/bash ../../libtool --tag=CXX   --mode=link g++  -g -O2 -g -O2 -Wall -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -DDEBUG -g -O1   -o seqalign_test seqalign_test.o ../libfastx/libfastx.a 
-libtool: link: g++ -g -O2 -g -O2 -Wall -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -DDEBUG -g -O1 -o seqalign_test seqalign_test.o  ../libfastx/libfastx.a
-make[4]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/src/seqalign_test'
+make[4]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/src/seqalign_test'
+g++ -DHAVE_CONFIG_H -I. -I../..   -I../libfastx -D_FORTIFY_SOURCE=2  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Wformat-security -Werror=format-security -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -DDEBUG -g -O1 -c -o seqalign_test.o seqalign_test.cpp
+/bin/bash ../../libtool --tag=CXX   --mode=link g++  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Wformat-security -Werror=format-security -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -DDEBUG -g -O1  -Wl,-z,relro -o seqalign_test seqalign_test.o ../libfastx/libfastx.a 
+libtool: link: g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Wformat-security -Werror=format-security -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -DDEBUG -g -O1 -Wl,-z -Wl,relro -o seqalign_test seqalign_test.o  ../libfastx/libfastx.a
+make[4]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/src/seqalign_test'
 Making all in fasta_formatter
-make[4]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/src/fasta_formatter'
-g++ -DHAVE_CONFIG_H -I. -I../.. -I/usr/include/gtextutils   -I../libfastx     -g -O2 -g -O2 -Wall -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -DDEBUG -g -O1 -c -o fasta_formatter.o fasta_formatter.cpp
-/bin/bash ../../libtool --tag=CXX   --mode=link g++  -g -O2 -g -O2 -Wall -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -DDEBUG -g -O1   -o fasta_formatter fasta_formatter.o -lgtextutils   ../libfastx/libfastx.a  
-libtool: link: g++ -g -O2 -g -O2 -Wall -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -DDEBUG -g -O1 -o fasta_formatter fasta_formatter.o  -lgtextutils ../libfastx/libfastx.a
-make[4]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/src/fasta_formatter'
+make[4]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/src/fasta_formatter'
+g++ -DHAVE_CONFIG_H -I. -I../.. -I/usr/include/gtextutils   -I../libfastx   -D_FORTIFY_SOURCE=2  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Wformat-security -Werror=format-security -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -DDEBUG -g -O1 -c -o fasta_formatter.o fasta_formatter.cpp
+/bin/bash ../../libtool --tag=CXX   --mode=link g++  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Wformat-security -Werror=format-security -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -DDEBUG -g -O1  -Wl,-z,relro -o fasta_formatter fasta_formatter.o -lgtextutils   ../libfastx/libfastx.a  
+libtool: link: g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Wformat-security -Werror=format-security -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -DDEBUG -g -O1 -Wl,-z -Wl,relro -o fasta_formatter fasta_formatter.o  -lgtextutils ../libfastx/libfastx.a
+make[4]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/src/fasta_formatter'
 Making all in fasta_nucleotide_changer
-make[4]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/src/fasta_nucleotide_changer'
-gcc -DHAVE_CONFIG_H -I. -I../..   -I../libfastx   -g -O2 -g -O2 -Wall -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -c fasta_nucleotide_changer.c
-/bin/bash ../../libtool --tag=CC   --mode=link gcc  -g -O2 -g -O2 -Wall -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1   -o fasta_nucleotide_changer fasta_nucleotide_changer.o ../libfastx/libfastx.a  
-libtool: link: gcc -g -O2 -g -O2 -Wall -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -o fasta_nucleotide_changer fasta_nucleotide_changer.o  ../libfastx/libfastx.a
-make[4]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/src/fasta_nucleotide_changer'
+make[4]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/src/fasta_nucleotide_changer'
+gcc -DHAVE_CONFIG_H -I. -I../..   -I../libfastx -D_FORTIFY_SOURCE=2  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Wformat-security -Werror=format-security -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -c fasta_nucleotide_changer.c
+/bin/bash ../../libtool --tag=CC   --mode=link gcc  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Wformat-security -Werror=format-security -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1  -Wl,-z,relro -o fasta_nucleotide_changer fasta_nucleotide_changer.o ../libfastx/libfastx.a  
+libtool: link: gcc -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Wformat-security -Werror=format-security -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -Wl,-z -Wl,relro -o fasta_nucleotide_changer fasta_nucleotide_changer.o  ../libfastx/libfastx.a
+make[4]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/src/fasta_nucleotide_changer'
 Making all in fastx_renamer
-make[4]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/src/fastx_renamer'
-gcc -DHAVE_CONFIG_H -I. -I../..   -I../libfastx   -g -O2 -g -O2 -Wall -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -c fastx_renamer.c
-/bin/bash ../../libtool --tag=CC   --mode=link gcc  -g -O2 -g -O2 -Wall -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1   -o fastx_renamer fastx_renamer.o ../libfastx/libfastx.a  
-libtool: link: gcc -g -O2 -g -O2 -Wall -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -o fastx_renamer fastx_renamer.o  ../libfastx/libfastx.a
-make[4]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/src/fastx_renamer'
+make[4]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/src/fastx_renamer'
+gcc -DHAVE_CONFIG_H -I. -I../..   -I../libfastx -D_FORTIFY_SOURCE=2  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Wformat-security -Werror=format-security -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -c fastx_renamer.c
+/bin/bash ../../libtool --tag=CC   --mode=link gcc  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Wformat-security -Werror=format-security -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1  -Wl,-z,relro -o fastx_renamer fastx_renamer.o ../libfastx/libfastx.a  
+libtool: link: gcc -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Wformat-security -Werror=format-security -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -Wl,-z -Wl,relro -o fastx_renamer fastx_renamer.o  ../libfastx/libfastx.a
+make[4]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/src/fastx_renamer'
 Making all in fastq_masker
-make[4]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/src/fastq_masker'
-gcc -DHAVE_CONFIG_H -I. -I../..   -I../libfastx   -g -O2 -g -O2 -Wall -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -c fastq_masker.c
-/bin/bash ../../libtool --tag=CC   --mode=link gcc  -g -O2 -g -O2 -Wall -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1   -o fastq_masker fastq_masker.o ../libfastx/libfastx.a  
-libtool: link: gcc -g -O2 -g -O2 -Wall -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -o fastq_masker fastq_masker.o  ../libfastx/libfastx.a
-make[4]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/src/fastq_masker'
-make[4]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/src'
+make[4]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/src/fastq_masker'
+gcc -DHAVE_CONFIG_H -I. -I../..   -I../libfastx -D_FORTIFY_SOURCE=2  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Wformat-security -Werror=format-security -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -c fastq_masker.c
+/bin/bash ../../libtool --tag=CC   --mode=link gcc  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Wformat-security -Werror=format-security -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1  -Wl,-z,relro -o fastq_masker fastq_masker.o ../libfastx/libfastx.a  
+libtool: link: gcc -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Wformat-security -Werror=format-security -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -Wl,-z -Wl,relro -o fastq_masker fastq_masker.o  ../libfastx/libfastx.a
+make[4]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/src/fastq_masker'
+make[4]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/src'
 make[4]: Nothing to be done for `all-am'.
-make[4]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/src'
-make[3]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/src'
+make[4]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/src'
+make[3]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/src'
 Making all in doc
-make[3]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/doc'
+make[3]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/doc'
 make[3]: Nothing to be done for `all'.
-make[3]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/doc'
+make[3]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/doc'
 Making all in galaxy
-make[3]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/galaxy'
+make[3]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/galaxy'
 Making all in tools
-make[4]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/galaxy/tools'
+make[4]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/galaxy/tools'
 Making all in fastx_toolkit
-make[5]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/galaxy/tools/fastx_toolkit'
+make[5]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/galaxy/tools/fastx_toolkit'
 make[5]: Nothing to be done for `all'.
-make[5]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/galaxy/tools/fastx_toolkit'
+make[5]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/galaxy/tools/fastx_toolkit'
 Making all in cshl_custom_fastx_toolkit
-make[5]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/galaxy/tools/cshl_custom_fastx_toolkit'
+make[5]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/galaxy/tools/cshl_custom_fastx_toolkit'
 make[5]: Nothing to be done for `all'.
-make[5]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/galaxy/tools/cshl_custom_fastx_toolkit'
-make[5]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/galaxy/tools'
+make[5]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/galaxy/tools/cshl_custom_fastx_toolkit'
+make[5]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/galaxy/tools'
 make[5]: Nothing to be done for `all-am'.
-make[5]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/galaxy/tools'
-make[4]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/galaxy/tools'
+make[5]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/galaxy/tools'
+make[4]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/galaxy/tools'
 Making all in test-data
-make[4]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/galaxy/test-data'
+make[4]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/galaxy/test-data'
 make[4]: Nothing to be done for `all'.
-make[4]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/galaxy/test-data'
+make[4]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/galaxy/test-data'
 Making all in static
-make[4]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/galaxy/static'
+make[4]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/galaxy/static'
 Making all in fastx_icons
-make[5]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/galaxy/static/fastx_icons'
+make[5]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/galaxy/static/fastx_icons'
 make[5]: Nothing to be done for `all'.
-make[5]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/galaxy/static/fastx_icons'
-make[5]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/galaxy/static'
+make[5]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/galaxy/static/fastx_icons'
+make[5]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/galaxy/static'
 make[5]: Nothing to be done for `all-am'.
-make[5]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/galaxy/static'
-make[4]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/galaxy/static'
+make[5]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/galaxy/static'
+make[4]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/galaxy/static'
 Making all in tool-data
-make[4]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/galaxy/tool-data'
+make[4]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/galaxy/tool-data'
 make[4]: Nothing to be done for `all'.
-make[4]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/galaxy/tool-data'
-make[4]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/galaxy'
+make[4]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/galaxy/tool-data'
+make[4]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/galaxy'
 make[4]: Nothing to be done for `all-am'.
-make[4]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/galaxy'
-make[3]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/galaxy'
+make[4]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/galaxy'
+make[3]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/galaxy'
 Making all in scripts
-make[3]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/scripts'
+make[3]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/scripts'
 make[3]: Nothing to be done for `all'.
-make[3]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/scripts'
+make[3]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/scripts'
 Making all in build_scripts
-make[3]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/build_scripts'
+make[3]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/build_scripts'
 make[3]: Nothing to be done for `all'.
-make[3]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/build_scripts'
-make[3]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1'
-make[3]: Nothing to be done for `all-am'.
-make[3]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1'
-make[2]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1'
-make[1]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1'
-touch debian/stamp-makefile-build
-DEB_MAKE_CHECK_TARGET unset, not running checks
+make[3]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/build_scripts'
+make[3]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1'
+make[3]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1'
+make[2]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1'
+make[1]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1'
+   dh_auto_test -a
+make[1]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1'
+Making check in m4
+make[2]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/m4'
+make[2]: Nothing to be done for `check'.
+make[2]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/m4'
+Making check in src
+make[2]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/src'
+Making check in libfastx
+make[3]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/src/libfastx'
+make[3]: Nothing to be done for `check'.
+make[3]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/src/libfastx'
+Making check in fastx_clipper
+make[3]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/src/fastx_clipper'
+make[3]: Nothing to be done for `check'.
+make[3]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/src/fastx_clipper'
+Making check in fastx_trimmer
+make[3]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/src/fastx_trimmer'
+make[3]: Nothing to be done for `check'.
+make[3]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/src/fastx_trimmer'
+Making check in fastx_quality_stats
+make[3]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/src/fastx_quality_stats'
+make[3]: Nothing to be done for `check'.
+make[3]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/src/fastx_quality_stats'
+Making check in fastq_quality_converter
+make[3]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/src/fastq_quality_converter'
+make[3]: Nothing to be done for `check'.
+make[3]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/src/fastq_quality_converter'
+Making check in fastq_to_fasta
+make[3]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/src/fastq_to_fasta'
+make[3]: Nothing to be done for `check'.
+make[3]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/src/fastq_to_fasta'
+Making check in fastq_quality_filter
+make[3]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/src/fastq_quality_filter'
+make[3]: Nothing to be done for `check'.
+make[3]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/src/fastq_quality_filter'
+Making check in fastq_quality_trimmer
+make[3]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/src/fastq_quality_trimmer'
+make[3]: Nothing to be done for `check'.
+make[3]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/src/fastq_quality_trimmer'
+Making check in fastx_artifacts_filter
+make[3]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/src/fastx_artifacts_filter'
+make[3]: Nothing to be done for `check'.
+make[3]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/src/fastx_artifacts_filter'
+Making check in fastx_reverse_complement
+make[3]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/src/fastx_reverse_complement'
+make[3]: Nothing to be done for `check'.
+make[3]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/src/fastx_reverse_complement'
+Making check in fastx_collapser
+make[3]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/src/fastx_collapser'
+make[3]: Nothing to be done for `check'.
+make[3]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/src/fastx_collapser'
+Making check in fastx_uncollapser
+make[3]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/src/fastx_uncollapser'
+make[3]: Nothing to be done for `check'.
+make[3]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/src/fastx_uncollapser'
+Making check in seqalign_test
+make[3]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/src/seqalign_test'
+make[3]: Nothing to be done for `check'.
+make[3]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/src/seqalign_test'
+Making check in fasta_formatter
+make[3]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/src/fasta_formatter'
+make[3]: Nothing to be done for `check'.
+make[3]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/src/fasta_formatter'
+Making check in fasta_nucleotide_changer
+make[3]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/src/fasta_nucleotide_changer'
+make[3]: Nothing to be done for `check'.
+make[3]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/src/fasta_nucleotide_changer'
+Making check in fastx_renamer
+make[3]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/src/fastx_renamer'
+make[3]: Nothing to be done for `check'.
+make[3]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/src/fastx_renamer'
+Making check in fastq_masker
+make[3]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/src/fastq_masker'
+make[3]: Nothing to be done for `check'.
+make[3]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/src/fastq_masker'
+make[3]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/src'
+make[3]: Nothing to be done for `check-am'.
+make[3]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/src'
+make[2]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/src'
+Making check in doc
+make[2]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/doc'
+make[2]: Nothing to be done for `check'.
+make[2]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/doc'
+Making check in galaxy
+make[2]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/galaxy'
+Making check in tools
+make[3]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/galaxy/tools'
+Making check in fastx_toolkit
+make[4]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/galaxy/tools/fastx_toolkit'
+make[4]: Nothing to be done for `check'.
+make[4]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/galaxy/tools/fastx_toolkit'
+Making check in cshl_custom_fastx_toolkit
+make[4]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/galaxy/tools/cshl_custom_fastx_toolkit'
+make[4]: Nothing to be done for `check'.
+make[4]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/galaxy/tools/cshl_custom_fastx_toolkit'
+make[4]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/galaxy/tools'
+make[4]: Nothing to be done for `check-am'.
+make[4]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/galaxy/tools'
+make[3]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/galaxy/tools'
+Making check in test-data
+make[3]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/galaxy/test-data'
+make[3]: Nothing to be done for `check'.
+make[3]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/galaxy/test-data'
+Making check in static
+make[3]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/galaxy/static'
+Making check in fastx_icons
+make[4]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/galaxy/static/fastx_icons'
+make[4]: Nothing to be done for `check'.
+make[4]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/galaxy/static/fastx_icons'
+make[4]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/galaxy/static'
+make[4]: Nothing to be done for `check-am'.
+make[4]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/galaxy/static'
+make[3]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/galaxy/static'
+Making check in tool-data
+make[3]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/galaxy/tool-data'
+make[3]: Nothing to be done for `check'.
+make[3]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/galaxy/tool-data'
+make[3]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/galaxy'
+make[3]: Nothing to be done for `check-am'.
+make[3]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/galaxy'
+make[2]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/galaxy'
+Making check in scripts
+make[2]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/scripts'
+make[2]: Nothing to be done for `check'.
+make[2]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/scripts'
+Making check in build_scripts
+make[2]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/build_scripts'
+make[2]: Nothing to be done for `check'.
+make[2]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/build_scripts'
+make[2]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1'
+make[2]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1'
+make[1]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1'
  fakeroot debian/rules binary-arch
-test -x debian/rules
-dh_testroot
-dh_prep 
-dh_installdirs -A 
-mkdir -p "."
-if test -e /usr/share/misc/config.guess ; then \
-		for i in ./config/config.guess ; do \
-			if ! test -e $i.cdbs-orig ; then \
-				mv $i $i.cdbs-orig ; \
-				cp --remove-destination /usr/share/misc/config.guess $i ; \
-			fi ; \
-		done ; \
-	fi
-if test -e /usr/share/misc/config.sub ; then \
-		for i in ./config/config.sub ; do \
-			if ! test -e $i.cdbs-orig ; then \
-				mv $i $i.cdbs-orig ; \
-				cp --remove-destination /usr/share/misc/config.sub $i ; \
-			fi ; \
-		done ; \
-	fi
-DEB_MAKE_CHECK_TARGET unset, not running checks
-/usr/bin/make  -C .  install DESTDIR=/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/debian/fastx-toolkit/
-make[1]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1'
+dh binary-arch
+   dh_testroot -a
+   dh_prep -a
+   dh_installdirs -a
+   dh_auto_install -a
+make[1]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1'
 Making install in m4
-make[2]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/m4'
-make[3]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/m4'
+make[2]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/m4'
+make[3]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/m4'
 make[3]: Nothing to be done for `install-exec-am'.
-test -z "/usr/share/aclocal" || /bin/mkdir -p "/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/debian/fastx-toolkit//usr/share/aclocal"
- /usr/bin/install -c -m 644 'ax_c_long_long.m4' '/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/debian/fastx-toolkit//usr/share/aclocal/ax_c_long_long.m4'
- /usr/bin/install -c -m 644 'ax_cxx_header_stdcxx_tr1.m4' '/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/debian/fastx-toolkit//usr/share/aclocal/ax_cxx_header_stdcxx_tr1.m4'
-make[3]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/m4'
-make[2]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/m4'
+test -z "/usr/share/aclocal" || /bin/mkdir -p "/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/debian/fastx-toolkit/usr/share/aclocal"
+ /usr/bin/install -c -m 644 'ax_c_long_long.m4' '/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/debian/fastx-toolkit/usr/share/aclocal/ax_c_long_long.m4'
+ /usr/bin/install -c -m 644 'ax_cxx_header_stdcxx_tr1.m4' '/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/debian/fastx-toolkit/usr/share/aclocal/ax_cxx_header_stdcxx_tr1.m4'
+make[3]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/m4'
+make[2]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/m4'
 Making install in src
-make[2]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/src'
+make[2]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/src'
 Making install in libfastx
-make[3]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/src/libfastx'
-make[4]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/src/libfastx'
+make[3]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/src/libfastx'
+make[4]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/src/libfastx'
 make[4]: Nothing to be done for `install-exec-am'.
 make[4]: Nothing to be done for `install-data-am'.
-make[4]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/src/libfastx'
-make[3]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/src/libfastx'
+make[4]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/src/libfastx'
+make[3]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/src/libfastx'
 Making install in fastx_clipper
-make[3]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/src/fastx_clipper'
-make[4]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/src/fastx_clipper'
-test -z "/usr/bin" || /bin/mkdir -p "/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/debian/fastx-toolkit//usr/bin"
-  /bin/bash ../../libtool   --mode=install /usr/bin/install -c 'fastx_clipper' '/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/debian/fastx-toolkit//usr/bin/fastx_clipper'
-libtool: install: /usr/bin/install -c fastx_clipper /build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/debian/fastx-toolkit//usr/bin/fastx_clipper
+make[3]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/src/fastx_clipper'
+make[4]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/src/fastx_clipper'
+test -z "/usr/bin" || /bin/mkdir -p "/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/debian/fastx-toolkit/usr/bin"
+  /bin/bash ../../libtool   --mode=install /usr/bin/install -c 'fastx_clipper' '/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/debian/fastx-toolkit/usr/bin/fastx_clipper'
+libtool: install: /usr/bin/install -c fastx_clipper /build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/debian/fastx-toolkit/usr/bin/fastx_clipper
 make[4]: Nothing to be done for `install-data-am'.
-make[4]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/src/fastx_clipper'
-make[3]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/src/fastx_clipper'
+make[4]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/src/fastx_clipper'
+make[3]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/src/fastx_clipper'
 Making install in fastx_trimmer
-make[3]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/src/fastx_trimmer'
-make[4]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/src/fastx_trimmer'
-test -z "/usr/bin" || /bin/mkdir -p "/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/debian/fastx-toolkit//usr/bin"
-  /bin/bash ../../libtool   --mode=install /usr/bin/install -c 'fastx_trimmer' '/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/debian/fastx-toolkit//usr/bin/fastx_trimmer'
-libtool: install: /usr/bin/install -c fastx_trimmer /build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/debian/fastx-toolkit//usr/bin/fastx_trimmer
+make[3]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/src/fastx_trimmer'
+make[4]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/src/fastx_trimmer'
+test -z "/usr/bin" || /bin/mkdir -p "/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/debian/fastx-toolkit/usr/bin"
+  /bin/bash ../../libtool   --mode=install /usr/bin/install -c 'fastx_trimmer' '/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/debian/fastx-toolkit/usr/bin/fastx_trimmer'
+libtool: install: /usr/bin/install -c fastx_trimmer /build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/debian/fastx-toolkit/usr/bin/fastx_trimmer
 make[4]: Nothing to be done for `install-data-am'.
-make[4]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/src/fastx_trimmer'
-make[3]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/src/fastx_trimmer'
+make[4]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/src/fastx_trimmer'
+make[3]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/src/fastx_trimmer'
 Making install in fastx_quality_stats
-make[3]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/src/fastx_quality_stats'
-make[4]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/src/fastx_quality_stats'
-test -z "/usr/bin" || /bin/mkdir -p "/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/debian/fastx-toolkit//usr/bin"
-  /bin/bash ../../libtool   --mode=install /usr/bin/install -c 'fastx_quality_stats' '/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/debian/fastx-toolkit//usr/bin/fastx_quality_stats'
-libtool: install: /usr/bin/install -c fastx_quality_stats /build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/debian/fastx-toolkit//usr/bin/fastx_quality_stats
+make[3]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/src/fastx_quality_stats'
+make[4]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/src/fastx_quality_stats'
+test -z "/usr/bin" || /bin/mkdir -p "/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/debian/fastx-toolkit/usr/bin"
+  /bin/bash ../../libtool   --mode=install /usr/bin/install -c 'fastx_quality_stats' '/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/debian/fastx-toolkit/usr/bin/fastx_quality_stats'
+libtool: install: /usr/bin/install -c fastx_quality_stats /build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/debian/fastx-toolkit/usr/bin/fastx_quality_stats
 make[4]: Nothing to be done for `install-data-am'.
-make[4]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/src/fastx_quality_stats'
-make[3]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/src/fastx_quality_stats'
+make[4]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/src/fastx_quality_stats'
+make[3]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/src/fastx_quality_stats'
 Making install in fastq_quality_converter
-make[3]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/src/fastq_quality_converter'
-make[4]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/src/fastq_quality_converter'
-test -z "/usr/bin" || /bin/mkdir -p "/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/debian/fastx-toolkit//usr/bin"
-  /bin/bash ../../libtool   --mode=install /usr/bin/install -c 'fastq_quality_converter' '/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/debian/fastx-toolkit//usr/bin/fastq_quality_converter'
-libtool: install: /usr/bin/install -c fastq_quality_converter /build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/debian/fastx-toolkit//usr/bin/fastq_quality_converter
+make[3]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/src/fastq_quality_converter'
+make[4]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/src/fastq_quality_converter'
+test -z "/usr/bin" || /bin/mkdir -p "/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/debian/fastx-toolkit/usr/bin"
+  /bin/bash ../../libtool   --mode=install /usr/bin/install -c 'fastq_quality_converter' '/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/debian/fastx-toolkit/usr/bin/fastq_quality_converter'
+libtool: install: /usr/bin/install -c fastq_quality_converter /build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/debian/fastx-toolkit/usr/bin/fastq_quality_converter
 make[4]: Nothing to be done for `install-data-am'.
-make[4]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/src/fastq_quality_converter'
-make[3]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/src/fastq_quality_converter'
+make[4]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/src/fastq_quality_converter'
+make[3]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/src/fastq_quality_converter'
 Making install in fastq_to_fasta
-make[3]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/src/fastq_to_fasta'
-make[4]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/src/fastq_to_fasta'
-test -z "/usr/bin" || /bin/mkdir -p "/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/debian/fastx-toolkit//usr/bin"
-  /bin/bash ../../libtool   --mode=install /usr/bin/install -c 'fastq_to_fasta' '/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/debian/fastx-toolkit//usr/bin/fastq_to_fasta'
-libtool: install: /usr/bin/install -c fastq_to_fasta /build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/debian/fastx-toolkit//usr/bin/fastq_to_fasta
+make[3]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/src/fastq_to_fasta'
+make[4]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/src/fastq_to_fasta'
+test -z "/usr/bin" || /bin/mkdir -p "/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/debian/fastx-toolkit/usr/bin"
+  /bin/bash ../../libtool   --mode=install /usr/bin/install -c 'fastq_to_fasta' '/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/debian/fastx-toolkit/usr/bin/fastq_to_fasta'
+libtool: install: /usr/bin/install -c fastq_to_fasta /build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/debian/fastx-toolkit/usr/bin/fastq_to_fasta
 make[4]: Nothing to be done for `install-data-am'.
-make[4]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/src/fastq_to_fasta'
-make[3]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/src/fastq_to_fasta'
+make[4]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/src/fastq_to_fasta'
+make[3]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/src/fastq_to_fasta'
 Making install in fastq_quality_filter
-make[3]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/src/fastq_quality_filter'
-make[4]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/src/fastq_quality_filter'
-test -z "/usr/bin" || /bin/mkdir -p "/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/debian/fastx-toolkit//usr/bin"
-  /bin/bash ../../libtool   --mode=install /usr/bin/install -c 'fastq_quality_filter' '/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/debian/fastx-toolkit//usr/bin/fastq_quality_filter'
-libtool: install: /usr/bin/install -c fastq_quality_filter /build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/debian/fastx-toolkit//usr/bin/fastq_quality_filter
+make[3]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/src/fastq_quality_filter'
+make[4]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/src/fastq_quality_filter'
+test -z "/usr/bin" || /bin/mkdir -p "/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/debian/fastx-toolkit/usr/bin"
+  /bin/bash ../../libtool   --mode=install /usr/bin/install -c 'fastq_quality_filter' '/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/debian/fastx-toolkit/usr/bin/fastq_quality_filter'
+libtool: install: /usr/bin/install -c fastq_quality_filter /build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/debian/fastx-toolkit/usr/bin/fastq_quality_filter
 make[4]: Nothing to be done for `install-data-am'.
-make[4]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/src/fastq_quality_filter'
-make[3]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/src/fastq_quality_filter'
+make[4]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/src/fastq_quality_filter'
+make[3]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/src/fastq_quality_filter'
 Making install in fastq_quality_trimmer
-make[3]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/src/fastq_quality_trimmer'
-make[4]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/src/fastq_quality_trimmer'
-test -z "/usr/bin" || /bin/mkdir -p "/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/debian/fastx-toolkit//usr/bin"
-  /bin/bash ../../libtool   --mode=install /usr/bin/install -c 'fastq_quality_trimmer' '/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/debian/fastx-toolkit//usr/bin/fastq_quality_trimmer'
-libtool: install: /usr/bin/install -c fastq_quality_trimmer /build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/debian/fastx-toolkit//usr/bin/fastq_quality_trimmer
+make[3]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/src/fastq_quality_trimmer'
+make[4]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/src/fastq_quality_trimmer'
+test -z "/usr/bin" || /bin/mkdir -p "/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/debian/fastx-toolkit/usr/bin"
+  /bin/bash ../../libtool   --mode=install /usr/bin/install -c 'fastq_quality_trimmer' '/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/debian/fastx-toolkit/usr/bin/fastq_quality_trimmer'
+libtool: install: /usr/bin/install -c fastq_quality_trimmer /build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/debian/fastx-toolkit/usr/bin/fastq_quality_trimmer
 make[4]: Nothing to be done for `install-data-am'.
-make[4]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/src/fastq_quality_trimmer'
-make[3]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/src/fastq_quality_trimmer'
+make[4]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/src/fastq_quality_trimmer'
+make[3]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/src/fastq_quality_trimmer'
 Making install in fastx_artifacts_filter
-make[3]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/src/fastx_artifacts_filter'
-make[4]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/src/fastx_artifacts_filter'
-test -z "/usr/bin" || /bin/mkdir -p "/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/debian/fastx-toolkit//usr/bin"
-  /bin/bash ../../libtool   --mode=install /usr/bin/install -c 'fastx_artifacts_filter' '/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/debian/fastx-toolkit//usr/bin/fastx_artifacts_filter'
-libtool: install: /usr/bin/install -c fastx_artifacts_filter /build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/debian/fastx-toolkit//usr/bin/fastx_artifacts_filter
+make[3]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/src/fastx_artifacts_filter'
+make[4]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/src/fastx_artifacts_filter'
+test -z "/usr/bin" || /bin/mkdir -p "/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/debian/fastx-toolkit/usr/bin"
+  /bin/bash ../../libtool   --mode=install /usr/bin/install -c 'fastx_artifacts_filter' '/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/debian/fastx-toolkit/usr/bin/fastx_artifacts_filter'
+libtool: install: /usr/bin/install -c fastx_artifacts_filter /build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/debian/fastx-toolkit/usr/bin/fastx_artifacts_filter
 make[4]: Nothing to be done for `install-data-am'.
-make[4]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/src/fastx_artifacts_filter'
-make[3]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/src/fastx_artifacts_filter'
+make[4]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/src/fastx_artifacts_filter'
+make[3]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/src/fastx_artifacts_filter'
 Making install in fastx_reverse_complement
-make[3]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/src/fastx_reverse_complement'
-make[4]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/src/fastx_reverse_complement'
-test -z "/usr/bin" || /bin/mkdir -p "/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/debian/fastx-toolkit//usr/bin"
-  /bin/bash ../../libtool   --mode=install /usr/bin/install -c 'fastx_reverse_complement' '/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/debian/fastx-toolkit//usr/bin/fastx_reverse_complement'
-libtool: install: /usr/bin/install -c fastx_reverse_complement /build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/debian/fastx-toolkit//usr/bin/fastx_reverse_complement
+make[3]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/src/fastx_reverse_complement'
+make[4]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/src/fastx_reverse_complement'
+test -z "/usr/bin" || /bin/mkdir -p "/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/debian/fastx-toolkit/usr/bin"
+  /bin/bash ../../libtool   --mode=install /usr/bin/install -c 'fastx_reverse_complement' '/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/debian/fastx-toolkit/usr/bin/fastx_reverse_complement'
+libtool: install: /usr/bin/install -c fastx_reverse_complement /build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/debian/fastx-toolkit/usr/bin/fastx_reverse_complement
 make[4]: Nothing to be done for `install-data-am'.
-make[4]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/src/fastx_reverse_complement'
-make[3]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/src/fastx_reverse_complement'
+make[4]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/src/fastx_reverse_complement'
+make[3]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/src/fastx_reverse_complement'
 Making install in fastx_collapser
-make[3]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/src/fastx_collapser'
-make[4]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/src/fastx_collapser'
-test -z "/usr/bin" || /bin/mkdir -p "/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/debian/fastx-toolkit//usr/bin"
-  /bin/bash ../../libtool   --mode=install /usr/bin/install -c 'fastx_collapser' '/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/debian/fastx-toolkit//usr/bin/fastx_collapser'
-libtool: install: /usr/bin/install -c fastx_collapser /build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/debian/fastx-toolkit//usr/bin/fastx_collapser
+make[3]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/src/fastx_collapser'
+make[4]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/src/fastx_collapser'
+test -z "/usr/bin" || /bin/mkdir -p "/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/debian/fastx-toolkit/usr/bin"
+  /bin/bash ../../libtool   --mode=install /usr/bin/install -c 'fastx_collapser' '/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/debian/fastx-toolkit/usr/bin/fastx_collapser'
+libtool: install: /usr/bin/install -c fastx_collapser /build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/debian/fastx-toolkit/usr/bin/fastx_collapser
 make[4]: Nothing to be done for `install-data-am'.
-make[4]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/src/fastx_collapser'
-make[3]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/src/fastx_collapser'
+make[4]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/src/fastx_collapser'
+make[3]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/src/fastx_collapser'
 Making install in fastx_uncollapser
-make[3]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/src/fastx_uncollapser'
-make[4]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/src/fastx_uncollapser'
-test -z "/usr/bin" || /bin/mkdir -p "/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/debian/fastx-toolkit//usr/bin"
-  /bin/bash ../../libtool   --mode=install /usr/bin/install -c 'fastx_uncollapser' '/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/debian/fastx-toolkit//usr/bin/fastx_uncollapser'
-libtool: install: /usr/bin/install -c fastx_uncollapser /build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/debian/fastx-toolkit//usr/bin/fastx_uncollapser
+make[3]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/src/fastx_uncollapser'
+make[4]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/src/fastx_uncollapser'
+test -z "/usr/bin" || /bin/mkdir -p "/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/debian/fastx-toolkit/usr/bin"
+  /bin/bash ../../libtool   --mode=install /usr/bin/install -c 'fastx_uncollapser' '/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/debian/fastx-toolkit/usr/bin/fastx_uncollapser'
+libtool: install: /usr/bin/install -c fastx_uncollapser /build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/debian/fastx-toolkit/usr/bin/fastx_uncollapser
 make[4]: Nothing to be done for `install-data-am'.
-make[4]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/src/fastx_uncollapser'
-make[3]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/src/fastx_uncollapser'
+make[4]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/src/fastx_uncollapser'
+make[3]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/src/fastx_uncollapser'
 Making install in seqalign_test
-make[3]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/src/seqalign_test'
-make[4]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/src/seqalign_test'
+make[3]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/src/seqalign_test'
+make[4]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/src/seqalign_test'
 make[4]: Nothing to be done for `install-exec-am'.
 make[4]: Nothing to be done for `install-data-am'.
-make[4]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/src/seqalign_test'
-make[3]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/src/seqalign_test'
+make[4]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/src/seqalign_test'
+make[3]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/src/seqalign_test'
 Making install in fasta_formatter
-make[3]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/src/fasta_formatter'
-make[4]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/src/fasta_formatter'
-test -z "/usr/bin" || /bin/mkdir -p "/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/debian/fastx-toolkit//usr/bin"
-  /bin/bash ../../libtool   --mode=install /usr/bin/install -c 'fasta_formatter' '/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/debian/fastx-toolkit//usr/bin/fasta_formatter'
-libtool: install: /usr/bin/install -c fasta_formatter /build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/debian/fastx-toolkit//usr/bin/fasta_formatter
+make[3]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/src/fasta_formatter'
+make[4]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/src/fasta_formatter'
+test -z "/usr/bin" || /bin/mkdir -p "/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/debian/fastx-toolkit/usr/bin"
+  /bin/bash ../../libtool   --mode=install /usr/bin/install -c 'fasta_formatter' '/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/debian/fastx-toolkit/usr/bin/fasta_formatter'
+libtool: install: /usr/bin/install -c fasta_formatter /build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/debian/fastx-toolkit/usr/bin/fasta_formatter
 make[4]: Nothing to be done for `install-data-am'.
-make[4]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/src/fasta_formatter'
-make[3]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/src/fasta_formatter'
+make[4]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/src/fasta_formatter'
+make[3]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/src/fasta_formatter'
 Making install in fasta_nucleotide_changer
-make[3]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/src/fasta_nucleotide_changer'
-make[4]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/src/fasta_nucleotide_changer'
-test -z "/usr/bin" || /bin/mkdir -p "/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/debian/fastx-toolkit//usr/bin"
-  /bin/bash ../../libtool   --mode=install /usr/bin/install -c 'fasta_nucleotide_changer' '/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/debian/fastx-toolkit//usr/bin/fasta_nucleotide_changer'
-libtool: install: /usr/bin/install -c fasta_nucleotide_changer /build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/debian/fastx-toolkit//usr/bin/fasta_nucleotide_changer
+make[3]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/src/fasta_nucleotide_changer'
+make[4]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/src/fasta_nucleotide_changer'
+test -z "/usr/bin" || /bin/mkdir -p "/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/debian/fastx-toolkit/usr/bin"
+  /bin/bash ../../libtool   --mode=install /usr/bin/install -c 'fasta_nucleotide_changer' '/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/debian/fastx-toolkit/usr/bin/fasta_nucleotide_changer'
+libtool: install: /usr/bin/install -c fasta_nucleotide_changer /build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/debian/fastx-toolkit/usr/bin/fasta_nucleotide_changer
 make[4]: Nothing to be done for `install-data-am'.
-make[4]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/src/fasta_nucleotide_changer'
-make[3]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/src/fasta_nucleotide_changer'
+make[4]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/src/fasta_nucleotide_changer'
+make[3]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/src/fasta_nucleotide_changer'
 Making install in fastx_renamer
-make[3]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/src/fastx_renamer'
-make[4]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/src/fastx_renamer'
-test -z "/usr/bin" || /bin/mkdir -p "/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/debian/fastx-toolkit//usr/bin"
-  /bin/bash ../../libtool   --mode=install /usr/bin/install -c 'fastx_renamer' '/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/debian/fastx-toolkit//usr/bin/fastx_renamer'
-libtool: install: /usr/bin/install -c fastx_renamer /build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/debian/fastx-toolkit//usr/bin/fastx_renamer
+make[3]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/src/fastx_renamer'
+make[4]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/src/fastx_renamer'
+test -z "/usr/bin" || /bin/mkdir -p "/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/debian/fastx-toolkit/usr/bin"
+  /bin/bash ../../libtool   --mode=install /usr/bin/install -c 'fastx_renamer' '/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/debian/fastx-toolkit/usr/bin/fastx_renamer'
+libtool: install: /usr/bin/install -c fastx_renamer /build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/debian/fastx-toolkit/usr/bin/fastx_renamer
 make[4]: Nothing to be done for `install-data-am'.
-make[4]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/src/fastx_renamer'
-make[3]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/src/fastx_renamer'
+make[4]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/src/fastx_renamer'
+make[3]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/src/fastx_renamer'
 Making install in fastq_masker
-make[3]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/src/fastq_masker'
-make[4]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/src/fastq_masker'
-test -z "/usr/bin" || /bin/mkdir -p "/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/debian/fastx-toolkit//usr/bin"
-  /bin/bash ../../libtool   --mode=install /usr/bin/install -c 'fastq_masker' '/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/debian/fastx-toolkit//usr/bin/fastq_masker'
-libtool: install: /usr/bin/install -c fastq_masker /build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/debian/fastx-toolkit//usr/bin/fastq_masker
+make[3]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/src/fastq_masker'
+make[4]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/src/fastq_masker'
+test -z "/usr/bin" || /bin/mkdir -p "/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/debian/fastx-toolkit/usr/bin"
+  /bin/bash ../../libtool   --mode=install /usr/bin/install -c 'fastq_masker' '/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/debian/fastx-toolkit/usr/bin/fastq_masker'
+libtool: install: /usr/bin/install -c fastq_masker /build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/debian/fastx-toolkit/usr/bin/fastq_masker
 make[4]: Nothing to be done for `install-data-am'.
-make[4]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/src/fastq_masker'
-make[3]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/src/fastq_masker'
-make[3]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/src'
-make[4]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/src'
+make[4]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/src/fastq_masker'
+make[3]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/src/fastq_masker'
+make[3]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/src'
+make[4]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/src'
 make[4]: Nothing to be done for `install-exec-am'.
 make[4]: Nothing to be done for `install-data-am'.
-make[4]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/src'
-make[3]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/src'
-make[2]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/src'
+make[4]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/src'
+make[3]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/src'
+make[2]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/src'
 Making install in doc
-make[2]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/doc'
-make[3]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/doc'
+make[2]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/doc'
+make[3]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/doc'
 make[3]: Nothing to be done for `install-exec-am'.
 make[3]: Nothing to be done for `install-data-am'.
-make[3]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/doc'
-make[2]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/doc'
+make[3]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/doc'
+make[2]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/doc'
 Making install in galaxy
-make[2]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/galaxy'
+make[2]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/galaxy'
 Making install in tools
-make[3]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/galaxy/tools'
+make[3]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/galaxy/tools'
 Making install in fastx_toolkit
-make[4]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/galaxy/tools/fastx_toolkit'
-make[5]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/galaxy/tools/fastx_toolkit'
+make[4]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/galaxy/tools/fastx_toolkit'
+make[5]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/galaxy/tools/fastx_toolkit'
 make[5]: Nothing to be done for `install-exec-am'.
 make[5]: Nothing to be done for `install-data-am'.
-make[5]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/galaxy/tools/fastx_toolkit'
-make[4]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/galaxy/tools/fastx_toolkit'
+make[5]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/galaxy/tools/fastx_toolkit'
+make[4]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/galaxy/tools/fastx_toolkit'
 Making install in cshl_custom_fastx_toolkit
-make[4]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/galaxy/tools/cshl_custom_fastx_toolkit'
-make[5]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/galaxy/tools/cshl_custom_fastx_toolkit'
+make[4]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/galaxy/tools/cshl_custom_fastx_toolkit'
+make[5]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/galaxy/tools/cshl_custom_fastx_toolkit'
 make[5]: Nothing to be done for `install-exec-am'.
 make[5]: Nothing to be done for `install-data-am'.
-make[5]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/galaxy/tools/cshl_custom_fastx_toolkit'
-make[4]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/galaxy/tools/cshl_custom_fastx_toolkit'
-make[4]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/galaxy/tools'
-make[5]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/galaxy/tools'
+make[5]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/galaxy/tools/cshl_custom_fastx_toolkit'
+make[4]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/galaxy/tools/cshl_custom_fastx_toolkit'
+make[4]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/galaxy/tools'
+make[5]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/galaxy/tools'
 make[5]: Nothing to be done for `install-exec-am'.
 make[5]: Nothing to be done for `install-data-am'.
-make[5]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/galaxy/tools'
-make[4]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/galaxy/tools'
-make[3]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/galaxy/tools'
+make[5]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/galaxy/tools'
+make[4]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/galaxy/tools'
+make[3]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/galaxy/tools'
 Making install in test-data
-make[3]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/galaxy/test-data'
-make[4]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/galaxy/test-data'
+make[3]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/galaxy/test-data'
+make[4]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/galaxy/test-data'
 make[4]: Nothing to be done for `install-exec-am'.
 make[4]: Nothing to be done for `install-data-am'.
-make[4]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/galaxy/test-data'
-make[3]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/galaxy/test-data'
+make[4]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/galaxy/test-data'
+make[3]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/galaxy/test-data'
 Making install in static
-make[3]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/galaxy/static'
+make[3]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/galaxy/static'
 Making install in fastx_icons
-make[4]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/galaxy/static/fastx_icons'
-make[5]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/galaxy/static/fastx_icons'
+make[4]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/galaxy/static/fastx_icons'
+make[5]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/galaxy/static/fastx_icons'
 make[5]: Nothing to be done for `install-exec-am'.
 make[5]: Nothing to be done for `install-data-am'.
-make[5]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/galaxy/static/fastx_icons'
-make[4]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/galaxy/static/fastx_icons'
-make[4]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/galaxy/static'
-make[5]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/galaxy/static'
+make[5]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/galaxy/static/fastx_icons'
+make[4]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/galaxy/static/fastx_icons'
+make[4]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/galaxy/static'
+make[5]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/galaxy/static'
 make[5]: Nothing to be done for `install-exec-am'.
 make[5]: Nothing to be done for `install-data-am'.
-make[5]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/galaxy/static'
-make[4]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/galaxy/static'
-make[3]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/galaxy/static'
+make[5]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/galaxy/static'
+make[4]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/galaxy/static'
+make[3]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/galaxy/static'
 Making install in tool-data
-make[3]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/galaxy/tool-data'
-make[4]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/galaxy/tool-data'
+make[3]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/galaxy/tool-data'
+make[4]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/galaxy/tool-data'
 make[4]: Nothing to be done for `install-exec-am'.
 make[4]: Nothing to be done for `install-data-am'.
-make[4]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/galaxy/tool-data'
-make[3]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/galaxy/tool-data'
-make[3]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/galaxy'
-make[4]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/galaxy'
+make[4]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/galaxy/tool-data'
+make[3]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/galaxy/tool-data'
+make[3]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/galaxy'
+make[4]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/galaxy'
 make[4]: Nothing to be done for `install-exec-am'.
 make[4]: Nothing to be done for `install-data-am'.
-make[4]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/galaxy'
-make[3]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/galaxy'
-make[2]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/galaxy'
+make[4]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/galaxy'
+make[3]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/galaxy'
+make[2]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/galaxy'
 Making install in scripts
-make[2]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/scripts'
-make[3]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/scripts'
-test -z "/usr/bin" || /bin/mkdir -p "/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/debian/fastx-toolkit//usr/bin"
- /usr/bin/install -c 'fastx_barcode_splitter.pl' '/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/debian/fastx-toolkit//usr/bin/fastx_barcode_splitter.pl'
- /usr/bin/install -c 'fastx_nucleotide_distribution_graph.sh' '/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/debian/fastx-toolkit//usr/bin/fastx_nucleotide_distribution_graph.sh'
- /usr/bin/install -c 'fastx_nucleotide_distribution_line_graph.sh' '/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/debian/fastx-toolkit//usr/bin/fastx_nucleotide_distribution_line_graph.sh'
- /usr/bin/install -c 'fastq_quality_boxplot_graph.sh' '/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/debian/fastx-toolkit//usr/bin/fastq_quality_boxplot_graph.sh'
- /usr/bin/install -c 'fasta_clipping_histogram.pl' '/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/debian/fastx-toolkit//usr/bin/fasta_clipping_histogram.pl'
+make[2]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/scripts'
+make[3]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/scripts'
+test -z "/usr/bin" || /bin/mkdir -p "/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/debian/fastx-toolkit/usr/bin"
+ /usr/bin/install -c 'fastx_barcode_splitter.pl' '/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/debian/fastx-toolkit/usr/bin/fastx_barcode_splitter.pl'
+ /usr/bin/install -c 'fastx_nucleotide_distribution_graph.sh' '/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/debian/fastx-toolkit/usr/bin/fastx_nucleotide_distribution_graph.sh'
+ /usr/bin/install -c 'fastx_nucleotide_distribution_line_graph.sh' '/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/debian/fastx-toolkit/usr/bin/fastx_nucleotide_distribution_line_graph.sh'
+ /usr/bin/install -c 'fastq_quality_boxplot_graph.sh' '/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/debian/fastx-toolkit/usr/bin/fastq_quality_boxplot_graph.sh'
+ /usr/bin/install -c 'fasta_clipping_histogram.pl' '/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/debian/fastx-toolkit/usr/bin/fasta_clipping_histogram.pl'
 make[3]: Nothing to be done for `install-data-am'.
-make[3]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/scripts'
-make[2]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/scripts'
+make[3]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/scripts'
+make[2]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/scripts'
 Making install in build_scripts
-make[2]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/build_scripts'
-make[3]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/build_scripts'
+make[2]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/build_scripts'
+make[3]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/build_scripts'
 make[3]: Nothing to be done for `install-exec-am'.
 make[3]: Nothing to be done for `install-data-am'.
-make[3]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/build_scripts'
-make[2]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/build_scripts'
-make[2]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1'
-make[3]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1'
+make[3]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/build_scripts'
+make[2]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/build_scripts'
+make[2]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1'
+make[3]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1'
 make[3]: Nothing to be done for `install-exec-am'.
 make[3]: Nothing to be done for `install-data-am'.
-make[3]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1'
-make[2]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1'
-make[1]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1'
-touch debian/stamp-makefile-install
-Adding cdbs dependencies to debian/fastx-toolkit.substvars
-dh_installdirs -pfastx-toolkit 
-rm --recursive /build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A/fastx-toolkit-0.0.13.1/debian/fastx-toolkit/usr/share/aclocal
-dh_installdocs -pfastx-toolkit ./README ./NEWS ./AUTHORS ./THANKS 
-dh_installexamples -pfastx-toolkit 
-dh_installman -pfastx-toolkit  
-dh_installinfo -pfastx-toolkit  
-dh_installmenu -pfastx-toolkit 
-dh_installcron -pfastx-toolkit 
-dh_installinit -pfastx-toolkit  
-dh_installdebconf -pfastx-toolkit 
-dh_installemacsen -pfastx-toolkit   
-dh_installcatalogs -pfastx-toolkit 
-dh_installpam -pfastx-toolkit 
-dh_installlogrotate -pfastx-toolkit 
-dh_installlogcheck -pfastx-toolkit 
-dh_installchangelogs -pfastx-toolkit  NEWS 
-dh_installudev -pfastx-toolkit 
-dh_lintian -pfastx-toolkit 
-dh_bugfiles -pfastx-toolkit 
-dh_install -pfastx-toolkit  
-dh_link -pfastx-toolkit  
-dh_installmime -pfastx-toolkit 
-dh_installgsettings -pfastx-toolkit 
-dh_strip -pfastx-toolkit  
-dh_compress -pfastx-toolkit  
-dh_fixperms -pfastx-toolkit  
-dh_makeshlibs -pfastx-toolkit  
-dh_installdeb -pfastx-toolkit 
-dh_perl -pfastx-toolkit 
-dh_shlibdeps -pfastx-toolkit    
-dh_gencontrol -pfastx-toolkit  
+make[3]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1'
+make[2]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1'
+make[1]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1'
+   debian/rules override_dh_install
+make[1]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1'
+dh_install
+rm --recursive /build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/debian/fastx-toolkit/usr/share/aclocal
+make[1]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1'
+   dh_installdocs -a
+   debian/rules override_dh_installchangelogs
+make[1]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1'
+dh_installchangelogs -k NEWS
+make[1]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1'
+   dh_installexamples -a
+   debian/rules override_dh_installman
+make[1]: Entering directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1'
+mkdir -p /build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/debian/fastx-toolkit/usr/share/man/man1
+# The name strings are obtained from
+#   http://hannonlab.cshl.edu/fastx_toolkit/ (Section "Available Tools")
+# and
+#   http://hannonlab.cshl.edu/fastx_toolkit/commandline.html
+help2man --no-info --no-discard-stderr --version-string='0.0.13.1' --help-option='-h' \
+	   --name='changes the width of sequences line in a FASTA file' \
+	   /build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/debian/fastx-toolkit/usr/bin/fasta_formatter > /build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/debian/fastx-toolkit/usr/share/man/man1/fasta_formatter.1
+help2man --no-info --no-discard-stderr --version-string='0.0.13.1' --help-option='-h' \
+	   --name='Convets FASTA sequences from/to RNA/DNA' \
+	   /build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/debian/fastx-toolkit/usr/bin/fasta_nucleotide_changer > /build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/debian/fastx-toolkit/usr/share/man/man1/fasta_nucleotide_changer.1
+help2man --no-info --no-discard-stderr --version-string='0.0.13.1' --help-option='-h' \
+	   --name="Masks nucleotides with 'N' (or other character) based on quality" \
+	   /build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/debian/fastx-toolkit/usr/bin/fastq_masker > /build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/debian/fastx-toolkit/usr/share/man/man1/fastq_masker.1
+# FIXME: The tool `fasta_quality_converter` was NOT described at the URLs above
+help2man --no-info --no-discard-stderr --version-string='0.0.13.1' --help-option='-h' \
+	   --name='Converts sequences based on quality' \
+	   /build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/debian/fastx-toolkit/usr/bin/fastq_quality_converter > /build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/debian/fastx-toolkit/usr/share/man/man1/fastq_quality_converter.1
+help2man --no-info --no-discard-stderr --version-string='0.0.13.1' --help-option='-h' \
+	   --name='Filters sequences based on quality' \
+	   /build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/debian/fastx-toolkit/usr/bin/fastq_quality_filter > /build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/debian/fastx-toolkit/usr/share/man/man1/fastq_quality_filter.1
+dh_installman debian/fastq_quality_trimmer.1
+help2man --no-info --no-discard-stderr --version-string='0.0.13.1' --help-option='-h' \
+	   --name='Convert FASTQ files to FASTA files' \
+	   /build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/debian/fastx-toolkit/usr/bin/fastq_to_fasta > /build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/debian/fastx-toolkit/usr/share/man/man1/fastq_to_fasta.1
+help2man --no-info --no-discard-stderr --version-string='0.0.13.1' --help-option='-h' \
+	   --name='FASTQ/A Artifacts Filter' \
+	   /build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/debian/fastx-toolkit/usr/bin/fastx_artifacts_filter > /build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/debian/fastx-toolkit/usr/share/man/man1/fastx_artifacts_filter.1
+help2man --no-info --no-discard-stderr --version-string='0.0.13.1' --help-option='-h' \
+	   --name='FASTA/Q Clipper' \
+	   /build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/debian/fastx-toolkit/usr/bin/fastx_clipper > /build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/debian/fastx-toolkit/usr/share/man/man1/fastx_clipper.1
+help2man --no-info --no-discard-stderr --version-string='0.0.13.1' --help-option='-h' \
+	   --name='FASTA/Q Collapser' \
+	   /build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/debian/fastx-toolkit/usr/bin/fastx_collapser > /build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/debian/fastx-toolkit/usr/share/man/man1/fastx_collapser.1
+help2man --no-info --no-discard-stderr --version-string='0.0.13.1' --help-option='-h' \
+	   --name='FASTX Statistics' \
+	   /build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/debian/fastx-toolkit/usr/bin/fastx_quality_stats > /build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/debian/fastx-toolkit/usr/share/man/man1/fastx_quality_stats.1
+help2man --no-info --no-discard-stderr --version-string='0.0.13.1' --help-option='-h' \
+	   --name='FASTA/Q Renamer' \
+	   /build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/debian/fastx-toolkit/usr/bin/fastx_renamer > /build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/debian/fastx-toolkit/usr/share/man/man1/fastx_renamer.1
+help2man --no-info --no-discard-stderr --version-string='0.0.13.1' --help-option='-h' \
+	   --name='FASTQ/A Reverse Complement' \
+	   /build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/debian/fastx-toolkit/usr/bin/fastx_reverse_complement > /build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/debian/fastx-toolkit/usr/share/man/man1/fastx_reverse_complement.1
+help2man --no-info --no-discard-stderr --version-string='0.0.13.1' --help-option='-h' \
+	   --name='FASTA/Q Trimmer' \
+	   /build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/debian/fastx-toolkit/usr/bin/fastx_trimmer > /build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/debian/fastx-toolkit/usr/share/man/man1/fastx_trimmer.1
+help2man --no-info --no-discard-stderr --version-string='0.0.13.1' --help-option='-h' \
+	   --name='FASTA/Q Uncollapser' \
+	   /build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/debian/fastx-toolkit/usr/bin/fastx_uncollapser > /build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/debian/fastx-toolkit/usr/share/man/man1/fastx_uncollapser.1
+# Perl scripts add the full path to usage advise which needs to be removed
+# The script fasta_clipping_histogram.pl does not feature a '-h' option
+help2man --no-info --no-discard-stderr --version-string='0.0.13.1' -h '' \
+	   --name='Create a Linker Clipping Information Histogram' \
+	   /build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/debian/fastx-toolkit/usr/bin/fasta_clipping_histogram.pl | \
+	   sed -e 's?^usage: .*\([^/]\+\.pl\)?usage: \1?' \
+	   > /build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/debian/fastx-toolkit/usr/share/man/man1/fasta_clipping_histogram.pl.1
+help2man --no-info --no-discard-stderr --version-string='0.0.13.1' --help-option='-h' \
+	   --name='FASTX Barcode Splitter' \
+	   /build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/debian/fastx-toolkit/usr/bin/fastx_barcode_splitter.pl | \
+	   sed -e 's?^usage: .*\([^/]\+\.pl\)?usage: \1?' \
+	   > /build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/debian/fastx-toolkit/usr/share/man/man1/fastx_barcode_splitter.pl.1
+help2man --no-info --no-discard-stderr --version-string='0.0.13.1' --help-option='-h' \
+	   --name='Solexa-Quality BoxPlot plotter' \
+	   /build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/debian/fastx-toolkit/usr/bin/fastq_quality_boxplot_graph.sh > /build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/debian/fastx-toolkit/usr/share/man/man1/fastq_quality_boxplot_graph.sh.1
+help2man --no-info --no-discard-stderr --version-string='0.0.13.1' --help-option='-h' \
+	   --name='FASTA/Q Nucleotide Distribution Plotter' \
+	   /build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/debian/fastx-toolkit/usr/bin/fastx_nucleotide_distribution_graph.sh > /build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/debian/fastx-toolkit/usr/share/man/man1/fastx_nucleotide_distribution_graph.sh.1
+help2man --no-info --no-discard-stderr --version-string='0.0.13.1' --help-option='-h' \
+	   --name='FASTA/Q Nucleotide Distribution Plotter' \
+	   /build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/debian/fastx-toolkit/usr/bin/fastx_nucleotide_distribution_line_graph.sh > /build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/debian/fastx-toolkit/usr/share/man/man1/fastx_nucleotide_distribution_line_graph.sh.1
+for man in `find /build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/debian/fastx-toolkit/usr/share/man/man1 "*.1"` ; do cat debian/manpages_see_also >> $man ; done
+find: `*.1': No such file or directory
+/bin/sh: 1: cannot create /build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1/debian/fastx-toolkit/usr/share/man/man1: Is a directory
+make[1]: Leaving directory `/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz/fastx-toolkit-0.0.13.1'
+   dh_installcatalogs -a
+   dh_installcron -a
+   dh_installdebconf -a
+   dh_installemacsen -a
+   dh_installifupdown -a
+   dh_installinfo -a
+   dh_installinit -a
+   dh_installmenu -a
+   dh_installmime -a
+   dh_installmodules -a
+   dh_installlogcheck -a
+   dh_installlogrotate -a
+   dh_installpam -a
+   dh_installppp -a
+   dh_installudev -a
+   dh_installwm -a
+   dh_installxfonts -a
+   dh_installgsettings -a
+   dh_bugfiles -a
+   dh_ucf -a
+   dh_lintian -a
+   dh_gconf -a
+   dh_icons -a
+   dh_perl -a
+   dh_usrlocal -a
+   dh_link -a
+   dh_compress -a
+   dh_fixperms -a
+   dh_strip -a
+   dh_makeshlibs -a
+   dh_shlibdeps -a
+   dh_installdeb -a
+   dh_gencontrol -a
 dpkg-gencontrol: warning: package fastx-toolkit: unused substitution variable ${perl:Depends}
-dh_md5sums -pfastx-toolkit 
-dh_builddeb -pfastx-toolkit 
-dpkg-deb: building package `fastx-toolkit' in `../fastx-toolkit_0.0.13.1-1_powerpc.deb'.
- dpkg-genchanges -B -mpowerpc Build Daemon (poulenc) <buildd_powerpc-poulenc@buildd.debian.org> >../fastx-toolkit_0.0.13.1-1_powerpc.changes
+   dh_md5sums -a
+   dh_builddeb -a
+dpkg-deb: building package `fastx-toolkit' in `../fastx-toolkit_0.0.13.1-2_powerpc.deb'.
+ dpkg-genchanges -B -mpowerpc Build Daemon (parry) <buildd_powerpc-parry@buildd.debian.org> >../fastx-toolkit_0.0.13.1-2_powerpc.changes
 dpkg-genchanges: arch-specific upload - not including arch-independent packages
 dpkg-genchanges: binary-only upload - not including any source code
  dpkg-source --after-build fastx-toolkit-0.0.13.1
 dpkg-buildpackage: binary only upload (no source included)
 ────────────────────────────────────────────────────────────────────────────────
-Build finished at 20110708-0511
+Build finished at 20120426-1503
 
-fastx-toolkit_0.0.13.1-1_powerpc.changes:
+fastx-toolkit_0.0.13.1-2_powerpc.changes:
 Format: 1.8
-Date: Fri, 08 Jul 2011 13:11:37 +0900
+Date: Wed, 25 Apr 2012 22:31:55 +0200
 Source: fastx-toolkit
 Binary: fastx-toolkit
 Architecture: powerpc
-Version: 0.0.13.1-1
+Version: 0.0.13.1-2
 Distribution: sid
 Urgency: low
-Maintainer: powerpc Build Daemon (poulenc) <buildd_powerpc-poulenc@buildd.debian.org>
-Changed-By: Charles Plessy <plessy@debian.org>
+Maintainer: powerpc Build Daemon (parry) <buildd_powerpc-parry@buildd.debian.org>
+Changed-By: Andreas Tille <tille@debian.org>
 Description: 
  fastx-toolkit - FASTQ/A short nucleotide reads pre-processing tools
-Closes: 626761
+Closes: 667161
 Changes: 
- fastx-toolkit (0.0.13.1-1) unstable; urgency=low
+ fastx-toolkit (0.0.13.1-2) unstable; urgency=low
  .
-   * New upstream release (Closes: #626761).
-   * Incremented Standards-Version to reflect conformance with Policy 3.9.2
-     (debian/control, no changes needed).
-   * Corrected Vcs-Git URL (debian/control).
+   * debian/control:
+      - Added myself to Uploaders
+      - Standards-Version: 3.9.3 (no changes needed)
+      - Add missing dependencies of Perl scripts
+      - Add Build-Depends help2man
+      - Add Perl modules also ad Build-Depends to enable also
+        running help2man on Perl scripts
+   * debian/patches/gcc-4.7.patch: Fix build issue with gcc-4.7
+     Closes: #667161
+   * debian/rules:
+      - convert from cdbs to dh to finally enable hardening flags
+      - use help2man to creat manpages where possible
+   * debhelper 9 (control+compat) to support hardening flags
+   * debian/README.Debian: Add hint for useful web page
 Checksums-Sha1: 
- 8181cb07d2b9dc66a6e2cb686cfaeb995effb659 110824 fastx-toolkit_0.0.13.1-1_powerpc.deb
+ f9b1ae1e80eb76e9cbc71d2cbffcf6103568db66 131102 fastx-toolkit_0.0.13.1-2_powerpc.deb
 Checksums-Sha256: 
- 86b75c1b06955d83583a3b91377e5ef494ddcdc5ce93557220d35fed55703158 110824 fastx-toolkit_0.0.13.1-1_powerpc.deb
+ fa6b6556ea316cfdcd9a9703222dd09519689dd7e766e0240abe7c672bfb2397 131102 fastx-toolkit_0.0.13.1-2_powerpc.deb
 Files: 
- 35e282afbe4c40c6413084425d703a7f 110824 science optional fastx-toolkit_0.0.13.1-1_powerpc.deb
+ 965c508b8fe8161dbdbb794b3110cd50 131102 science optional fastx-toolkit_0.0.13.1-2_powerpc.deb
 
 ┌──────────────────────────────────────────────────────────────────────────────┐
 │ Package contents                                                             │
 └──────────────────────────────────────────────────────────────────────────────┘
 
 
-fastx-toolkit_0.0.13.1-1_powerpc.deb
+fastx-toolkit_0.0.13.1-2_powerpc.deb
 ────────────────────────────────────
 
  new debian package, version 2.0.
- size 110824 bytes: control archive= 1604 bytes.
-    1041 bytes,    19 lines      control              
-    1798 bytes,    27 lines      md5sums              
+ size 131102 bytes: control archive= 2145 bytes.
+    1080 bytes,    19 lines      control              
+    3342 bytes,    46 lines      md5sums              
  Package: fastx-toolkit
- Version: 0.0.13.1-1
+ Version: 0.0.13.1-2
  Architecture: powerpc
  Maintainer: Debian Med Packaging Team <debian-med-packaging@lists.alioth.debian.org>
- Installed-Size: 448
- Depends: libc6 (>= 2.4), libgcc1 (>= 1:4.1.1), libgtextutils0 (>= 0.6.2), libstdc++6 (>= 4.6)
+ Installed-Size: 452
+ Depends: libc6 (>= 2.4), libgcc1 (>= 1:4.1.1), libgtextutils0 (>= 0.6.2), libstdc++6 (>= 4.6), libgd-graph-perl, libperlio-gzip-perl
  Section: science
  Priority: optional
  Homepage: http://hannonlab.cshl.edu/fastx_toolkit/
@@ -1061,39 +1310,61 @@ fastx-toolkit_0.0.13.1-1_powerpc.deb
   produce better mapping results. The FASTX-Toolkit tools perform some of these
   preprocessing tasks.
 
-drwxr-xr-x root/root         0 2011-07-08 05:11 ./
-drwxr-xr-x root/root         0 2011-07-08 05:10 ./usr/
-drwxr-xr-x root/root         0 2011-07-08 05:11 ./usr/share/
-drwxr-xr-x root/root         0 2011-07-08 05:11 ./usr/share/doc/
-drwxr-xr-x root/root         0 2011-07-08 05:11 ./usr/share/doc/fastx-toolkit/
--rw-r--r-- root/root       425 2010-01-29 22:32 ./usr/share/doc/fastx-toolkit/changelog.gz
+drwxr-xr-x root/root         0 2012-04-26 15:03 ./
+drwxr-xr-x root/root         0 2012-04-26 15:03 ./usr/
+drwxr-xr-x root/root         0 2012-04-26 15:03 ./usr/bin/
+-rwxr-xr-x root/root     18040 2012-04-26 15:03 ./usr/bin/fastq_quality_filter
+-rwxr-xr-x root/root     18044 2012-04-26 15:03 ./usr/bin/fastx_trimmer
+-rwxr-xr-x root/root      2764 2012-04-26 15:03 ./usr/bin/fasta_clipping_histogram.pl
+-rwxr-xr-x root/root     18044 2012-04-26 15:03 ./usr/bin/fastq_quality_trimmer
+-rwxr-xr-x root/root     18048 2012-04-26 15:03 ./usr/bin/fastx_renamer
+-rwxr-xr-x root/root     13925 2012-04-26 15:03 ./usr/bin/fastx_barcode_splitter.pl
+-rwxr-xr-x root/root     22168 2012-04-26 15:03 ./usr/bin/fastx_quality_stats
+-rwxr-xr-x root/root     18044 2012-04-26 15:03 ./usr/bin/fastq_masker
+-rwxr-xr-x root/root     55268 2012-04-26 15:03 ./usr/bin/fastx_clipper
+-rwxr-xr-x root/root     26468 2012-04-26 15:03 ./usr/bin/fastx_collapser
+-rwxr-xr-x root/root      5896 2012-04-26 15:03 ./usr/bin/fastx_nucleotide_distribution_graph.sh
+-rwxr-xr-x root/root      5380 2012-04-26 15:03 ./usr/bin/fastq_quality_boxplot_graph.sh
+-rwxr-xr-x root/root     30624 2012-04-26 15:03 ./usr/bin/fastx_uncollapser
+-rwxr-xr-x root/root     18040 2012-04-26 15:03 ./usr/bin/fastq_quality_converter
+-rwxr-xr-x root/root      6069 2012-04-26 15:03 ./usr/bin/fastx_nucleotide_distribution_line_graph.sh
+-rwxr-xr-x root/root     18196 2012-04-26 15:03 ./usr/bin/fasta_formatter
+-rwxr-xr-x root/root     18036 2012-04-26 15:03 ./usr/bin/fastx_artifacts_filter
+-rwxr-xr-x root/root     18044 2012-04-26 15:03 ./usr/bin/fastq_to_fasta
+-rwxr-xr-x root/root     18036 2012-04-26 15:03 ./usr/bin/fasta_nucleotide_changer
+-rwxr-xr-x root/root     18040 2012-04-26 15:03 ./usr/bin/fastx_reverse_complement
+drwxr-xr-x root/root         0 2012-04-26 15:03 ./usr/share/
+drwxr-xr-x root/root         0 2012-04-26 15:03 ./usr/share/man/
+drwxr-xr-x root/root         0 2012-04-26 15:03 ./usr/share/man/man1/
+-rw-r--r-- root/root       505 2012-04-26 15:03 ./usr/share/man/man1/fastx_collapser.1.gz
+-rw-r--r-- root/root       660 2012-04-26 15:03 ./usr/share/man/man1/fastq_quality_filter.1.gz
+-rw-r--r-- root/root       584 2012-04-26 15:03 ./usr/share/man/man1/fastx_nucleotide_distribution_graph.sh.1.gz
+-rw-r--r-- root/root       590 2012-04-26 15:03 ./usr/share/man/man1/fastx_uncollapser.1.gz
+-rw-r--r-- root/root       640 2012-04-26 15:03 ./usr/share/man/man1/fastx_trimmer.1.gz
+-rw-r--r-- root/root       728 2012-04-26 15:03 ./usr/share/man/man1/fastq_quality_trimmer.1.gz
+-rw-r--r-- root/root       614 2012-04-26 15:03 ./usr/share/man/man1/fastq_quality_boxplot_graph.sh.1.gz
+-rw-r--r-- root/root      2215 2012-04-26 15:03 ./usr/share/man/man1/fastx_barcode_splitter.pl.1.gz
+-rw-r--r-- root/root       906 2012-04-26 15:03 ./usr/share/man/man1/fastx_clipper.1.gz
+-rw-r--r-- root/root       591 2012-04-26 15:03 ./usr/share/man/man1/fastx_nucleotide_distribution_line_graph.sh.1.gz
+-rw-r--r-- root/root       689 2012-04-26 15:03 ./usr/share/man/man1/fastq_masker.1.gz
+-rw-r--r-- root/root       600 2012-04-26 15:03 ./usr/share/man/man1/fastx_artifacts_filter.1.gz
+-rw-r--r-- root/root       520 2012-04-26 15:03 ./usr/share/man/man1/fastx_reverse_complement.1.gz
+-rw-r--r-- root/root       468 2012-04-26 15:03 ./usr/share/man/man1/fasta_clipping_histogram.pl.1.gz
+-rw-r--r-- root/root       662 2012-04-26 15:03 ./usr/share/man/man1/fastq_to_fasta.1.gz
+-rw-r--r-- root/root       559 2012-04-26 15:03 ./usr/share/man/man1/fastx_renamer.1.gz
+-rw-r--r-- root/root       932 2012-04-26 15:03 ./usr/share/man/man1/fastx_quality_stats.1.gz
+-rw-r--r-- root/root       559 2012-04-26 15:03 ./usr/share/man/man1/fastq_quality_converter.1.gz
+-rw-r--r-- root/root       647 2012-04-26 15:03 ./usr/share/man/man1/fasta_nucleotide_changer.1.gz
+-rw-r--r-- root/root       923 2012-04-26 15:03 ./usr/share/man/man1/fasta_formatter.1.gz
+drwxr-xr-x root/root         0 2012-04-26 15:03 ./usr/share/doc/
+drwxr-xr-x root/root         0 2012-04-26 15:03 ./usr/share/doc/fastx-toolkit/
 -rw-r--r-- root/root       372 2010-01-29 22:32 ./usr/share/doc/fastx-toolkit/THANKS
--rw-r--r-- root/root       121 2008-12-26 18:51 ./usr/share/doc/fastx-toolkit/AUTHORS
+-rw-r--r-- root/root       621 2012-04-26 14:20 ./usr/share/doc/fastx-toolkit/changelog.Debian.gz
+-rw-r--r-- root/root     37672 2012-04-26 14:20 ./usr/share/doc/fastx-toolkit/copyright
+-rw-r--r-- root/root       425 2010-01-29 22:32 ./usr/share/doc/fastx-toolkit/changelog.gz
+-rw-r--r-- root/root       482 2012-04-26 14:20 ./usr/share/doc/fastx-toolkit/README.Debian
 -rw-r--r-- root/root      3728 2009-01-20 07:06 ./usr/share/doc/fastx-toolkit/README.gz
--rw-r--r-- root/root     37672 2011-07-08 03:55 ./usr/share/doc/fastx-toolkit/copyright
--rw-r--r-- root/root       306 2011-07-08 04:11 ./usr/share/doc/fastx-toolkit/changelog.Debian.gz
--rw-r--r-- root/root       425 2010-01-29 22:32 ./usr/share/doc/fastx-toolkit/NEWS.gz
-drwxr-xr-x root/root         0 2011-07-08 05:11 ./usr/bin/
--rwxr-xr-x root/root     24948 2011-07-08 05:11 ./usr/bin/fastx_collapser
--rwxr-xr-x root/root      2764 2011-07-08 05:11 ./usr/bin/fasta_clipping_histogram.pl
--rwxr-xr-x root/root      5380 2011-07-08 05:11 ./usr/bin/fastq_quality_boxplot_graph.sh
--rwxr-xr-x root/root     14200 2011-07-08 05:11 ./usr/bin/fastq_quality_converter
--rwxr-xr-x root/root     14892 2011-07-08 05:11 ./usr/bin/fastq_masker
--rwxr-xr-x root/root      6069 2011-07-08 05:11 ./usr/bin/fastx_nucleotide_distribution_line_graph.sh
--rwxr-xr-x root/root     13925 2011-07-08 05:11 ./usr/bin/fastx_barcode_splitter.pl
--rwxr-xr-x root/root     15140 2011-07-08 05:11 ./usr/bin/fastq_quality_trimmer
--rwxr-xr-x root/root     14744 2011-07-08 05:11 ./usr/bin/fasta_nucleotide_changer
--rwxr-xr-x root/root     14352 2011-07-08 05:11 ./usr/bin/fastx_renamer
--rwxr-xr-x root/root     52428 2011-07-08 05:11 ./usr/bin/fastx_clipper
--rwxr-xr-x root/root     22432 2011-07-08 05:11 ./usr/bin/fastx_quality_stats
--rwxr-xr-x root/root     14336 2011-07-08 05:11 ./usr/bin/fastx_artifacts_filter
--rwxr-xr-x root/root     15516 2011-07-08 05:11 ./usr/bin/fastx_trimmer
--rwxr-xr-x root/root     26832 2011-07-08 05:11 ./usr/bin/fastx_uncollapser
--rwxr-xr-x root/root     15176 2011-07-08 05:11 ./usr/bin/fastq_quality_filter
--rwxr-xr-x root/root     14836 2011-07-08 05:11 ./usr/bin/fasta_formatter
--rwxr-xr-x root/root     14328 2011-07-08 05:11 ./usr/bin/fastx_reverse_complement
--rwxr-xr-x root/root      5896 2011-07-08 05:11 ./usr/bin/fastx_nucleotide_distribution_graph.sh
--rwxr-xr-x root/root     14448 2011-07-08 05:11 ./usr/bin/fastq_to_fasta
+lrwxrwxrwx root/root         0 2012-04-26 15:03 ./usr/share/doc/fastx-toolkit/NEWS.gz -> changelog.gz
 
 
 ┌──────────────────────────────────────────────────────────────────────────────┐
@@ -1107,7 +1378,7 @@ Built successfully
 │ Post Build                                                                   │
 └──────────────────────────────────────────────────────────────────────────────┘
 
-Purging /var/lib/schroot/mount/sid-powerpc-sbuild-d358f54c-5c25-406b-8739-ccd1851f11fb/build/buildd-fastx-toolkit_0.0.13.1-1-powerpc-Lxu0_A
+Purging /var/lib/schroot/mount/sid-powerpc-sbuild-ccb546d9-c024-4f25-b948-6882e97ea63e/build/buildd-fastx-toolkit_0.0.13.1-2-powerpc-lyBvxz
 Not cleaning session: cloned chroot in use
 
 ┌──────────────────────────────────────────────────────────────────────────────┐
@@ -1115,18 +1386,19 @@ Not cleaning session: cloned chroot in use
 └──────────────────────────────────────────────────────────────────────────────┘
 
 Architecture: powerpc
-Build-Space: 8924
-Build-Time: 40
+Build-Space: 9156
+Build-Time: 27
 Distribution: sid
-Install-Time: 42
-Job: fastx-toolkit_0.0.13.1-1
+Install-Time: 97
+Job: fastx-toolkit_0.0.13.1-2
 Package: fastx-toolkit
-Package-Time: 119
-Source-Version: 0.0.13.1-1
-Space: 8924
+Package-Time: 145
+Source-Version: 0.0.13.1-2
+Space: 9156
 Status: successful
-Version: 0.0.13.1-1
+Version: 0.0.13.1-2
 ────────────────────────────────────────────────────────────────────────────────
-Finished at 20110708-0511
-Build needed 00:01:59, 8924k disc space
-Signature with key '205E9E83' requested:
+Finished at 20120426-1503
+Build needed 00:02:25, 9156k disc space
+Signature with key '9811BFE6' requested:
+
