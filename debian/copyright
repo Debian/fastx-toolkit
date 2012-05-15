@@ -1,4 +1,4 @@
-Format: http://dep.debian.net/deps/dep5/
+Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Source: http://hannonlab.cshl.edu/fastx_toolkit/fastx_toolkit-0.0.13.2.tar.bz2
 Comment: FASTX-Toolkit LICENSE
   =====================
@@ -15,7 +15,6 @@ Comment: FASTX-Toolkit LICENSE
 Files: *
 Copyright: 2008–2009, Assaf Gordon <gordon@cshl.edu>
 License: AGPL-3+
-
 
 Files: galaxy/*
 Copyright: 2008–2009, Assaf Gordon <gordon@cshl.edu>
@@ -40,17 +39,14 @@ License: MIT
  SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 Comment: from https://bitbucket.org/galaxy/galaxy-central/src/9e3864eeeb0a/LICENSE.txt
 
-
 Files: m4/ax_c_long_long.m4
 Copyright: © 2008 Caolan McNamara <caolan@skynet.ie>
 License: GAPlike
 Comment: See <http://www.nongnu.org/autoconf-archive/ax_c_long_long.html>.
 
-
 Files: m4/ax_cxx_header_stdcxx_tr1.m4
 Copyright: © 2008 Benjamin Kosnik <bkoz@redhat.com>
 License: GAPlike
-
 
 License: AGPL-3+
                      GNU AFFERO GENERAL PUBLIC LICENSE
