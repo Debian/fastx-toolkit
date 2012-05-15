@@ -1,5 +1,7 @@
 #!/usr/bin/make -f
 
+export DH_VERBOSE=1
+
 pkg := $(shell dpkg-parsechangelog | sed -n 's/^Source: //p')
 ver := $(shell dpkg-parsechangelog | sed -ne 's/^Version: \(\([0-9]\+\):\)\?\(.*\)-.*/\3/p')
 
