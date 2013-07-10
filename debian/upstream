@@ -1,0 +1,6 @@
+Contact: Assaf Gordon <gordon@cshl.edu>
+Name: FASTX-Toolkit
+Homepage: http://hannonlab.cshl.edu/fastx_toolkit/
+Watch: |
+ version=3
+ http://hannonlab.cshl.edu/fastx_toolkit/download.html fastx_toolkit-(.*)\.tar\.bz2
