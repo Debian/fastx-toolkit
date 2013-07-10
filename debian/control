@@ -12,8 +12,8 @@ Build-Depends: debhelper (>= 9),
                libgd-graph-perl,
                libperlio-gzip-perl
 Standards-Version: 3.9.4
-Vcs-Browser: http://git.debian.org/?p=debian-med/fastx-toolkit.git
-Vcs-Git: git://git.debian.org/debian-med/fastx-toolkit.git
+Vcs-Browser: http://anonscm.debian.org/gitweb/?p=debian-med/fastx-toolkit.git
+Vcs-Git: git://anonscm.debian.org/debian-med/fastx-toolkit.git
 Homepage: http://hannonlab.cshl.edu/fastx_toolkit/
 
 Package: fastx-toolkit
