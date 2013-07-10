@@ -14,7 +14,6 @@ Build-Depends: debhelper (>= 9),
 Standards-Version: 3.9.4
 Vcs-Browser: http://git.debian.org/?p=debian-med/fastx-toolkit.git
 Vcs-Git: git://git.debian.org/debian-med/fastx-toolkit.git
-DM-Upload-Allowed: yes
 Homepage: http://hannonlab.cshl.edu/fastx_toolkit/
 
 Package: fastx-toolkit
