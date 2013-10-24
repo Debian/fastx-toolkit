@@ -5,6 +5,7 @@ fastx-toolkit (0.0.13.2-2) UNRELEASED; urgency=low
   bd520ae Removed obsolete DM-Upload-Allowed field.
   ef94fe2 Added upstream metadata.
   5303f09 Use normalised VCS URLs.
+  381489a Refresh autotools files via dh. (Closes: #727377)
 
  -- Charles Plessy <plessy@debian.org>  Wed, 10 Jul 2013 09:31:59 +0900
 
