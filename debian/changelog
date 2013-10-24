@@ -1,4 +1,4 @@
-fastx-toolkit (0.0.13.2-2) UNRELEASED; urgency=low
+fastx-toolkit (0.0.13.2-2) unstable; urgency=low
 
   20c23bd debian/control normalised with config-model-edit.
   e23d327 Conforms with Policy 3.9.4.
