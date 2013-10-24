@@ -9,7 +9,7 @@ mandir := $(CURDIR)/debian/$(pkg)/usr/share/man/man1
 bindir := $(CURDIR)/debian/$(pkg)/usr/bin
 
 %:
-	dh $@
+	dh $@ --with autotools_dev
 
 override_dh_install:
 	dh_install
