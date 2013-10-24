@@ -1,0 +1,45 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Wed, 10 Jul 2013 09:31:59 +0900
+Source: fastx-toolkit
+Binary: fastx-toolkit
+Architecture: source amd64
+Version: 0.0.13.2-2
+Distribution: unstable
+Urgency: low
+Maintainer: Debian Med Packaging Team <debian-med-packaging@lists.alioth.debian.org>
+Changed-By: Charles Plessy <plessy@debian.org>
+Description: 
+ fastx-toolkit - FASTQ/A short nucleotide reads pre-processing tools
+Closes: 727377
+Changes: 
+ fastx-toolkit (0.0.13.2-2) unstable; urgency=low
+ .
+   20c23bd debian/control normalised with config-model-edit.
+   e23d327 Conforms with Policy 3.9.4.
+   bd520ae Removed obsolete DM-Upload-Allowed field.
+   ef94fe2 Added upstream metadata.
+   5303f09 Use normalised VCS URLs.
+   381489a Refresh autotools files via dh. (Closes: #727377)
+Checksums-Sha1: 
+ edb1cbd2e62687050a1e934e689b079bdc99f62c 1500 fastx-toolkit_0.0.13.2-2.dsc
+ 16866a54ccef96087c4e8404df0f0440132b791f 17018 fastx-toolkit_0.0.13.2-2.debian.tar.gz
+ 798c450823e07314f646c8ddba9e8e059c2afdbf 88188 fastx-toolkit_0.0.13.2-2_amd64.deb
+Checksums-Sha256: 
+ 64d628c16d5ccad0abd532b53b750eea0bdb60624c317e06fc74465928105313 1500 fastx-toolkit_0.0.13.2-2.dsc
+ c0bc6d4f56d360df845efa50f0f964a16c8862b29b19fe23063fd6deec7fea3b 17018 fastx-toolkit_0.0.13.2-2.debian.tar.gz
+ 23b969c56149d566be0424a9a3901e3a258309c4dd4bdaebe2713dca2e1c9cbe 88188 fastx-toolkit_0.0.13.2-2_amd64.deb
+Files: 
+ 1060bd28252fb8d1d612a00bfba211d2 1500 science optional fastx-toolkit_0.0.13.2-2.dsc
+ 3aa6aa75120d08e0582d30fbbe702b1d 17018 science optional fastx-toolkit_0.0.13.2-2.debian.tar.gz
+ 27cc1d6466988d5bcb7ca66199b096c7 88188 science optional fastx-toolkit_0.0.13.2-2_amd64.deb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.15 (GNU/Linux)
+
+iEYEARECAAYFAlJou70ACgkQYDBbMcCf01oKKwCgjBhwCELCIOdQUSyYIod+R0WR
+xz0AoKgTjdeNFv9xSpPR/Pju41jIOD1U
+=pui9
+-----END PGP SIGNATURE-----

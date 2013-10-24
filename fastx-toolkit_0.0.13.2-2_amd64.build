@@ -1,0 +1,1236 @@
+I: Using pkgname logfile
+I: Current time: Thu Oct 24 08:15:11 CEST 2013
+I: pbuilder-time-stamp: 1382595311
+I: Obtaining the cached apt archive contents
+I: Installing the build-deps
+W: no hooks of type D found -- ignoring
+ -> Attempting to satisfy build-dependencies
+ -> Creating pbuilder-satisfydepends-dummy package
+Package: pbuilder-satisfydepends-dummy
+Version: 0.invalid.0
+Architecture: amd64
+Maintainer: Debian Pbuilder Team <pbuilder-maint@lists.alioth.debian.org>
+Description: Dummy package to satisfy dependencies with aptitude - created by pbuilder
+ This package was created automatically by pbuilder to satisfy the
+ build-dependencies of the package being currently built.
+Depends: debhelper (>= 9), autotools-dev, pkg-config, libgtextutils-dev, help2man, libgd-graph-perl, libperlio-gzip-perl
+dpkg-deb: building package `pbuilder-satisfydepends-dummy' in `/tmp/satisfydepends-aptitude/pbuilder-satisfydepends-dummy.deb'.
+Selecting previously unselected package pbuilder-satisfydepends-dummy.
+(Reading database ... 12146 files and directories currently installed.)
+Unpacking pbuilder-satisfydepends-dummy (from .../pbuilder-satisfydepends-dummy.deb) ...
+dpkg: pbuilder-satisfydepends-dummy: dependency problems, but configuring anyway as you requested:
+ pbuilder-satisfydepends-dummy depends on debhelper (>= 9); however:
+  Package debhelper is not installed.
+ pbuilder-satisfydepends-dummy depends on autotools-dev; however:
+  Package autotools-dev is not installed.
+ pbuilder-satisfydepends-dummy depends on pkg-config; however:
+  Package pkg-config is not installed.
+ pbuilder-satisfydepends-dummy depends on libgtextutils-dev; however:
+  Package libgtextutils-dev is not installed.
+ pbuilder-satisfydepends-dummy depends on help2man; however:
+  Package help2man is not installed.
+ pbuilder-satisfydepends-dummy depends on libgd-graph-perl; however:
+  Package libgd-graph-perl is not installed.
+ pbuilder-satisfydepends-dummy depends on libperlio-gzip-perl; however:
+  Package libperlio-gzip-perl is not installed.
+
+Setting up pbuilder-satisfydepends-dummy (0.invalid.0) ...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+Initializing package states...
+Writing extended state information...
+The following NEW packages will be installed:
+  autotools-dev{a} bsdmainutils{a} debhelper{a} file{a} 
+  fontconfig-config{a} fonts-dejavu-core{a} gettext{a} gettext-base{a} 
+  groff-base{a} help2man{a} intltool-debian{a} libasprintf0c2{a} 
+  libcroco3{a} libexpat1{a} libffi6{a} libfontconfig1{a} libfreetype6{a} 
+  libgd-gd2-perl{a} libgd-graph-perl{a} libgd-text-perl{a} libgd3{a} 
+  libglib2.0-0{a} libgtextutils-dev{a} libgtextutils0{a} libjbig0 
+  libjpeg8{a} libmagic1{a} libperlio-gzip-perl{a} libpipeline1{a} 
+  libpng12-0{a} libpopt0{a} libtiff4{a} libunistring0{a} libvpx1{a} 
+  libx11-6{a} libx11-data{a} libxau6{a} libxcb1{a} libxdmcp6{a} libxml2{a} 
+  libxpm4{a} man-db{a} pkg-config{a} po-debconf{a} ttf-dejavu-core{a} 
+  ucf{a} 
+0 packages upgraded, 46 newly installed, 0 to remove and 0 not upgraded.
+Need to get 676 kB/13.2 MB of archives. After unpacking 38.4 MB will be used.
+Writing extended state information...
+Get: 1 http://ftp.de.debian.org/debian/ sid/main libgtextutils0 amd64 0.6.2-1 [21.1 kB]
+Get: 2 http://ftp.de.debian.org/debian/ sid/main libgtextutils-dev amd64 0.6.2-1 [25.9 kB]
+Get: 3 http://ftp.de.debian.org/debian/ sid/main libperlio-gzip-perl amd64 0.18-1+b3 [19.0 kB]
+Get: 4 http://ftp.de.debian.org/debian/ sid/main libgd-gd2-perl amd64 1:2.46-3.1+b1 [175 kB]
+Get: 5 http://ftp.de.debian.org/debian/ sid/main libgd-text-perl all 0.86-8 [42.4 kB]
+Get: 6 http://ftp.de.debian.org/debian/ sid/main libgd-graph-perl all 1.44-6 [393 kB]
+Fetched 676 kB in 2min 1s (5560 B/s)
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package libpipeline1:amd64.
+(Reading database ... 12146 files and directories currently installed.)
+Unpacking libpipeline1:amd64 (from .../libpipeline1_1.2.4-1_amd64.deb) ...
+Selecting previously unselected package libpopt0:amd64.
+Unpacking libpopt0:amd64 (from .../libpopt0_1.16-7_amd64.deb) ...
+Selecting previously unselected package groff-base.
+Unpacking groff-base (from .../groff-base_1.22.2-3_amd64.deb) ...
+Selecting previously unselected package bsdmainutils.
+Unpacking bsdmainutils (from .../bsdmainutils_9.0.5_amd64.deb) ...
+Selecting previously unselected package man-db.
+Unpacking man-db (from .../man-db_2.6.5-2_amd64.deb) ...
+Selecting previously unselected package libasprintf0c2:amd64.
+Unpacking libasprintf0c2:amd64 (from .../libasprintf0c2_0.18.3.1-1_amd64.deb) ...
+Selecting previously unselected package libmagic1:amd64.
+Unpacking libmagic1:amd64 (from .../libmagic1_1%3a5.14-2_amd64.deb) ...
+Selecting previously unselected package libxml2:amd64.
+Unpacking libxml2:amd64 (from .../libxml2_2.9.1+dfsg1-3_amd64.deb) ...
+Selecting previously unselected package libffi6:amd64.
+Unpacking libffi6:amd64 (from .../libffi6_3.0.13-4_amd64.deb) ...
+Selecting previously unselected package libglib2.0-0:amd64.
+Unpacking libglib2.0-0:amd64 (from .../libglib2.0-0_2.36.4-1_amd64.deb) ...
+Selecting previously unselected package libcroco3:amd64.
+Unpacking libcroco3:amd64 (from .../libcroco3_0.6.8-2_amd64.deb) ...
+Selecting previously unselected package libexpat1:amd64.
+Unpacking libexpat1:amd64 (from .../libexpat1_2.1.0-4_amd64.deb) ...
+Selecting previously unselected package libfreetype6:amd64.
+Unpacking libfreetype6:amd64 (from .../libfreetype6_2.4.9-1.1_amd64.deb) ...
+Selecting previously unselected package ucf.
+Unpacking ucf (from .../ucf_3.0027+nmu1_all.deb) ...
+Moving old data out of the way
+Selecting previously unselected package fonts-dejavu-core.
+Unpacking fonts-dejavu-core (from .../fonts-dejavu-core_2.33+svn2514-3_all.deb) ...
+Selecting previously unselected package ttf-dejavu-core.
+Unpacking ttf-dejavu-core (from .../ttf-dejavu-core_2.33+svn2514-3_all.deb) ...
+Selecting previously unselected package fontconfig-config.
+Unpacking fontconfig-config (from .../fontconfig-config_2.11.0-1_all.deb) ...
+Selecting previously unselected package libfontconfig1:amd64.
+Unpacking libfontconfig1:amd64 (from .../libfontconfig1_2.11.0-1_amd64.deb) ...
+Selecting previously unselected package libjpeg8:amd64.
+Unpacking libjpeg8:amd64 (from .../libjpeg8_8d-1_amd64.deb) ...
+Selecting previously unselected package libpng12-0:amd64.
+Unpacking libpng12-0:amd64 (from .../libpng12-0_1.2.49-5_amd64.deb) ...
+Selecting previously unselected package libjbig0:amd64.
+Unpacking libjbig0:amd64 (from .../libjbig0_2.0-2_amd64.deb) ...
+Selecting previously unselected package libtiff4:amd64.
+Unpacking libtiff4:amd64 (from .../libtiff4_3.9.7-2_amd64.deb) ...
+Selecting previously unselected package libvpx1:amd64.
+Unpacking libvpx1:amd64 (from .../libvpx1_1.2.0-2_amd64.deb) ...
+Selecting previously unselected package libxau6:amd64.
+Unpacking libxau6:amd64 (from .../libxau6_1%3a1.0.8-1_amd64.deb) ...
+Selecting previously unselected package libxdmcp6:amd64.
+Unpacking libxdmcp6:amd64 (from .../libxdmcp6_1%3a1.1.1-1_amd64.deb) ...
+Selecting previously unselected package libxcb1:amd64.
+Unpacking libxcb1:amd64 (from .../libxcb1_1.9.1-3_amd64.deb) ...
+Selecting previously unselected package libx11-data.
+Unpacking libx11-data (from .../libx11-data_2%3a1.6.2-1_all.deb) ...
+Selecting previously unselected package libx11-6:amd64.
+Unpacking libx11-6:amd64 (from .../libx11-6_2%3a1.6.2-1_amd64.deb) ...
+Selecting previously unselected package libxpm4:amd64.
+Unpacking libxpm4:amd64 (from .../libxpm4_1%3a3.5.10-1_amd64.deb) ...
+Selecting previously unselected package libgd3:amd64.
+Unpacking libgd3:amd64 (from .../libgd3_2.1.0-3_amd64.deb) ...
+Selecting previously unselected package libunistring0:amd64.
+Unpacking libunistring0:amd64 (from .../libunistring0_0.9.3-5_amd64.deb) ...
+Selecting previously unselected package file.
+Unpacking file (from .../file_1%3a5.14-2_amd64.deb) ...
+Selecting previously unselected package gettext-base.
+Unpacking gettext-base (from .../gettext-base_0.18.3.1-1_amd64.deb) ...
+Selecting previously unselected package autotools-dev.
+Unpacking autotools-dev (from .../autotools-dev_20130810.1_all.deb) ...
+Selecting previously unselected package gettext.
+Unpacking gettext (from .../gettext_0.18.3.1-1_amd64.deb) ...
+Selecting previously unselected package intltool-debian.
+Unpacking intltool-debian (from .../intltool-debian_0.35.0+20060710.1_all.deb) ...
+Selecting previously unselected package po-debconf.
+Unpacking po-debconf (from .../po-debconf_1.0.16+nmu2_all.deb) ...
+Selecting previously unselected package debhelper.
+Unpacking debhelper (from .../debhelper_9.20130921_all.deb) ...
+Selecting previously unselected package help2man.
+Unpacking help2man (from .../help2man_1.43.3_amd64.deb) ...
+Selecting previously unselected package libgtextutils0.
+Unpacking libgtextutils0 (from .../libgtextutils0_0.6.2-1_amd64.deb) ...
+Selecting previously unselected package libgtextutils-dev.
+Unpacking libgtextutils-dev (from .../libgtextutils-dev_0.6.2-1_amd64.deb) ...
+Selecting previously unselected package libperlio-gzip-perl.
+Unpacking libperlio-gzip-perl (from .../libperlio-gzip-perl_0.18-1+b3_amd64.deb) ...
+Selecting previously unselected package pkg-config.
+Unpacking pkg-config (from .../pkg-config_0.26-1_amd64.deb) ...
+Selecting previously unselected package libgd-gd2-perl.
+Unpacking libgd-gd2-perl (from .../libgd-gd2-perl_1%3a2.46-3.1+b1_amd64.deb) ...
+Selecting previously unselected package libgd-text-perl.
+Unpacking libgd-text-perl (from .../libgd-text-perl_0.86-8_all.deb) ...
+Selecting previously unselected package libgd-graph-perl.
+Unpacking libgd-graph-perl (from .../libgd-graph-perl_1.44-6_all.deb) ...
+Setting up libpipeline1:amd64 (1.2.4-1) ...
+Setting up libpopt0:amd64 (1.16-7) ...
+Setting up groff-base (1.22.2-3) ...
+Setting up bsdmainutils (9.0.5) ...
+update-alternatives: using /usr/bin/bsd-write to provide /usr/bin/write (write) in auto mode
+update-alternatives: using /usr/bin/bsd-from to provide /usr/bin/from (from) in auto mode
+Setting up man-db (2.6.5-2) ...
+Building database of manual pages ...
+Setting up libasprintf0c2:amd64 (0.18.3.1-1) ...
+Setting up libmagic1:amd64 (1:5.14-2) ...
+Setting up libxml2:amd64 (2.9.1+dfsg1-3) ...
+Setting up libffi6:amd64 (3.0.13-4) ...
+Setting up libglib2.0-0:amd64 (2.36.4-1) ...
+No schema files found: doing nothing.
+Setting up libcroco3:amd64 (0.6.8-2) ...
+Setting up libexpat1:amd64 (2.1.0-4) ...
+Setting up libfreetype6:amd64 (2.4.9-1.1) ...
+Setting up ucf (3.0027+nmu1) ...
+Setting up fonts-dejavu-core (2.33+svn2514-3) ...
+Setting up ttf-dejavu-core (2.33+svn2514-3) ...
+Setting up fontconfig-config (2.11.0-1) ...
+Setting up libfontconfig1:amd64 (2.11.0-1) ...
+Setting up libjpeg8:amd64 (8d-1) ...
+Setting up libpng12-0:amd64 (1.2.49-5) ...
+Setting up libjbig0:amd64 (2.0-2) ...
+Setting up libtiff4:amd64 (3.9.7-2) ...
+Setting up libvpx1:amd64 (1.2.0-2) ...
+Setting up libxau6:amd64 (1:1.0.8-1) ...
+Setting up libxdmcp6:amd64 (1:1.1.1-1) ...
+Setting up libxcb1:amd64 (1.9.1-3) ...
+Setting up libx11-data (2:1.6.2-1) ...
+Setting up libx11-6:amd64 (2:1.6.2-1) ...
+Setting up libxpm4:amd64 (1:3.5.10-1) ...
+Setting up libgd3:amd64 (2.1.0-3) ...
+Setting up libunistring0:amd64 (0.9.3-5) ...
+Setting up file (1:5.14-2) ...
+Setting up gettext-base (0.18.3.1-1) ...
+Setting up autotools-dev (20130810.1) ...
+Setting up gettext (0.18.3.1-1) ...
+Setting up intltool-debian (0.35.0+20060710.1) ...
+Setting up po-debconf (1.0.16+nmu2) ...
+Setting up debhelper (9.20130921) ...
+Setting up help2man (1.43.3) ...
+Setting up libgtextutils0 (0.6.2-1) ...
+Setting up libgtextutils-dev (0.6.2-1) ...
+Setting up libperlio-gzip-perl (0.18-1+b3) ...
+Setting up pkg-config (0.26-1) ...
+Setting up libgd-gd2-perl (1:2.46-3.1+b1) ...
+Setting up libgd-text-perl (0.86-8) ...
+Setting up libgd-graph-perl (1.44-6) ...
+Processing triggers for libc-bin ...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+Reading extended state information...
+Initializing package states...
+Writing extended state information...
+ -> Finished parsing the build-deps
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following NEW packages will be installed:
+  fakeroot
+debconf: delaying package configuration, since apt-utils is not installed
+0 upgraded, 1 newly installed, 0 to remove and 0 not upgraded.
+Need to get 0 B/95.1 kB of archives.
+After this operation, 351 kB of additional disk space will be used.
+Selecting previously unselected package fakeroot.
+(Reading database ... 14362 files and directories currently installed.)
+Unpacking fakeroot (from .../fakeroot_1.20-1_amd64.deb) ...
+Processing triggers for man-db ...
+Setting up fakeroot (1.20-1) ...
+update-alternatives: using /usr/bin/fakeroot-sysv to provide /usr/bin/fakeroot (fakeroot) in auto mode
+I: Copying back the cached apt archive contents
+I: new cache content libperlio-gzip-perl_0.18-1+b3_amd64.deb added
+I: new cache content libgd-text-perl_0.86-8_all.deb added
+I: new cache content libgd-gd2-perl_1%3a2.46-3.1+b1_amd64.deb added
+I: new cache content libgd-graph-perl_1.44-6_all.deb added
+I: new cache content libgtextutils0_0.6.2-1_amd64.deb added
+I: new cache content libgtextutils-dev_0.6.2-1_amd64.deb added
+I: Copying source file
+I: copying [/home/tillea/debian-maintain/alioth/debian-med_git/build-area/fastx-toolkit_0.0.13.2-2.dsc]
+I: copying [/home/tillea/debian-maintain/alioth/debian-med_git/build-area/fastx-toolkit_0.0.13.2.orig.tar.bz2]
+I: copying [/home/tillea/debian-maintain/alioth/debian-med_git/build-area/fastx-toolkit_0.0.13.2-2.debian.tar.gz]
+I: Extracting source
+dpkg-source: warning: extracting unsigned source package (fastx-toolkit_0.0.13.2-2.dsc)
+dpkg-source: info: extracting fastx-toolkit in fastx-toolkit-0.0.13.2
+dpkg-source: info: unpacking fastx-toolkit_0.0.13.2.orig.tar.bz2
+dpkg-source: info: unpacking fastx-toolkit_0.0.13.2-2.debian.tar.gz
+I: Building the package
+W: no hooks of type A found -- ignoring
+I: Running cd tmp/buildd/*/ && env PATH="/usr/sbin:/usr/bin:/sbin:/bin" dpkg-buildpackage -us -uc   -i\.git -I.git   -i\.git -I.git  -rfakeroot
+dpkg-buildpackage: source package fastx-toolkit
+dpkg-buildpackage: source version 0.0.13.2-2
+dpkg-buildpackage: source distribution unstable
+dpkg-buildpackage: source changed by Charles Plessy <plessy@debian.org>
+ dpkg-source -i.git -I.git -i.git -I.git --before-build fastx-toolkit-0.0.13.2
+dpkg-buildpackage: host architecture amd64
+ fakeroot debian/rules clean
+dh clean --with autotools_dev
+   dh_testdir
+   dh_auto_clean
+   dh_autotools-dev_restoreconfig
+	for c_g in `find . -type f -name config.guess` ; do if test -e "$c_g.dh-orig" ; then mv -f "$c_g.dh-orig" "$c_g" ; fi ; done
+	for c_s in `find . -type f -name config.sub`   ; do if test -e "$c_s.dh-orig" ; then mv -f "$c_s.dh-orig" "$c_s" ; fi ; done
+	find . -type f \( -name config.guess.dh-orig -o -name config.sub.dh-orig \) -delete
+   dh_clean
+	rm -f debian/fastx-toolkit.substvars
+	rm -f debian/fastx-toolkit.*.debhelper
+	rm -rf debian/fastx-toolkit/
+	rm -f debian/*.debhelper.log
+	rm -f debian/files
+	find .  \( \( -type f -a \
+	        \( -name '#*#' -o -name '.*~' -o -name '*~' -o -name DEADJOE \
+		 -o -name '*.orig' -o -name '*.rej' -o -name '*.bak' \
+		 -o -name '.*.orig' -o -name .*.rej -o -name '.SUMS' \
+		 -o -name TAGS -o \( -path '*/.deps/*' -a -name '*.P' \) \
+		\) -exec rm -f {} + \) -o \
+		\( -type d -a -name autom4te.cache -prune -exec rm -rf {} + \) \)
+	rm -f *-stamp
+ dpkg-source -i.git -I.git -i.git -I.git -b fastx-toolkit-0.0.13.2
+dpkg-source: info: using source format `3.0 (quilt)'
+dpkg-source: info: building fastx-toolkit using existing ./fastx-toolkit_0.0.13.2.orig.tar.bz2
+dpkg-source: info: building fastx-toolkit in fastx-toolkit_0.0.13.2-2.debian.tar.gz
+dpkg-source: info: building fastx-toolkit in fastx-toolkit_0.0.13.2-2.dsc
+ debian/rules build
+dh build --with autotools_dev
+   dh_testdir
+   dh_autotools-dev_updateconfig
+	for c_g in `find -type f -name config.guess` ; do if ! test -e "$c_g.dh-orig" ; then mv -f "$c_g" "$c_g.dh-orig" ; cp -f /usr/share/misc/config.guess "$c_g" ; fi ; done
+	for c_s in `find -type f -name config.sub`   ; do if ! test -e "$c_s.dh-orig" ; then mv -f "$c_s" "$c_s.dh-orig" ; cp -f /usr/share/misc/config.sub   "$c_s" ; fi ; done
+   dh_auto_configure
+	./configure --build=x86_64-linux-gnu --prefix=/usr --includedir=\${prefix}/include --mandir=\${prefix}/share/man --infodir=\${prefix}/share/info --sysconfdir=/etc --localstatedir=/var --libdir=\${prefix}/lib/x86_64-linux-gnu --libexecdir=\${prefix}/lib/x86_64-linux-gnu --disable-maintainer-mode --disable-dependency-tracking
+configure: WARNING: unrecognized options: --disable-maintainer-mode
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a thread-safe mkdir -p... /bin/mkdir -p
+checking for gawk... no
+checking for mawk... mawk
+checking whether make sets $(MAKE)... yes
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking for style of include used by make... GNU
+checking dependency style of gcc... none
+checking for g++... g++
+checking whether we are using the GNU C++ compiler... yes
+checking whether g++ accepts -g... yes
+checking dependency style of g++... none
+checking build system type... x86_64-pc-linux-gnu
+checking host system type... x86_64-pc-linux-gnu
+checking for a sed that does not truncate output... /bin/sed
+checking for grep that handles long lines and -e... /bin/grep
+checking for egrep... /bin/grep -E
+checking for fgrep... /bin/grep -F
+checking for ld used by gcc... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... /usr/bin/nm -B
+checking the name lister (/usr/bin/nm -B) interface... BSD nm
+checking whether ln -s works... yes
+checking the maximum length of command line arguments... 3458764513820540925
+checking whether the shell understands some XSI constructs... yes
+checking whether the shell understands "+="... yes
+checking for /usr/bin/ld option to reload object files... -r
+checking for objdump... objdump
+checking how to recognize dependent libraries... pass_all
+checking for ar... ar
+checking for strip... strip
+checking for ranlib... ranlib
+checking command to parse /usr/bin/nm -B output from gcc object... ok
+checking how to run the C preprocessor... gcc -E
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking for dlfcn.h... yes
+checking whether we are using the GNU C++ compiler... (cached) yes
+checking whether g++ accepts -g... (cached) yes
+checking dependency style of g++... (cached) none
+checking how to run the C++ preprocessor... g++ -E
+checking for objdir... .libs
+checking if gcc supports -fno-rtti -fno-exceptions... no
+checking for gcc option to produce PIC... -fPIC -DPIC
+checking if gcc PIC flag -fPIC -DPIC works... yes
+checking if gcc static flag -static works... yes
+checking if gcc supports -c -o file.o... yes
+checking if gcc supports -c -o file.o... (cached) yes
+checking whether the gcc linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... no
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... yes
+checking for ld used by g++... /usr/bin/ld -m elf_x86_64
+checking if the linker (/usr/bin/ld -m elf_x86_64) is GNU ld... yes
+checking whether the g++ linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking for g++ option to produce PIC... -fPIC -DPIC
+checking if g++ PIC flag -fPIC -DPIC works... yes
+checking if g++ static flag -static works... yes
+checking if g++ supports -c -o file.o... yes
+checking if g++ supports -c -o file.o... (cached) yes
+checking whether the g++ linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking for long long int... yes
+checking for ISO C++ TR1 include files... yes
+checking for pkg-config... /usr/bin/pkg-config
+checking pkg-config is at least version 0.9.0... yes
+checking for GTEXTUTILS... yes
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating doc/Makefile
+config.status: creating m4/Makefile
+config.status: creating src/Makefile
+config.status: creating src/libfastx/Makefile
+config.status: creating src/fastx_clipper/Makefile
+config.status: creating src/fastq_to_fasta/Makefile
+config.status: creating src/fastx_quality_stats/Makefile
+config.status: creating src/fastq_quality_converter/Makefile
+config.status: creating src/fastx_trimmer/Makefile
+config.status: creating src/fastq_quality_filter/Makefile
+config.status: creating src/fastq_quality_trimmer/Makefile
+config.status: creating src/fastx_artifacts_filter/Makefile
+config.status: creating src/fastx_reverse_complement/Makefile
+config.status: creating src/fastx_collapser/Makefile
+config.status: creating src/fastx_uncollapser/Makefile
+config.status: creating src/seqalign_test/Makefile
+config.status: creating src/fasta_formatter/Makefile
+config.status: creating src/fasta_nucleotide_changer/Makefile
+config.status: creating src/fastx_renamer/Makefile
+config.status: creating src/fastq_masker/Makefile
+config.status: creating galaxy/Makefile
+config.status: creating galaxy/tools/Makefile
+config.status: creating galaxy/tools/fastx_toolkit/Makefile
+config.status: creating galaxy/tools/cshl_custom_fastx_toolkit/Makefile
+config.status: creating galaxy/test-data/Makefile
+config.status: creating galaxy/static/Makefile
+config.status: creating galaxy/static/fastx_icons/Makefile
+config.status: creating galaxy/tool-data/Makefile
+config.status: creating scripts/Makefile
+config.status: creating build_scripts/Makefile
+config.status: creating config.h
+config.status: executing depfiles commands
+config.status: executing libtool commands
+configure: WARNING: unrecognized options: --disable-maintainer-mode
+   dh_auto_build
+	make -j1
+make[1]: Entering directory `/tmp/buildd/fastx-toolkit-0.0.13.2'
+make  all-recursive
+make[2]: Entering directory `/tmp/buildd/fastx-toolkit-0.0.13.2'
+Making all in m4
+make[3]: Entering directory `/tmp/buildd/fastx-toolkit-0.0.13.2/m4'
+make[3]: Nothing to be done for `all'.
+make[3]: Leaving directory `/tmp/buildd/fastx-toolkit-0.0.13.2/m4'
+Making all in src
+make[3]: Entering directory `/tmp/buildd/fastx-toolkit-0.0.13.2/src'
+Making all in libfastx
+make[4]: Entering directory `/tmp/buildd/fastx-toolkit-0.0.13.2/src/libfastx'
+gcc -DHAVE_CONFIG_H -I. -I../..   -D_FORTIFY_SOURCE=2  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -c chomp.c
+gcc -DHAVE_CONFIG_H -I. -I../..   -D_FORTIFY_SOURCE=2  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -c fastx.c
+gcc -DHAVE_CONFIG_H -I. -I../..   -D_FORTIFY_SOURCE=2  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -c fastx_args.c
+g++ -DHAVE_CONFIG_H -I. -I../..   -D_FORTIFY_SOURCE=2  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -DDEBUG -g -O1 -c -o sequence_alignment.o sequence_alignment.cpp
+rm -f libfastx.a
+ar cru libfastx.a chomp.o fastx.o fastx_args.o sequence_alignment.o 
+ranlib libfastx.a
+make[4]: Leaving directory `/tmp/buildd/fastx-toolkit-0.0.13.2/src/libfastx'
+Making all in fastx_clipper
+make[4]: Entering directory `/tmp/buildd/fastx-toolkit-0.0.13.2/src/fastx_clipper'
+g++ -DHAVE_CONFIG_H -I. -I../..   -I../libfastx -D_FORTIFY_SOURCE=2  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -DDEBUG -g -O1 -c -o fastx_clipper.o fastx_clipper.cpp
+/bin/bash ../../libtool --tag=CXX   --mode=link g++  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -DDEBUG -g -O1  -Wl,-z,relro -o fastx_clipper fastx_clipper.o ../libfastx/libfastx.a  
+libtool: link: g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -DDEBUG -g -O1 -Wl,-z -Wl,relro -o fastx_clipper fastx_clipper.o  ../libfastx/libfastx.a
+make[4]: Leaving directory `/tmp/buildd/fastx-toolkit-0.0.13.2/src/fastx_clipper'
+Making all in fastx_trimmer
+make[4]: Entering directory `/tmp/buildd/fastx-toolkit-0.0.13.2/src/fastx_trimmer'
+gcc -DHAVE_CONFIG_H -I. -I../..   -I../libfastx -D_FORTIFY_SOURCE=2  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -c fastx_trimmer.c
+/bin/bash ../../libtool --tag=CC   --mode=link gcc  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1  -Wl,-z,relro -o fastx_trimmer fastx_trimmer.o ../libfastx/libfastx.a  
+libtool: link: gcc -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -Wl,-z -Wl,relro -o fastx_trimmer fastx_trimmer.o  ../libfastx/libfastx.a
+make[4]: Leaving directory `/tmp/buildd/fastx-toolkit-0.0.13.2/src/fastx_trimmer'
+Making all in fastx_quality_stats
+make[4]: Entering directory `/tmp/buildd/fastx-toolkit-0.0.13.2/src/fastx_quality_stats'
+gcc -DHAVE_CONFIG_H -I. -I../..   -I../libfastx -D_FORTIFY_SOURCE=2  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -c fastx_quality_stats.c
+/bin/bash ../../libtool --tag=CC   --mode=link gcc  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1  -Wl,-z,relro -o fastx_quality_stats fastx_quality_stats.o ../libfastx/libfastx.a  
+libtool: link: gcc -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -Wl,-z -Wl,relro -o fastx_quality_stats fastx_quality_stats.o  ../libfastx/libfastx.a
+make[4]: Leaving directory `/tmp/buildd/fastx-toolkit-0.0.13.2/src/fastx_quality_stats'
+Making all in fastq_quality_converter
+make[4]: Entering directory `/tmp/buildd/fastx-toolkit-0.0.13.2/src/fastq_quality_converter'
+gcc -DHAVE_CONFIG_H -I. -I../..   -I../libfastx -D_FORTIFY_SOURCE=2  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -c fastq_quality_converter.c
+/bin/bash ../../libtool --tag=CC   --mode=link gcc  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1  -Wl,-z,relro -o fastq_quality_converter fastq_quality_converter.o ../libfastx/libfastx.a  
+libtool: link: gcc -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -Wl,-z -Wl,relro -o fastq_quality_converter fastq_quality_converter.o  ../libfastx/libfastx.a
+make[4]: Leaving directory `/tmp/buildd/fastx-toolkit-0.0.13.2/src/fastq_quality_converter'
+Making all in fastq_to_fasta
+make[4]: Entering directory `/tmp/buildd/fastx-toolkit-0.0.13.2/src/fastq_to_fasta'
+gcc -DHAVE_CONFIG_H -I. -I../..   -I../libfastx -D_FORTIFY_SOURCE=2  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -c fastq_to_fasta.c
+/bin/bash ../../libtool --tag=CC   --mode=link gcc  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1  -Wl,-z,relro -o fastq_to_fasta fastq_to_fasta.o ../libfastx/libfastx.a  
+libtool: link: gcc -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -Wl,-z -Wl,relro -o fastq_to_fasta fastq_to_fasta.o  ../libfastx/libfastx.a
+make[4]: Leaving directory `/tmp/buildd/fastx-toolkit-0.0.13.2/src/fastq_to_fasta'
+Making all in fastq_quality_filter
+make[4]: Entering directory `/tmp/buildd/fastx-toolkit-0.0.13.2/src/fastq_quality_filter'
+gcc -DHAVE_CONFIG_H -I. -I../..   -I../libfastx -D_FORTIFY_SOURCE=2  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -c fastq_quality_filter.c
+/bin/bash ../../libtool --tag=CC   --mode=link gcc  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1  -Wl,-z,relro -o fastq_quality_filter fastq_quality_filter.o ../libfastx/libfastx.a  
+libtool: link: gcc -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -Wl,-z -Wl,relro -o fastq_quality_filter fastq_quality_filter.o  ../libfastx/libfastx.a
+make[4]: Leaving directory `/tmp/buildd/fastx-toolkit-0.0.13.2/src/fastq_quality_filter'
+Making all in fastq_quality_trimmer
+make[4]: Entering directory `/tmp/buildd/fastx-toolkit-0.0.13.2/src/fastq_quality_trimmer'
+gcc -DHAVE_CONFIG_H -I. -I../..   -I../libfastx -D_FORTIFY_SOURCE=2  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -c fastq_quality_trimmer.c
+/bin/bash ../../libtool --tag=CC   --mode=link gcc  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1  -Wl,-z,relro -o fastq_quality_trimmer fastq_quality_trimmer.o ../libfastx/libfastx.a  
+libtool: link: gcc -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -Wl,-z -Wl,relro -o fastq_quality_trimmer fastq_quality_trimmer.o  ../libfastx/libfastx.a
+make[4]: Leaving directory `/tmp/buildd/fastx-toolkit-0.0.13.2/src/fastq_quality_trimmer'
+Making all in fastx_artifacts_filter
+make[4]: Entering directory `/tmp/buildd/fastx-toolkit-0.0.13.2/src/fastx_artifacts_filter'
+gcc -DHAVE_CONFIG_H -I. -I../..   -I../libfastx -D_FORTIFY_SOURCE=2  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -c fastx_artifacts_filter.c
+/bin/bash ../../libtool --tag=CC   --mode=link gcc  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1  -Wl,-z,relro -o fastx_artifacts_filter fastx_artifacts_filter.o ../libfastx/libfastx.a  
+libtool: link: gcc -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -Wl,-z -Wl,relro -o fastx_artifacts_filter fastx_artifacts_filter.o  ../libfastx/libfastx.a
+make[4]: Leaving directory `/tmp/buildd/fastx-toolkit-0.0.13.2/src/fastx_artifacts_filter'
+Making all in fastx_reverse_complement
+make[4]: Entering directory `/tmp/buildd/fastx-toolkit-0.0.13.2/src/fastx_reverse_complement'
+gcc -DHAVE_CONFIG_H -I. -I../..   -I../libfastx -D_FORTIFY_SOURCE=2  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -c fastx_reverse_complement.c
+/bin/bash ../../libtool --tag=CC   --mode=link gcc  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1  -Wl,-z,relro -o fastx_reverse_complement fastx_reverse_complement.o ../libfastx/libfastx.a  
+libtool: link: gcc -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -Wl,-z -Wl,relro -o fastx_reverse_complement fastx_reverse_complement.o  ../libfastx/libfastx.a
+make[4]: Leaving directory `/tmp/buildd/fastx-toolkit-0.0.13.2/src/fastx_reverse_complement'
+Making all in fastx_collapser
+make[4]: Entering directory `/tmp/buildd/fastx-toolkit-0.0.13.2/src/fastx_collapser'
+g++ -DHAVE_CONFIG_H -I. -I../..   -I../libfastx -D_FORTIFY_SOURCE=2  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -DDEBUG -g -O1 -c -o fastx_collapser.o fastx_collapser.cpp
+/bin/bash ../../libtool --tag=CXX   --mode=link g++  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -DDEBUG -g -O1  -Wl,-z,relro -o fastx_collapser fastx_collapser.o ../libfastx/libfastx.a  
+libtool: link: g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -DDEBUG -g -O1 -Wl,-z -Wl,relro -o fastx_collapser fastx_collapser.o  ../libfastx/libfastx.a
+make[4]: Leaving directory `/tmp/buildd/fastx-toolkit-0.0.13.2/src/fastx_collapser'
+Making all in fastx_uncollapser
+make[4]: Entering directory `/tmp/buildd/fastx-toolkit-0.0.13.2/src/fastx_uncollapser'
+g++ -DHAVE_CONFIG_H -I. -I../.. -I/usr/include/gtextutils   -I../libfastx  -I../libfastx -D_FORTIFY_SOURCE=2  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -DDEBUG -g -O1 -c -o fastx_uncollapser.o fastx_uncollapser.cpp
+/bin/bash ../../libtool --tag=CXX   --mode=link g++  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -DDEBUG -g -O1  -Wl,-z,relro -o fastx_uncollapser fastx_uncollapser.o -lgtextutils   ../libfastx/libfastx.a  
+libtool: link: g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -DDEBUG -g -O1 -Wl,-z -Wl,relro -o fastx_uncollapser fastx_uncollapser.o  -lgtextutils ../libfastx/libfastx.a
+make[4]: Leaving directory `/tmp/buildd/fastx-toolkit-0.0.13.2/src/fastx_uncollapser'
+Making all in seqalign_test
+make[4]: Entering directory `/tmp/buildd/fastx-toolkit-0.0.13.2/src/seqalign_test'
+g++ -DHAVE_CONFIG_H -I. -I../..   -I../libfastx -D_FORTIFY_SOURCE=2  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -DDEBUG -g -O1 -c -o seqalign_test.o seqalign_test.cpp
+/bin/bash ../../libtool --tag=CXX   --mode=link g++  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -DDEBUG -g -O1  -Wl,-z,relro -o seqalign_test seqalign_test.o ../libfastx/libfastx.a 
+libtool: link: g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -DDEBUG -g -O1 -Wl,-z -Wl,relro -o seqalign_test seqalign_test.o  ../libfastx/libfastx.a
+make[4]: Leaving directory `/tmp/buildd/fastx-toolkit-0.0.13.2/src/seqalign_test'
+Making all in fasta_formatter
+make[4]: Entering directory `/tmp/buildd/fastx-toolkit-0.0.13.2/src/fasta_formatter'
+g++ -DHAVE_CONFIG_H -I. -I../.. -I/usr/include/gtextutils   -I../libfastx   -D_FORTIFY_SOURCE=2  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -DDEBUG -g -O1 -c -o fasta_formatter.o fasta_formatter.cpp
+/bin/bash ../../libtool --tag=CXX   --mode=link g++  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -DDEBUG -g -O1  -Wl,-z,relro -o fasta_formatter fasta_formatter.o -lgtextutils   ../libfastx/libfastx.a  
+libtool: link: g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -DDEBUG -g -O1 -Wl,-z -Wl,relro -o fasta_formatter fasta_formatter.o  -lgtextutils ../libfastx/libfastx.a
+make[4]: Leaving directory `/tmp/buildd/fastx-toolkit-0.0.13.2/src/fasta_formatter'
+Making all in fasta_nucleotide_changer
+make[4]: Entering directory `/tmp/buildd/fastx-toolkit-0.0.13.2/src/fasta_nucleotide_changer'
+gcc -DHAVE_CONFIG_H -I. -I../..   -I../libfastx -D_FORTIFY_SOURCE=2  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -c fasta_nucleotide_changer.c
+/bin/bash ../../libtool --tag=CC   --mode=link gcc  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1  -Wl,-z,relro -o fasta_nucleotide_changer fasta_nucleotide_changer.o ../libfastx/libfastx.a  
+libtool: link: gcc -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -Wl,-z -Wl,relro -o fasta_nucleotide_changer fasta_nucleotide_changer.o  ../libfastx/libfastx.a
+make[4]: Leaving directory `/tmp/buildd/fastx-toolkit-0.0.13.2/src/fasta_nucleotide_changer'
+Making all in fastx_renamer
+make[4]: Entering directory `/tmp/buildd/fastx-toolkit-0.0.13.2/src/fastx_renamer'
+gcc -DHAVE_CONFIG_H -I. -I../..   -I../libfastx -D_FORTIFY_SOURCE=2  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -c fastx_renamer.c
+/bin/bash ../../libtool --tag=CC   --mode=link gcc  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1  -Wl,-z,relro -o fastx_renamer fastx_renamer.o ../libfastx/libfastx.a  
+libtool: link: gcc -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -Wl,-z -Wl,relro -o fastx_renamer fastx_renamer.o  ../libfastx/libfastx.a
+make[4]: Leaving directory `/tmp/buildd/fastx-toolkit-0.0.13.2/src/fastx_renamer'
+Making all in fastq_masker
+make[4]: Entering directory `/tmp/buildd/fastx-toolkit-0.0.13.2/src/fastq_masker'
+gcc -DHAVE_CONFIG_H -I. -I../..   -I../libfastx -D_FORTIFY_SOURCE=2  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -c fastq_masker.c
+/bin/bash ../../libtool --tag=CC   --mode=link gcc  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1  -Wl,-z,relro -o fastq_masker fastq_masker.o ../libfastx/libfastx.a  
+libtool: link: gcc -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -Wl,-z -Wl,relro -o fastq_masker fastq_masker.o  ../libfastx/libfastx.a
+make[4]: Leaving directory `/tmp/buildd/fastx-toolkit-0.0.13.2/src/fastq_masker'
+make[4]: Entering directory `/tmp/buildd/fastx-toolkit-0.0.13.2/src'
+make[4]: Nothing to be done for `all-am'.
+make[4]: Leaving directory `/tmp/buildd/fastx-toolkit-0.0.13.2/src'
+make[3]: Leaving directory `/tmp/buildd/fastx-toolkit-0.0.13.2/src'
+Making all in doc
+make[3]: Entering directory `/tmp/buildd/fastx-toolkit-0.0.13.2/doc'
+make[3]: Nothing to be done for `all'.
+make[3]: Leaving directory `/tmp/buildd/fastx-toolkit-0.0.13.2/doc'
+Making all in galaxy
+make[3]: Entering directory `/tmp/buildd/fastx-toolkit-0.0.13.2/galaxy'
+Making all in tools
+make[4]: Entering directory `/tmp/buildd/fastx-toolkit-0.0.13.2/galaxy/tools'
+Making all in fastx_toolkit
+make[5]: Entering directory `/tmp/buildd/fastx-toolkit-0.0.13.2/galaxy/tools/fastx_toolkit'
+make[5]: Nothing to be done for `all'.
+make[5]: Leaving directory `/tmp/buildd/fastx-toolkit-0.0.13.2/galaxy/tools/fastx_toolkit'
+Making all in cshl_custom_fastx_toolkit
+make[5]: Entering directory `/tmp/buildd/fastx-toolkit-0.0.13.2/galaxy/tools/cshl_custom_fastx_toolkit'
+make[5]: Nothing to be done for `all'.
+make[5]: Leaving directory `/tmp/buildd/fastx-toolkit-0.0.13.2/galaxy/tools/cshl_custom_fastx_toolkit'
+make[5]: Entering directory `/tmp/buildd/fastx-toolkit-0.0.13.2/galaxy/tools'
+make[5]: Nothing to be done for `all-am'.
+make[5]: Leaving directory `/tmp/buildd/fastx-toolkit-0.0.13.2/galaxy/tools'
+make[4]: Leaving directory `/tmp/buildd/fastx-toolkit-0.0.13.2/galaxy/tools'
+Making all in test-data
+make[4]: Entering directory `/tmp/buildd/fastx-toolkit-0.0.13.2/galaxy/test-data'
+make[4]: Nothing to be done for `all'.
+make[4]: Leaving directory `/tmp/buildd/fastx-toolkit-0.0.13.2/galaxy/test-data'
+Making all in static
+make[4]: Entering directory `/tmp/buildd/fastx-toolkit-0.0.13.2/galaxy/static'
+Making all in fastx_icons
+make[5]: Entering directory `/tmp/buildd/fastx-toolkit-0.0.13.2/galaxy/static/fastx_icons'
+make[5]: Nothing to be done for `all'.
+make[5]: Leaving directory `/tmp/buildd/fastx-toolkit-0.0.13.2/galaxy/static/fastx_icons'
+make[5]: Entering directory `/tmp/buildd/fastx-toolkit-0.0.13.2/galaxy/static'
+make[5]: Nothing to be done for `all-am'.
+make[5]: Leaving directory `/tmp/buildd/fastx-toolkit-0.0.13.2/galaxy/static'
+make[4]: Leaving directory `/tmp/buildd/fastx-toolkit-0.0.13.2/galaxy/static'
+Making all in tool-data
+make[4]: Entering directory `/tmp/buildd/fastx-toolkit-0.0.13.2/galaxy/tool-data'
+make[4]: Nothing to be done for `all'.
+make[4]: Leaving directory `/tmp/buildd/fastx-toolkit-0.0.13.2/galaxy/tool-data'
+make[4]: Entering directory `/tmp/buildd/fastx-toolkit-0.0.13.2/galaxy'
+make[4]: Nothing to be done for `all-am'.
+make[4]: Leaving directory `/tmp/buildd/fastx-toolkit-0.0.13.2/galaxy'
+make[3]: Leaving directory `/tmp/buildd/fastx-toolkit-0.0.13.2/galaxy'
+Making all in scripts
+make[3]: Entering directory `/tmp/buildd/fastx-toolkit-0.0.13.2/scripts'
+make[3]: Nothing to be done for `all'.
+make[3]: Leaving directory `/tmp/buildd/fastx-toolkit-0.0.13.2/scripts'
+Making all in build_scripts
+make[3]: Entering directory `/tmp/buildd/fastx-toolkit-0.0.13.2/build_scripts'
+make[3]: Nothing to be done for `all'.
+make[3]: Leaving directory `/tmp/buildd/fastx-toolkit-0.0.13.2/build_scripts'
+make[3]: Entering directory `/tmp/buildd/fastx-toolkit-0.0.13.2'
+make[3]: Leaving directory `/tmp/buildd/fastx-toolkit-0.0.13.2'
+make[2]: Leaving directory `/tmp/buildd/fastx-toolkit-0.0.13.2'
+make[1]: Leaving directory `/tmp/buildd/fastx-toolkit-0.0.13.2'
+   dh_auto_test
+	make -j1 check
+make[1]: Entering directory `/tmp/buildd/fastx-toolkit-0.0.13.2'
+Making check in m4
+make[2]: Entering directory `/tmp/buildd/fastx-toolkit-0.0.13.2/m4'
+make[2]: Nothing to be done for `check'.
+make[2]: Leaving directory `/tmp/buildd/fastx-toolkit-0.0.13.2/m4'
+Making check in src
+make[2]: Entering directory `/tmp/buildd/fastx-toolkit-0.0.13.2/src'
+Making check in libfastx
+make[3]: Entering directory `/tmp/buildd/fastx-toolkit-0.0.13.2/src/libfastx'
+make[3]: Nothing to be done for `check'.
+make[3]: Leaving directory `/tmp/buildd/fastx-toolkit-0.0.13.2/src/libfastx'
+Making check in fastx_clipper
+make[3]: Entering directory `/tmp/buildd/fastx-toolkit-0.0.13.2/src/fastx_clipper'
+make[3]: Nothing to be done for `check'.
+make[3]: Leaving directory `/tmp/buildd/fastx-toolkit-0.0.13.2/src/fastx_clipper'
+Making check in fastx_trimmer
+make[3]: Entering directory `/tmp/buildd/fastx-toolkit-0.0.13.2/src/fastx_trimmer'
+make[3]: Nothing to be done for `check'.
+make[3]: Leaving directory `/tmp/buildd/fastx-toolkit-0.0.13.2/src/fastx_trimmer'
+Making check in fastx_quality_stats
+make[3]: Entering directory `/tmp/buildd/fastx-toolkit-0.0.13.2/src/fastx_quality_stats'
+make[3]: Nothing to be done for `check'.
+make[3]: Leaving directory `/tmp/buildd/fastx-toolkit-0.0.13.2/src/fastx_quality_stats'
+Making check in fastq_quality_converter
+make[3]: Entering directory `/tmp/buildd/fastx-toolkit-0.0.13.2/src/fastq_quality_converter'
+make[3]: Nothing to be done for `check'.
+make[3]: Leaving directory `/tmp/buildd/fastx-toolkit-0.0.13.2/src/fastq_quality_converter'
+Making check in fastq_to_fasta
+make[3]: Entering directory `/tmp/buildd/fastx-toolkit-0.0.13.2/src/fastq_to_fasta'
+make[3]: Nothing to be done for `check'.
+make[3]: Leaving directory `/tmp/buildd/fastx-toolkit-0.0.13.2/src/fastq_to_fasta'
+Making check in fastq_quality_filter
+make[3]: Entering directory `/tmp/buildd/fastx-toolkit-0.0.13.2/src/fastq_quality_filter'
+make[3]: Nothing to be done for `check'.
+make[3]: Leaving directory `/tmp/buildd/fastx-toolkit-0.0.13.2/src/fastq_quality_filter'
+Making check in fastq_quality_trimmer
+make[3]: Entering directory `/tmp/buildd/fastx-toolkit-0.0.13.2/src/fastq_quality_trimmer'
+make[3]: Nothing to be done for `check'.
+make[3]: Leaving directory `/tmp/buildd/fastx-toolkit-0.0.13.2/src/fastq_quality_trimmer'
+Making check in fastx_artifacts_filter
+make[3]: Entering directory `/tmp/buildd/fastx-toolkit-0.0.13.2/src/fastx_artifacts_filter'
+make[3]: Nothing to be done for `check'.
+make[3]: Leaving directory `/tmp/buildd/fastx-toolkit-0.0.13.2/src/fastx_artifacts_filter'
+Making check in fastx_reverse_complement
+make[3]: Entering directory `/tmp/buildd/fastx-toolkit-0.0.13.2/src/fastx_reverse_complement'
+make[3]: Nothing to be done for `check'.
+make[3]: Leaving directory `/tmp/buildd/fastx-toolkit-0.0.13.2/src/fastx_reverse_complement'
+Making check in fastx_collapser
+make[3]: Entering directory `/tmp/buildd/fastx-toolkit-0.0.13.2/src/fastx_collapser'
+make[3]: Nothing to be done for `check'.
+make[3]: Leaving directory `/tmp/buildd/fastx-toolkit-0.0.13.2/src/fastx_collapser'
+Making check in fastx_uncollapser
+make[3]: Entering directory `/tmp/buildd/fastx-toolkit-0.0.13.2/src/fastx_uncollapser'
+make[3]: Nothing to be done for `check'.
+make[3]: Leaving directory `/tmp/buildd/fastx-toolkit-0.0.13.2/src/fastx_uncollapser'
+Making check in seqalign_test
+make[3]: Entering directory `/tmp/buildd/fastx-toolkit-0.0.13.2/src/seqalign_test'
+make[3]: Nothing to be done for `check'.
+make[3]: Leaving directory `/tmp/buildd/fastx-toolkit-0.0.13.2/src/seqalign_test'
+Making check in fasta_formatter
+make[3]: Entering directory `/tmp/buildd/fastx-toolkit-0.0.13.2/src/fasta_formatter'
+make[3]: Nothing to be done for `check'.
+make[3]: Leaving directory `/tmp/buildd/fastx-toolkit-0.0.13.2/src/fasta_formatter'
+Making check in fasta_nucleotide_changer
+make[3]: Entering directory `/tmp/buildd/fastx-toolkit-0.0.13.2/src/fasta_nucleotide_changer'
+make[3]: Nothing to be done for `check'.
+make[3]: Leaving directory `/tmp/buildd/fastx-toolkit-0.0.13.2/src/fasta_nucleotide_changer'
+Making check in fastx_renamer
+make[3]: Entering directory `/tmp/buildd/fastx-toolkit-0.0.13.2/src/fastx_renamer'
+make[3]: Nothing to be done for `check'.
+make[3]: Leaving directory `/tmp/buildd/fastx-toolkit-0.0.13.2/src/fastx_renamer'
+Making check in fastq_masker
+make[3]: Entering directory `/tmp/buildd/fastx-toolkit-0.0.13.2/src/fastq_masker'
+make[3]: Nothing to be done for `check'.
+make[3]: Leaving directory `/tmp/buildd/fastx-toolkit-0.0.13.2/src/fastq_masker'
+make[3]: Entering directory `/tmp/buildd/fastx-toolkit-0.0.13.2/src'
+make[3]: Nothing to be done for `check-am'.
+make[3]: Leaving directory `/tmp/buildd/fastx-toolkit-0.0.13.2/src'
+make[2]: Leaving directory `/tmp/buildd/fastx-toolkit-0.0.13.2/src'
+Making check in doc
+make[2]: Entering directory `/tmp/buildd/fastx-toolkit-0.0.13.2/doc'
+make[2]: Nothing to be done for `check'.
+make[2]: Leaving directory `/tmp/buildd/fastx-toolkit-0.0.13.2/doc'
+Making check in galaxy
+make[2]: Entering directory `/tmp/buildd/fastx-toolkit-0.0.13.2/galaxy'
+Making check in tools
+make[3]: Entering directory `/tmp/buildd/fastx-toolkit-0.0.13.2/galaxy/tools'
+Making check in fastx_toolkit
+make[4]: Entering directory `/tmp/buildd/fastx-toolkit-0.0.13.2/galaxy/tools/fastx_toolkit'
+make[4]: Nothing to be done for `check'.
+make[4]: Leaving directory `/tmp/buildd/fastx-toolkit-0.0.13.2/galaxy/tools/fastx_toolkit'
+Making check in cshl_custom_fastx_toolkit
+make[4]: Entering directory `/tmp/buildd/fastx-toolkit-0.0.13.2/galaxy/tools/cshl_custom_fastx_toolkit'
+make[4]: Nothing to be done for `check'.
+make[4]: Leaving directory `/tmp/buildd/fastx-toolkit-0.0.13.2/galaxy/tools/cshl_custom_fastx_toolkit'
+make[4]: Entering directory `/tmp/buildd/fastx-toolkit-0.0.13.2/galaxy/tools'
+make[4]: Nothing to be done for `check-am'.
+make[4]: Leaving directory `/tmp/buildd/fastx-toolkit-0.0.13.2/galaxy/tools'
+make[3]: Leaving directory `/tmp/buildd/fastx-toolkit-0.0.13.2/galaxy/tools'
+Making check in test-data
+make[3]: Entering directory `/tmp/buildd/fastx-toolkit-0.0.13.2/galaxy/test-data'
+make[3]: Nothing to be done for `check'.
+make[3]: Leaving directory `/tmp/buildd/fastx-toolkit-0.0.13.2/galaxy/test-data'
+Making check in static
+make[3]: Entering directory `/tmp/buildd/fastx-toolkit-0.0.13.2/galaxy/static'
+Making check in fastx_icons
+make[4]: Entering directory `/tmp/buildd/fastx-toolkit-0.0.13.2/galaxy/static/fastx_icons'
+make[4]: Nothing to be done for `check'.
+make[4]: Leaving directory `/tmp/buildd/fastx-toolkit-0.0.13.2/galaxy/static/fastx_icons'
+make[4]: Entering directory `/tmp/buildd/fastx-toolkit-0.0.13.2/galaxy/static'
+make[4]: Nothing to be done for `check-am'.
+make[4]: Leaving directory `/tmp/buildd/fastx-toolkit-0.0.13.2/galaxy/static'
+make[3]: Leaving directory `/tmp/buildd/fastx-toolkit-0.0.13.2/galaxy/static'
+Making check in tool-data
+make[3]: Entering directory `/tmp/buildd/fastx-toolkit-0.0.13.2/galaxy/tool-data'
+make[3]: Nothing to be done for `check'.
+make[3]: Leaving directory `/tmp/buildd/fastx-toolkit-0.0.13.2/galaxy/tool-data'
+make[3]: Entering directory `/tmp/buildd/fastx-toolkit-0.0.13.2/galaxy'
+make[3]: Nothing to be done for `check-am'.
+make[3]: Leaving directory `/tmp/buildd/fastx-toolkit-0.0.13.2/galaxy'
+make[2]: Leaving directory `/tmp/buildd/fastx-toolkit-0.0.13.2/galaxy'
+Making check in scripts
+make[2]: Entering directory `/tmp/buildd/fastx-toolkit-0.0.13.2/scripts'
+make[2]: Nothing to be done for `check'.
+make[2]: Leaving directory `/tmp/buildd/fastx-toolkit-0.0.13.2/scripts'
+Making check in build_scripts
+make[2]: Entering directory `/tmp/buildd/fastx-toolkit-0.0.13.2/build_scripts'
+make[2]: Nothing to be done for `check'.
+make[2]: Leaving directory `/tmp/buildd/fastx-toolkit-0.0.13.2/build_scripts'
+make[2]: Entering directory `/tmp/buildd/fastx-toolkit-0.0.13.2'
+make[2]: Leaving directory `/tmp/buildd/fastx-toolkit-0.0.13.2'
+make[1]: Leaving directory `/tmp/buildd/fastx-toolkit-0.0.13.2'
+ fakeroot debian/rules binary
+dh binary --with autotools_dev
+   dh_testroot
+   dh_prep
+	rm -f debian/fastx-toolkit.substvars
+	rm -f debian/fastx-toolkit.*.debhelper
+	rm -rf debian/fastx-toolkit/
+   dh_auto_install
+	install -d debian/fastx-toolkit
+	make -j1 install DESTDIR=/tmp/buildd/fastx-toolkit-0.0.13.2/debian/fastx-toolkit AM_UPDATE_INFO_DIR=no
+make[1]: Entering directory `/tmp/buildd/fastx-toolkit-0.0.13.2'
+Making install in m4
+make[2]: Entering directory `/tmp/buildd/fastx-toolkit-0.0.13.2/m4'
+make[3]: Entering directory `/tmp/buildd/fastx-toolkit-0.0.13.2/m4'
+make[3]: Nothing to be done for `install-exec-am'.
+test -z "/usr/share/aclocal" || /bin/mkdir -p "/tmp/buildd/fastx-toolkit-0.0.13.2/debian/fastx-toolkit/usr/share/aclocal"
+ /usr/bin/install -c -m 644 ax_c_long_long.m4 ax_cxx_header_stdcxx_tr1.m4 '/tmp/buildd/fastx-toolkit-0.0.13.2/debian/fastx-toolkit/usr/share/aclocal'
+make[3]: Leaving directory `/tmp/buildd/fastx-toolkit-0.0.13.2/m4'
+make[2]: Leaving directory `/tmp/buildd/fastx-toolkit-0.0.13.2/m4'
+Making install in src
+make[2]: Entering directory `/tmp/buildd/fastx-toolkit-0.0.13.2/src'
+Making install in libfastx
+make[3]: Entering directory `/tmp/buildd/fastx-toolkit-0.0.13.2/src/libfastx'
+make[4]: Entering directory `/tmp/buildd/fastx-toolkit-0.0.13.2/src/libfastx'
+make[4]: Nothing to be done for `install-exec-am'.
+make[4]: Nothing to be done for `install-data-am'.
+make[4]: Leaving directory `/tmp/buildd/fastx-toolkit-0.0.13.2/src/libfastx'
+make[3]: Leaving directory `/tmp/buildd/fastx-toolkit-0.0.13.2/src/libfastx'
+Making install in fastx_clipper
+make[3]: Entering directory `/tmp/buildd/fastx-toolkit-0.0.13.2/src/fastx_clipper'
+make[4]: Entering directory `/tmp/buildd/fastx-toolkit-0.0.13.2/src/fastx_clipper'
+test -z "/usr/bin" || /bin/mkdir -p "/tmp/buildd/fastx-toolkit-0.0.13.2/debian/fastx-toolkit/usr/bin"
+  /bin/bash ../../libtool   --mode=install /usr/bin/install -c fastx_clipper '/tmp/buildd/fastx-toolkit-0.0.13.2/debian/fastx-toolkit/usr/bin'
+libtool: install: /usr/bin/install -c fastx_clipper /tmp/buildd/fastx-toolkit-0.0.13.2/debian/fastx-toolkit/usr/bin/fastx_clipper
+make[4]: Nothing to be done for `install-data-am'.
+make[4]: Leaving directory `/tmp/buildd/fastx-toolkit-0.0.13.2/src/fastx_clipper'
+make[3]: Leaving directory `/tmp/buildd/fastx-toolkit-0.0.13.2/src/fastx_clipper'
+Making install in fastx_trimmer
+make[3]: Entering directory `/tmp/buildd/fastx-toolkit-0.0.13.2/src/fastx_trimmer'
+make[4]: Entering directory `/tmp/buildd/fastx-toolkit-0.0.13.2/src/fastx_trimmer'
+test -z "/usr/bin" || /bin/mkdir -p "/tmp/buildd/fastx-toolkit-0.0.13.2/debian/fastx-toolkit/usr/bin"
+  /bin/bash ../../libtool   --mode=install /usr/bin/install -c fastx_trimmer '/tmp/buildd/fastx-toolkit-0.0.13.2/debian/fastx-toolkit/usr/bin'
+libtool: install: /usr/bin/install -c fastx_trimmer /tmp/buildd/fastx-toolkit-0.0.13.2/debian/fastx-toolkit/usr/bin/fastx_trimmer
+make[4]: Nothing to be done for `install-data-am'.
+make[4]: Leaving directory `/tmp/buildd/fastx-toolkit-0.0.13.2/src/fastx_trimmer'
+make[3]: Leaving directory `/tmp/buildd/fastx-toolkit-0.0.13.2/src/fastx_trimmer'
+Making install in fastx_quality_stats
+make[3]: Entering directory `/tmp/buildd/fastx-toolkit-0.0.13.2/src/fastx_quality_stats'
+make[4]: Entering directory `/tmp/buildd/fastx-toolkit-0.0.13.2/src/fastx_quality_stats'
+test -z "/usr/bin" || /bin/mkdir -p "/tmp/buildd/fastx-toolkit-0.0.13.2/debian/fastx-toolkit/usr/bin"
+  /bin/bash ../../libtool   --mode=install /usr/bin/install -c fastx_quality_stats '/tmp/buildd/fastx-toolkit-0.0.13.2/debian/fastx-toolkit/usr/bin'
+libtool: install: /usr/bin/install -c fastx_quality_stats /tmp/buildd/fastx-toolkit-0.0.13.2/debian/fastx-toolkit/usr/bin/fastx_quality_stats
+make[4]: Nothing to be done for `install-data-am'.
+make[4]: Leaving directory `/tmp/buildd/fastx-toolkit-0.0.13.2/src/fastx_quality_stats'
+make[3]: Leaving directory `/tmp/buildd/fastx-toolkit-0.0.13.2/src/fastx_quality_stats'
+Making install in fastq_quality_converter
+make[3]: Entering directory `/tmp/buildd/fastx-toolkit-0.0.13.2/src/fastq_quality_converter'
+make[4]: Entering directory `/tmp/buildd/fastx-toolkit-0.0.13.2/src/fastq_quality_converter'
+test -z "/usr/bin" || /bin/mkdir -p "/tmp/buildd/fastx-toolkit-0.0.13.2/debian/fastx-toolkit/usr/bin"
+  /bin/bash ../../libtool   --mode=install /usr/bin/install -c fastq_quality_converter '/tmp/buildd/fastx-toolkit-0.0.13.2/debian/fastx-toolkit/usr/bin'
+libtool: install: /usr/bin/install -c fastq_quality_converter /tmp/buildd/fastx-toolkit-0.0.13.2/debian/fastx-toolkit/usr/bin/fastq_quality_converter
+make[4]: Nothing to be done for `install-data-am'.
+make[4]: Leaving directory `/tmp/buildd/fastx-toolkit-0.0.13.2/src/fastq_quality_converter'
+make[3]: Leaving directory `/tmp/buildd/fastx-toolkit-0.0.13.2/src/fastq_quality_converter'
+Making install in fastq_to_fasta
+make[3]: Entering directory `/tmp/buildd/fastx-toolkit-0.0.13.2/src/fastq_to_fasta'
+make[4]: Entering directory `/tmp/buildd/fastx-toolkit-0.0.13.2/src/fastq_to_fasta'
+test -z "/usr/bin" || /bin/mkdir -p "/tmp/buildd/fastx-toolkit-0.0.13.2/debian/fastx-toolkit/usr/bin"
+  /bin/bash ../../libtool   --mode=install /usr/bin/install -c fastq_to_fasta '/tmp/buildd/fastx-toolkit-0.0.13.2/debian/fastx-toolkit/usr/bin'
+libtool: install: /usr/bin/install -c fastq_to_fasta /tmp/buildd/fastx-toolkit-0.0.13.2/debian/fastx-toolkit/usr/bin/fastq_to_fasta
+make[4]: Nothing to be done for `install-data-am'.
+make[4]: Leaving directory `/tmp/buildd/fastx-toolkit-0.0.13.2/src/fastq_to_fasta'
+make[3]: Leaving directory `/tmp/buildd/fastx-toolkit-0.0.13.2/src/fastq_to_fasta'
+Making install in fastq_quality_filter
+make[3]: Entering directory `/tmp/buildd/fastx-toolkit-0.0.13.2/src/fastq_quality_filter'
+make[4]: Entering directory `/tmp/buildd/fastx-toolkit-0.0.13.2/src/fastq_quality_filter'
+test -z "/usr/bin" || /bin/mkdir -p "/tmp/buildd/fastx-toolkit-0.0.13.2/debian/fastx-toolkit/usr/bin"
+  /bin/bash ../../libtool   --mode=install /usr/bin/install -c fastq_quality_filter '/tmp/buildd/fastx-toolkit-0.0.13.2/debian/fastx-toolkit/usr/bin'
+libtool: install: /usr/bin/install -c fastq_quality_filter /tmp/buildd/fastx-toolkit-0.0.13.2/debian/fastx-toolkit/usr/bin/fastq_quality_filter
+make[4]: Nothing to be done for `install-data-am'.
+make[4]: Leaving directory `/tmp/buildd/fastx-toolkit-0.0.13.2/src/fastq_quality_filter'
+make[3]: Leaving directory `/tmp/buildd/fastx-toolkit-0.0.13.2/src/fastq_quality_filter'
+Making install in fastq_quality_trimmer
+make[3]: Entering directory `/tmp/buildd/fastx-toolkit-0.0.13.2/src/fastq_quality_trimmer'
+make[4]: Entering directory `/tmp/buildd/fastx-toolkit-0.0.13.2/src/fastq_quality_trimmer'
+test -z "/usr/bin" || /bin/mkdir -p "/tmp/buildd/fastx-toolkit-0.0.13.2/debian/fastx-toolkit/usr/bin"
+  /bin/bash ../../libtool   --mode=install /usr/bin/install -c fastq_quality_trimmer '/tmp/buildd/fastx-toolkit-0.0.13.2/debian/fastx-toolkit/usr/bin'
+libtool: install: /usr/bin/install -c fastq_quality_trimmer /tmp/buildd/fastx-toolkit-0.0.13.2/debian/fastx-toolkit/usr/bin/fastq_quality_trimmer
+make[4]: Nothing to be done for `install-data-am'.
+make[4]: Leaving directory `/tmp/buildd/fastx-toolkit-0.0.13.2/src/fastq_quality_trimmer'
+make[3]: Leaving directory `/tmp/buildd/fastx-toolkit-0.0.13.2/src/fastq_quality_trimmer'
+Making install in fastx_artifacts_filter
+make[3]: Entering directory `/tmp/buildd/fastx-toolkit-0.0.13.2/src/fastx_artifacts_filter'
+make[4]: Entering directory `/tmp/buildd/fastx-toolkit-0.0.13.2/src/fastx_artifacts_filter'
+test -z "/usr/bin" || /bin/mkdir -p "/tmp/buildd/fastx-toolkit-0.0.13.2/debian/fastx-toolkit/usr/bin"
+  /bin/bash ../../libtool   --mode=install /usr/bin/install -c fastx_artifacts_filter '/tmp/buildd/fastx-toolkit-0.0.13.2/debian/fastx-toolkit/usr/bin'
+libtool: install: /usr/bin/install -c fastx_artifacts_filter /tmp/buildd/fastx-toolkit-0.0.13.2/debian/fastx-toolkit/usr/bin/fastx_artifacts_filter
+make[4]: Nothing to be done for `install-data-am'.
+make[4]: Leaving directory `/tmp/buildd/fastx-toolkit-0.0.13.2/src/fastx_artifacts_filter'
+make[3]: Leaving directory `/tmp/buildd/fastx-toolkit-0.0.13.2/src/fastx_artifacts_filter'
+Making install in fastx_reverse_complement
+make[3]: Entering directory `/tmp/buildd/fastx-toolkit-0.0.13.2/src/fastx_reverse_complement'
+make[4]: Entering directory `/tmp/buildd/fastx-toolkit-0.0.13.2/src/fastx_reverse_complement'
+test -z "/usr/bin" || /bin/mkdir -p "/tmp/buildd/fastx-toolkit-0.0.13.2/debian/fastx-toolkit/usr/bin"
+  /bin/bash ../../libtool   --mode=install /usr/bin/install -c fastx_reverse_complement '/tmp/buildd/fastx-toolkit-0.0.13.2/debian/fastx-toolkit/usr/bin'
+libtool: install: /usr/bin/install -c fastx_reverse_complement /tmp/buildd/fastx-toolkit-0.0.13.2/debian/fastx-toolkit/usr/bin/fastx_reverse_complement
+make[4]: Nothing to be done for `install-data-am'.
+make[4]: Leaving directory `/tmp/buildd/fastx-toolkit-0.0.13.2/src/fastx_reverse_complement'
+make[3]: Leaving directory `/tmp/buildd/fastx-toolkit-0.0.13.2/src/fastx_reverse_complement'
+Making install in fastx_collapser
+make[3]: Entering directory `/tmp/buildd/fastx-toolkit-0.0.13.2/src/fastx_collapser'
+make[4]: Entering directory `/tmp/buildd/fastx-toolkit-0.0.13.2/src/fastx_collapser'
+test -z "/usr/bin" || /bin/mkdir -p "/tmp/buildd/fastx-toolkit-0.0.13.2/debian/fastx-toolkit/usr/bin"
+  /bin/bash ../../libtool   --mode=install /usr/bin/install -c fastx_collapser '/tmp/buildd/fastx-toolkit-0.0.13.2/debian/fastx-toolkit/usr/bin'
+libtool: install: /usr/bin/install -c fastx_collapser /tmp/buildd/fastx-toolkit-0.0.13.2/debian/fastx-toolkit/usr/bin/fastx_collapser
+make[4]: Nothing to be done for `install-data-am'.
+make[4]: Leaving directory `/tmp/buildd/fastx-toolkit-0.0.13.2/src/fastx_collapser'
+make[3]: Leaving directory `/tmp/buildd/fastx-toolkit-0.0.13.2/src/fastx_collapser'
+Making install in fastx_uncollapser
+make[3]: Entering directory `/tmp/buildd/fastx-toolkit-0.0.13.2/src/fastx_uncollapser'
+make[4]: Entering directory `/tmp/buildd/fastx-toolkit-0.0.13.2/src/fastx_uncollapser'
+test -z "/usr/bin" || /bin/mkdir -p "/tmp/buildd/fastx-toolkit-0.0.13.2/debian/fastx-toolkit/usr/bin"
+  /bin/bash ../../libtool   --mode=install /usr/bin/install -c fastx_uncollapser '/tmp/buildd/fastx-toolkit-0.0.13.2/debian/fastx-toolkit/usr/bin'
+libtool: install: /usr/bin/install -c fastx_uncollapser /tmp/buildd/fastx-toolkit-0.0.13.2/debian/fastx-toolkit/usr/bin/fastx_uncollapser
+make[4]: Nothing to be done for `install-data-am'.
+make[4]: Leaving directory `/tmp/buildd/fastx-toolkit-0.0.13.2/src/fastx_uncollapser'
+make[3]: Leaving directory `/tmp/buildd/fastx-toolkit-0.0.13.2/src/fastx_uncollapser'
+Making install in seqalign_test
+make[3]: Entering directory `/tmp/buildd/fastx-toolkit-0.0.13.2/src/seqalign_test'
+make[4]: Entering directory `/tmp/buildd/fastx-toolkit-0.0.13.2/src/seqalign_test'
+make[4]: Nothing to be done for `install-exec-am'.
+make[4]: Nothing to be done for `install-data-am'.
+make[4]: Leaving directory `/tmp/buildd/fastx-toolkit-0.0.13.2/src/seqalign_test'
+make[3]: Leaving directory `/tmp/buildd/fastx-toolkit-0.0.13.2/src/seqalign_test'
+Making install in fasta_formatter
+make[3]: Entering directory `/tmp/buildd/fastx-toolkit-0.0.13.2/src/fasta_formatter'
+make[4]: Entering directory `/tmp/buildd/fastx-toolkit-0.0.13.2/src/fasta_formatter'
+test -z "/usr/bin" || /bin/mkdir -p "/tmp/buildd/fastx-toolkit-0.0.13.2/debian/fastx-toolkit/usr/bin"
+  /bin/bash ../../libtool   --mode=install /usr/bin/install -c fasta_formatter '/tmp/buildd/fastx-toolkit-0.0.13.2/debian/fastx-toolkit/usr/bin'
+libtool: install: /usr/bin/install -c fasta_formatter /tmp/buildd/fastx-toolkit-0.0.13.2/debian/fastx-toolkit/usr/bin/fasta_formatter
+make[4]: Nothing to be done for `install-data-am'.
+make[4]: Leaving directory `/tmp/buildd/fastx-toolkit-0.0.13.2/src/fasta_formatter'
+make[3]: Leaving directory `/tmp/buildd/fastx-toolkit-0.0.13.2/src/fasta_formatter'
+Making install in fasta_nucleotide_changer
+make[3]: Entering directory `/tmp/buildd/fastx-toolkit-0.0.13.2/src/fasta_nucleotide_changer'
+make[4]: Entering directory `/tmp/buildd/fastx-toolkit-0.0.13.2/src/fasta_nucleotide_changer'
+test -z "/usr/bin" || /bin/mkdir -p "/tmp/buildd/fastx-toolkit-0.0.13.2/debian/fastx-toolkit/usr/bin"
+  /bin/bash ../../libtool   --mode=install /usr/bin/install -c fasta_nucleotide_changer '/tmp/buildd/fastx-toolkit-0.0.13.2/debian/fastx-toolkit/usr/bin'
+libtool: install: /usr/bin/install -c fasta_nucleotide_changer /tmp/buildd/fastx-toolkit-0.0.13.2/debian/fastx-toolkit/usr/bin/fasta_nucleotide_changer
+make[4]: Nothing to be done for `install-data-am'.
+make[4]: Leaving directory `/tmp/buildd/fastx-toolkit-0.0.13.2/src/fasta_nucleotide_changer'
+make[3]: Leaving directory `/tmp/buildd/fastx-toolkit-0.0.13.2/src/fasta_nucleotide_changer'
+Making install in fastx_renamer
+make[3]: Entering directory `/tmp/buildd/fastx-toolkit-0.0.13.2/src/fastx_renamer'
+make[4]: Entering directory `/tmp/buildd/fastx-toolkit-0.0.13.2/src/fastx_renamer'
+test -z "/usr/bin" || /bin/mkdir -p "/tmp/buildd/fastx-toolkit-0.0.13.2/debian/fastx-toolkit/usr/bin"
+  /bin/bash ../../libtool   --mode=install /usr/bin/install -c fastx_renamer '/tmp/buildd/fastx-toolkit-0.0.13.2/debian/fastx-toolkit/usr/bin'
+libtool: install: /usr/bin/install -c fastx_renamer /tmp/buildd/fastx-toolkit-0.0.13.2/debian/fastx-toolkit/usr/bin/fastx_renamer
+make[4]: Nothing to be done for `install-data-am'.
+make[4]: Leaving directory `/tmp/buildd/fastx-toolkit-0.0.13.2/src/fastx_renamer'
+make[3]: Leaving directory `/tmp/buildd/fastx-toolkit-0.0.13.2/src/fastx_renamer'
+Making install in fastq_masker
+make[3]: Entering directory `/tmp/buildd/fastx-toolkit-0.0.13.2/src/fastq_masker'
+make[4]: Entering directory `/tmp/buildd/fastx-toolkit-0.0.13.2/src/fastq_masker'
+test -z "/usr/bin" || /bin/mkdir -p "/tmp/buildd/fastx-toolkit-0.0.13.2/debian/fastx-toolkit/usr/bin"
+  /bin/bash ../../libtool   --mode=install /usr/bin/install -c fastq_masker '/tmp/buildd/fastx-toolkit-0.0.13.2/debian/fastx-toolkit/usr/bin'
+libtool: install: /usr/bin/install -c fastq_masker /tmp/buildd/fastx-toolkit-0.0.13.2/debian/fastx-toolkit/usr/bin/fastq_masker
+make[4]: Nothing to be done for `install-data-am'.
+make[4]: Leaving directory `/tmp/buildd/fastx-toolkit-0.0.13.2/src/fastq_masker'
+make[3]: Leaving directory `/tmp/buildd/fastx-toolkit-0.0.13.2/src/fastq_masker'
+make[3]: Entering directory `/tmp/buildd/fastx-toolkit-0.0.13.2/src'
+make[4]: Entering directory `/tmp/buildd/fastx-toolkit-0.0.13.2/src'
+make[4]: Nothing to be done for `install-exec-am'.
+make[4]: Nothing to be done for `install-data-am'.
+make[4]: Leaving directory `/tmp/buildd/fastx-toolkit-0.0.13.2/src'
+make[3]: Leaving directory `/tmp/buildd/fastx-toolkit-0.0.13.2/src'
+make[2]: Leaving directory `/tmp/buildd/fastx-toolkit-0.0.13.2/src'
+Making install in doc
+make[2]: Entering directory `/tmp/buildd/fastx-toolkit-0.0.13.2/doc'
+make[3]: Entering directory `/tmp/buildd/fastx-toolkit-0.0.13.2/doc'
+make[3]: Nothing to be done for `install-exec-am'.
+make[3]: Nothing to be done for `install-data-am'.
+make[3]: Leaving directory `/tmp/buildd/fastx-toolkit-0.0.13.2/doc'
+make[2]: Leaving directory `/tmp/buildd/fastx-toolkit-0.0.13.2/doc'
+Making install in galaxy
+make[2]: Entering directory `/tmp/buildd/fastx-toolkit-0.0.13.2/galaxy'
+Making install in tools
+make[3]: Entering directory `/tmp/buildd/fastx-toolkit-0.0.13.2/galaxy/tools'
+Making install in fastx_toolkit
+make[4]: Entering directory `/tmp/buildd/fastx-toolkit-0.0.13.2/galaxy/tools/fastx_toolkit'
+make[5]: Entering directory `/tmp/buildd/fastx-toolkit-0.0.13.2/galaxy/tools/fastx_toolkit'
+make[5]: Nothing to be done for `install-exec-am'.
+make[5]: Nothing to be done for `install-data-am'.
+make[5]: Leaving directory `/tmp/buildd/fastx-toolkit-0.0.13.2/galaxy/tools/fastx_toolkit'
+make[4]: Leaving directory `/tmp/buildd/fastx-toolkit-0.0.13.2/galaxy/tools/fastx_toolkit'
+Making install in cshl_custom_fastx_toolkit
+make[4]: Entering directory `/tmp/buildd/fastx-toolkit-0.0.13.2/galaxy/tools/cshl_custom_fastx_toolkit'
+make[5]: Entering directory `/tmp/buildd/fastx-toolkit-0.0.13.2/galaxy/tools/cshl_custom_fastx_toolkit'
+make[5]: Nothing to be done for `install-exec-am'.
+make[5]: Nothing to be done for `install-data-am'.
+make[5]: Leaving directory `/tmp/buildd/fastx-toolkit-0.0.13.2/galaxy/tools/cshl_custom_fastx_toolkit'
+make[4]: Leaving directory `/tmp/buildd/fastx-toolkit-0.0.13.2/galaxy/tools/cshl_custom_fastx_toolkit'
+make[4]: Entering directory `/tmp/buildd/fastx-toolkit-0.0.13.2/galaxy/tools'
+make[5]: Entering directory `/tmp/buildd/fastx-toolkit-0.0.13.2/galaxy/tools'
+make[5]: Nothing to be done for `install-exec-am'.
+make[5]: Nothing to be done for `install-data-am'.
+make[5]: Leaving directory `/tmp/buildd/fastx-toolkit-0.0.13.2/galaxy/tools'
+make[4]: Leaving directory `/tmp/buildd/fastx-toolkit-0.0.13.2/galaxy/tools'
+make[3]: Leaving directory `/tmp/buildd/fastx-toolkit-0.0.13.2/galaxy/tools'
+Making install in test-data
+make[3]: Entering directory `/tmp/buildd/fastx-toolkit-0.0.13.2/galaxy/test-data'
+make[4]: Entering directory `/tmp/buildd/fastx-toolkit-0.0.13.2/galaxy/test-data'
+make[4]: Nothing to be done for `install-exec-am'.
+make[4]: Nothing to be done for `install-data-am'.
+make[4]: Leaving directory `/tmp/buildd/fastx-toolkit-0.0.13.2/galaxy/test-data'
+make[3]: Leaving directory `/tmp/buildd/fastx-toolkit-0.0.13.2/galaxy/test-data'
+Making install in static
+make[3]: Entering directory `/tmp/buildd/fastx-toolkit-0.0.13.2/galaxy/static'
+Making install in fastx_icons
+make[4]: Entering directory `/tmp/buildd/fastx-toolkit-0.0.13.2/galaxy/static/fastx_icons'
+make[5]: Entering directory `/tmp/buildd/fastx-toolkit-0.0.13.2/galaxy/static/fastx_icons'
+make[5]: Nothing to be done for `install-exec-am'.
+make[5]: Nothing to be done for `install-data-am'.
+make[5]: Leaving directory `/tmp/buildd/fastx-toolkit-0.0.13.2/galaxy/static/fastx_icons'
+make[4]: Leaving directory `/tmp/buildd/fastx-toolkit-0.0.13.2/galaxy/static/fastx_icons'
+make[4]: Entering directory `/tmp/buildd/fastx-toolkit-0.0.13.2/galaxy/static'
+make[5]: Entering directory `/tmp/buildd/fastx-toolkit-0.0.13.2/galaxy/static'
+make[5]: Nothing to be done for `install-exec-am'.
+make[5]: Nothing to be done for `install-data-am'.
+make[5]: Leaving directory `/tmp/buildd/fastx-toolkit-0.0.13.2/galaxy/static'
+make[4]: Leaving directory `/tmp/buildd/fastx-toolkit-0.0.13.2/galaxy/static'
+make[3]: Leaving directory `/tmp/buildd/fastx-toolkit-0.0.13.2/galaxy/static'
+Making install in tool-data
+make[3]: Entering directory `/tmp/buildd/fastx-toolkit-0.0.13.2/galaxy/tool-data'
+make[4]: Entering directory `/tmp/buildd/fastx-toolkit-0.0.13.2/galaxy/tool-data'
+make[4]: Nothing to be done for `install-exec-am'.
+make[4]: Nothing to be done for `install-data-am'.
+make[4]: Leaving directory `/tmp/buildd/fastx-toolkit-0.0.13.2/galaxy/tool-data'
+make[3]: Leaving directory `/tmp/buildd/fastx-toolkit-0.0.13.2/galaxy/tool-data'
+make[3]: Entering directory `/tmp/buildd/fastx-toolkit-0.0.13.2/galaxy'
+make[4]: Entering directory `/tmp/buildd/fastx-toolkit-0.0.13.2/galaxy'
+make[4]: Nothing to be done for `install-exec-am'.
+make[4]: Nothing to be done for `install-data-am'.
+make[4]: Leaving directory `/tmp/buildd/fastx-toolkit-0.0.13.2/galaxy'
+make[3]: Leaving directory `/tmp/buildd/fastx-toolkit-0.0.13.2/galaxy'
+make[2]: Leaving directory `/tmp/buildd/fastx-toolkit-0.0.13.2/galaxy'
+Making install in scripts
+make[2]: Entering directory `/tmp/buildd/fastx-toolkit-0.0.13.2/scripts'
+make[3]: Entering directory `/tmp/buildd/fastx-toolkit-0.0.13.2/scripts'
+test -z "/usr/bin" || /bin/mkdir -p "/tmp/buildd/fastx-toolkit-0.0.13.2/debian/fastx-toolkit/usr/bin"
+ /usr/bin/install -c fastx_barcode_splitter.pl fastx_nucleotide_distribution_graph.sh fastx_nucleotide_distribution_line_graph.sh fastq_quality_boxplot_graph.sh fasta_clipping_histogram.pl '/tmp/buildd/fastx-toolkit-0.0.13.2/debian/fastx-toolkit/usr/bin'
+make[3]: Nothing to be done for `install-data-am'.
+make[3]: Leaving directory `/tmp/buildd/fastx-toolkit-0.0.13.2/scripts'
+make[2]: Leaving directory `/tmp/buildd/fastx-toolkit-0.0.13.2/scripts'
+Making install in build_scripts
+make[2]: Entering directory `/tmp/buildd/fastx-toolkit-0.0.13.2/build_scripts'
+make[3]: Entering directory `/tmp/buildd/fastx-toolkit-0.0.13.2/build_scripts'
+make[3]: Nothing to be done for `install-exec-am'.
+make[3]: Nothing to be done for `install-data-am'.
+make[3]: Leaving directory `/tmp/buildd/fastx-toolkit-0.0.13.2/build_scripts'
+make[2]: Leaving directory `/tmp/buildd/fastx-toolkit-0.0.13.2/build_scripts'
+make[2]: Entering directory `/tmp/buildd/fastx-toolkit-0.0.13.2'
+make[3]: Entering directory `/tmp/buildd/fastx-toolkit-0.0.13.2'
+make[3]: Nothing to be done for `install-exec-am'.
+make[3]: Nothing to be done for `install-data-am'.
+make[3]: Leaving directory `/tmp/buildd/fastx-toolkit-0.0.13.2'
+make[2]: Leaving directory `/tmp/buildd/fastx-toolkit-0.0.13.2'
+make[1]: Leaving directory `/tmp/buildd/fastx-toolkit-0.0.13.2'
+   debian/rules override_dh_install
+make[1]: Entering directory `/tmp/buildd/fastx-toolkit-0.0.13.2'
+dh_install
+rm --recursive /tmp/buildd/fastx-toolkit-0.0.13.2/debian/fastx-toolkit/usr/share/aclocal
+make[1]: Leaving directory `/tmp/buildd/fastx-toolkit-0.0.13.2'
+   dh_installdocs
+	install -g 0 -o 0 -d debian/fastx-toolkit/usr/share/doc/fastx-toolkit
+	cp -a NEWS debian/fastx-toolkit/usr/share/doc/fastx-toolkit
+	cp -a README debian/fastx-toolkit/usr/share/doc/fastx-toolkit
+	cp -a THANKS debian/fastx-toolkit/usr/share/doc/fastx-toolkit
+	chown -R 0:0 debian/fastx-toolkit/usr/share/doc
+	chmod -R go=rX debian/fastx-toolkit/usr/share/doc
+	chmod -R u\+rw debian/fastx-toolkit/usr/share/doc
+	install -g 0 -o 0 -m 644 -p debian/README.Debian debian/fastx-toolkit/usr/share/doc/fastx-toolkit/README.Debian
+	install -g 0 -o 0 -m 644 -p debian/copyright debian/fastx-toolkit/usr/share/doc/fastx-toolkit/copyright
+   debian/rules override_dh_installchangelogs
+make[1]: Entering directory `/tmp/buildd/fastx-toolkit-0.0.13.2'
+dh_installchangelogs -k NEWS
+	install -o 0 -g 0 -p -m644 debian/changelog debian/fastx-toolkit/usr/share/doc/fastx-toolkit/changelog.Debian
+	install -o 0 -g 0 -p -m644 NEWS debian/fastx-toolkit/usr/share/doc/fastx-toolkit/changelog
+	ln -sf changelog debian/fastx-toolkit/usr/share/doc/fastx-toolkit/NEWS
+make[1]: Leaving directory `/tmp/buildd/fastx-toolkit-0.0.13.2'
+   debian/rules override_dh_installman
+make[1]: Entering directory `/tmp/buildd/fastx-toolkit-0.0.13.2'
+mkdir -p /tmp/buildd/fastx-toolkit-0.0.13.2/debian/fastx-toolkit/usr/share/man/man1
+# The name strings are obtained from
+#   http://hannonlab.cshl.edu/fastx_toolkit/ (Section "Available Tools")
+# and
+#   http://hannonlab.cshl.edu/fastx_toolkit/commandline.html
+help2man --no-info --no-discard-stderr --version-string='0.0.13.2' --help-option='-h' \
+	   --name='changes the width of sequences line in a FASTA file' \
+	   /tmp/buildd/fastx-toolkit-0.0.13.2/debian/fastx-toolkit/usr/bin/fasta_formatter > /tmp/buildd/fastx-toolkit-0.0.13.2/debian/fastx-toolkit/usr/share/man/man1/fasta_formatter.1
+help2man --no-info --no-discard-stderr --version-string='0.0.13.2' --help-option='-h' \
+	   --name='Convets FASTA sequences from/to RNA/DNA' \
+	   /tmp/buildd/fastx-toolkit-0.0.13.2/debian/fastx-toolkit/usr/bin/fasta_nucleotide_changer > /tmp/buildd/fastx-toolkit-0.0.13.2/debian/fastx-toolkit/usr/share/man/man1/fasta_nucleotide_changer.1
+help2man --no-info --no-discard-stderr --version-string='0.0.13.2' --help-option='-h' \
+	   --name="Masks nucleotides with 'N' (or other character) based on quality" \
+	   /tmp/buildd/fastx-toolkit-0.0.13.2/debian/fastx-toolkit/usr/bin/fastq_masker > /tmp/buildd/fastx-toolkit-0.0.13.2/debian/fastx-toolkit/usr/share/man/man1/fastq_masker.1
+# FIXME: The tool `fasta_quality_converter` was NOT described at the URLs above
+help2man --no-info --no-discard-stderr --version-string='0.0.13.2' --help-option='-h' \
+	   --name='Converts sequences based on quality' \
+	   /tmp/buildd/fastx-toolkit-0.0.13.2/debian/fastx-toolkit/usr/bin/fastq_quality_converter > /tmp/buildd/fastx-toolkit-0.0.13.2/debian/fastx-toolkit/usr/share/man/man1/fastq_quality_converter.1
+help2man --no-info --no-discard-stderr --version-string='0.0.13.2' --help-option='-h' \
+	   --name='Filters sequences based on quality' \
+	   /tmp/buildd/fastx-toolkit-0.0.13.2/debian/fastx-toolkit/usr/bin/fastq_quality_filter > /tmp/buildd/fastx-toolkit-0.0.13.2/debian/fastx-toolkit/usr/share/man/man1/fastq_quality_filter.1
+dh_installman debian/fastq_quality_trimmer.1
+	install -p -m644 debian/fastq_quality_trimmer.1 debian/fastx-toolkit/usr/share/man/man1/fastq_quality_trimmer.1
+	man --recode UTF-8 ./fastq_quality_filter\.1 > fastq_quality_filter\.1\.new
+	chmod 644 fastq_quality_filter.1.new
+	mv -f fastq_quality_filter.1.new fastq_quality_filter.1
+	man --recode UTF-8 ./fasta_nucleotide_changer\.1 > fasta_nucleotide_changer\.1\.new
+	chmod 644 fasta_nucleotide_changer.1.new
+	mv -f fasta_nucleotide_changer.1.new fasta_nucleotide_changer.1
+	man --recode UTF-8 ./fastq_quality_converter\.1 > fastq_quality_converter\.1\.new
+	chmod 644 fastq_quality_converter.1.new
+	mv -f fastq_quality_converter.1.new fastq_quality_converter.1
+	man --recode UTF-8 ./fastq_quality_trimmer\.1 > fastq_quality_trimmer\.1\.new
+	chmod 644 fastq_quality_trimmer.1.new
+	mv -f fastq_quality_trimmer.1.new fastq_quality_trimmer.1
+	man --recode UTF-8 ./fasta_formatter\.1 > fasta_formatter\.1\.new
+	chmod 644 fasta_formatter.1.new
+	mv -f fasta_formatter.1.new fasta_formatter.1
+	man --recode UTF-8 ./fastq_masker\.1 > fastq_masker\.1\.new
+	chmod 644 fastq_masker.1.new
+	mv -f fastq_masker.1.new fastq_masker.1
+help2man --no-info --no-discard-stderr --version-string='0.0.13.2' --help-option='-h' \
+	   --name='Convert FASTQ files to FASTA files' \
+	   /tmp/buildd/fastx-toolkit-0.0.13.2/debian/fastx-toolkit/usr/bin/fastq_to_fasta > /tmp/buildd/fastx-toolkit-0.0.13.2/debian/fastx-toolkit/usr/share/man/man1/fastq_to_fasta.1
+help2man --no-info --no-discard-stderr --version-string='0.0.13.2' --help-option='-h' \
+	   --name='FASTQ/A Artifacts Filter' \
+	   /tmp/buildd/fastx-toolkit-0.0.13.2/debian/fastx-toolkit/usr/bin/fastx_artifacts_filter > /tmp/buildd/fastx-toolkit-0.0.13.2/debian/fastx-toolkit/usr/share/man/man1/fastx_artifacts_filter.1
+help2man --no-info --no-discard-stderr --version-string='0.0.13.2' --help-option='-h' \
+	   --name='FASTA/Q Clipper' \
+	   /tmp/buildd/fastx-toolkit-0.0.13.2/debian/fastx-toolkit/usr/bin/fastx_clipper > /tmp/buildd/fastx-toolkit-0.0.13.2/debian/fastx-toolkit/usr/share/man/man1/fastx_clipper.1
+help2man --no-info --no-discard-stderr --version-string='0.0.13.2' --help-option='-h' \
+	   --name='FASTA/Q Collapser' \
+	   /tmp/buildd/fastx-toolkit-0.0.13.2/debian/fastx-toolkit/usr/bin/fastx_collapser > /tmp/buildd/fastx-toolkit-0.0.13.2/debian/fastx-toolkit/usr/share/man/man1/fastx_collapser.1
+help2man --no-info --no-discard-stderr --version-string='0.0.13.2' --help-option='-h' \
+	   --name='FASTX Statistics' \
+	   /tmp/buildd/fastx-toolkit-0.0.13.2/debian/fastx-toolkit/usr/bin/fastx_quality_stats > /tmp/buildd/fastx-toolkit-0.0.13.2/debian/fastx-toolkit/usr/share/man/man1/fastx_quality_stats.1
+help2man --no-info --no-discard-stderr --version-string='0.0.13.2' --help-option='-h' \
+	   --name='FASTA/Q Renamer' \
+	   /tmp/buildd/fastx-toolkit-0.0.13.2/debian/fastx-toolkit/usr/bin/fastx_renamer > /tmp/buildd/fastx-toolkit-0.0.13.2/debian/fastx-toolkit/usr/share/man/man1/fastx_renamer.1
+help2man --no-info --no-discard-stderr --version-string='0.0.13.2' --help-option='-h' \
+	   --name='FASTQ/A Reverse Complement' \
+	   /tmp/buildd/fastx-toolkit-0.0.13.2/debian/fastx-toolkit/usr/bin/fastx_reverse_complement > /tmp/buildd/fastx-toolkit-0.0.13.2/debian/fastx-toolkit/usr/share/man/man1/fastx_reverse_complement.1
+help2man --no-info --no-discard-stderr --version-string='0.0.13.2' --help-option='-h' \
+	   --name='FASTA/Q Trimmer' \
+	   /tmp/buildd/fastx-toolkit-0.0.13.2/debian/fastx-toolkit/usr/bin/fastx_trimmer > /tmp/buildd/fastx-toolkit-0.0.13.2/debian/fastx-toolkit/usr/share/man/man1/fastx_trimmer.1
+help2man --no-info --no-discard-stderr --version-string='0.0.13.2' --help-option='-h' \
+	   --name='FASTA/Q Uncollapser' \
+	   /tmp/buildd/fastx-toolkit-0.0.13.2/debian/fastx-toolkit/usr/bin/fastx_uncollapser > /tmp/buildd/fastx-toolkit-0.0.13.2/debian/fastx-toolkit/usr/share/man/man1/fastx_uncollapser.1
+# Perl scripts add the full path to usage advise which needs to be removed
+# The script fasta_clipping_histogram.pl does not feature a '-h' option
+help2man --no-info --no-discard-stderr --version-string='0.0.13.2' -h '' \
+	   --name='Create a Linker Clipping Information Histogram' \
+	   /tmp/buildd/fastx-toolkit-0.0.13.2/debian/fastx-toolkit/usr/bin/fasta_clipping_histogram.pl | \
+	   sed -e 's?^usage: .*\([^/]\+\.pl\)?usage: \1?' \
+	   > /tmp/buildd/fastx-toolkit-0.0.13.2/debian/fastx-toolkit/usr/share/man/man1/fasta_clipping_histogram.pl.1
+help2man --no-info --no-discard-stderr --version-string='0.0.13.2' --help-option='-h' \
+	   --name='FASTX Barcode Splitter' \
+	   /tmp/buildd/fastx-toolkit-0.0.13.2/debian/fastx-toolkit/usr/bin/fastx_barcode_splitter.pl | \
+	   sed -e 's?^usage: .*\([^/]\+\.pl\)?usage: \1?' \
+	   > /tmp/buildd/fastx-toolkit-0.0.13.2/debian/fastx-toolkit/usr/share/man/man1/fastx_barcode_splitter.pl.1
+help2man --no-info --no-discard-stderr --version-string='0.0.13.2' --help-option='-h' \
+	   --name='Solexa-Quality BoxPlot plotter' \
+	   /tmp/buildd/fastx-toolkit-0.0.13.2/debian/fastx-toolkit/usr/bin/fastq_quality_boxplot_graph.sh > /tmp/buildd/fastx-toolkit-0.0.13.2/debian/fastx-toolkit/usr/share/man/man1/fastq_quality_boxplot_graph.sh.1
+help2man --no-info --no-discard-stderr --version-string='0.0.13.2' --help-option='-h' \
+	   --name='FASTA/Q Nucleotide Distribution Plotter' \
+	   /tmp/buildd/fastx-toolkit-0.0.13.2/debian/fastx-toolkit/usr/bin/fastx_nucleotide_distribution_graph.sh > /tmp/buildd/fastx-toolkit-0.0.13.2/debian/fastx-toolkit/usr/share/man/man1/fastx_nucleotide_distribution_graph.sh.1
+help2man --no-info --no-discard-stderr --version-string='0.0.13.2' --help-option='-h' \
+	   --name='FASTA/Q Nucleotide Distribution Plotter' \
+	   /tmp/buildd/fastx-toolkit-0.0.13.2/debian/fastx-toolkit/usr/bin/fastx_nucleotide_distribution_line_graph.sh > /tmp/buildd/fastx-toolkit-0.0.13.2/debian/fastx-toolkit/usr/share/man/man1/fastx_nucleotide_distribution_line_graph.sh.1
+for man in `find /tmp/buildd/fastx-toolkit-0.0.13.2/debian/fastx-toolkit/usr/share/man/man1 "*.1"` ; do cat debian/manpages_see_also >> $man ; done
+find: `*.1': No such file or directory
+/bin/sh: 1: cannot create /tmp/buildd/fastx-toolkit-0.0.13.2/debian/fastx-toolkit/usr/share/man/man1: Is a directory
+make[1]: Leaving directory `/tmp/buildd/fastx-toolkit-0.0.13.2'
+   dh_perl
+	(grep -s -v perl:Depends debian/fastx-toolkit.substvars; echo perl:Depends=perl) > debian/fastx-toolkit.substvars.new
+	mv debian/fastx-toolkit.substvars.new debian/fastx-toolkit.substvars
+   dh_link
+	rm -f debian/fastx-toolkit/usr/share/doc/fastx-toolkit/NEWS
+	ln -sf changelog debian/fastx-toolkit/usr/share/doc/fastx-toolkit/NEWS
+   dh_compress
+	cd debian/fastx-toolkit
+	chmod a-x usr/share/man/man1/fastx_barcode_splitter.pl.1 usr/share/man/man1/fastx_nucleotide_distribution_graph.sh.1 usr/share/man/man1/fastx_quality_stats.1 usr/share/man/man1/fastq_quality_filter.1 usr/share/man/man1/fasta_clipping_histogram.pl.1 usr/share/man/man1/fastx_collapser.1 usr/share/man/man1/fastx_reverse_complement.1 usr/share/man/man1/fastx_renamer.1 usr/share/man/man1/fastx_nucleotide_distribution_line_graph.sh.1 usr/share/man/man1/fastx_clipper.1 usr/share/man/man1/fastq_to_fasta.1 usr/share/man/man1/fastx_uncollapser.1 usr/share/man/man1/fasta_nucleotide_changer.1 usr/share/man/man1/fastx_trimmer.1 usr/share/man/man1/fastx_artifacts_filter.1 usr/share/man/man1/fastq_quality_converter.1 usr/share/man/man1/fastq_quality_trimmer.1 usr/share/man/man1/fastq_quality_boxplot_graph.sh.1 usr/share/man/man1/fasta_formatter.1 usr/share/man/man1/fastq_masker.1 usr/share/doc/fastx-toolkit/README usr/share/doc/fastx-toolkit/changelog usr/share/doc/fastx-toolkit/changelog.Debian
+	gzip -9nf usr/share/man/man1/fastx_barcode_splitter.pl.1 usr/share/man/man1/fastx_nucleotide_distribution_graph.sh.1 usr/share/man/man1/fastx_quality_stats.1 usr/share/man/man1/fastq_quality_filter.1 usr/share/man/man1/fasta_clipping_histogram.pl.1 usr/share/man/man1/fastx_collapser.1 usr/share/man/man1/fastx_reverse_complement.1 usr/share/man/man1/fastx_renamer.1 usr/share/man/man1/fastx_nucleotide_distribution_line_graph.sh.1 usr/share/man/man1/fastx_clipper.1 usr/share/man/man1/fastq_to_fasta.1 usr/share/man/man1/fastx_uncollapser.1 usr/share/man/man1/fasta_nucleotide_changer.1 usr/share/man/man1/fastx_trimmer.1 usr/share/man/man1/fastx_artifacts_filter.1 usr/share/man/man1/fastq_quality_converter.1 usr/share/man/man1/fastq_quality_trimmer.1 usr/share/man/man1/fastq_quality_boxplot_graph.sh.1 usr/share/man/man1/fasta_formatter.1 usr/share/man/man1/fastq_masker.1 usr/share/doc/fastx-toolkit/README usr/share/doc/fastx-toolkit/changelog usr/share/doc/fastx-toolkit/changelog.Debian
+	cd '/tmp/buildd/fastx-toolkit-0.0.13.2'
+	rm -f debian/fastx-toolkit/usr/share/doc/fastx-toolkit/NEWS
+	ln -sf changelog.gz debian/fastx-toolkit/usr/share/doc/fastx-toolkit/NEWS.gz
+   dh_fixperms
+	find debian/fastx-toolkit  -print0 2>/dev/null | xargs -0r chown --no-dereference 0:0
+	find debian/fastx-toolkit ! -type l  -print0 2>/dev/null | xargs -0r chmod go=rX,u+rw,a-s
+	find debian/fastx-toolkit/usr/share/doc -type f  ! -regex 'debian/fastx-toolkit/usr/share/doc/[^/]*/examples/.*' -print0 2>/dev/null | xargs -0r chmod 644
+	find debian/fastx-toolkit/usr/share/doc -type d  -print0 2>/dev/null | xargs -0r chmod 755
+	find debian/fastx-toolkit/usr/share/man debian/fastx-toolkit/usr/man/ debian/fastx-toolkit/usr/X11*/man/ -type f  -print0 2>/dev/null | xargs -0r chmod 644
+	find debian/fastx-toolkit -perm -5 -type f \( -name '*.so.*' -or -name '*.so' -or -name '*.la' -or -name '*.a' \)  -print0 2>/dev/null | xargs -0r chmod 644
+	find debian/fastx-toolkit/usr/include -type f  -print0 2>/dev/null | xargs -0r chmod 644
+	find debian/fastx-toolkit/usr/share/applications -type f  -print0 2>/dev/null | xargs -0r chmod 644
+	find debian/fastx-toolkit -perm -5 -type f \( -name '*.cmxs' \)  -print0 2>/dev/null | xargs -0r chmod 644
+	find debian/fastx-toolkit/usr/lib/perl5 debian/fastx-toolkit/usr/share/perl5 -type f -perm -5 -name '*.pm'  -print0 2>/dev/null | xargs -0r chmod a-X
+	find debian/fastx-toolkit/usr/bin -type f  -print0 2>/dev/null | xargs -0r chmod a+x
+	find debian/fastx-toolkit/usr/lib -type f -name '*.ali'  -print0 2>/dev/null | xargs -0r chmod uga-w
+   dh_strip
+	strip --remove-section=.comment --remove-section=.note debian/fastx-toolkit/usr/bin/fastx_trimmer
+	strip --remove-section=.comment --remove-section=.note debian/fastx-toolkit/usr/bin/fastx_reverse_complement
+	strip --remove-section=.comment --remove-section=.note debian/fastx-toolkit/usr/bin/fastx_uncollapser
+	strip --remove-section=.comment --remove-section=.note debian/fastx-toolkit/usr/bin/fastq_to_fasta
+	strip --remove-section=.comment --remove-section=.note debian/fastx-toolkit/usr/bin/fastx_clipper
+	strip --remove-section=.comment --remove-section=.note debian/fastx-toolkit/usr/bin/fastq_quality_filter
+	strip --remove-section=.comment --remove-section=.note debian/fastx-toolkit/usr/bin/fastx_artifacts_filter
+	strip --remove-section=.comment --remove-section=.note debian/fastx-toolkit/usr/bin/fastx_collapser
+	strip --remove-section=.comment --remove-section=.note debian/fastx-toolkit/usr/bin/fastq_quality_trimmer
+	strip --remove-section=.comment --remove-section=.note debian/fastx-toolkit/usr/bin/fasta_nucleotide_changer
+	strip --remove-section=.comment --remove-section=.note debian/fastx-toolkit/usr/bin/fastx_quality_stats
+	strip --remove-section=.comment --remove-section=.note debian/fastx-toolkit/usr/bin/fasta_formatter
+	strip --remove-section=.comment --remove-section=.note debian/fastx-toolkit/usr/bin/fastq_quality_converter
+	strip --remove-section=.comment --remove-section=.note debian/fastx-toolkit/usr/bin/fastq_masker
+	strip --remove-section=.comment --remove-section=.note debian/fastx-toolkit/usr/bin/fastx_renamer
+   dh_makeshlibs
+	rm -f debian/fastx-toolkit/DEBIAN/shlibs
+   dh_shlibdeps
+	install -o 0 -g 0 -d debian/fastx-toolkit/DEBIAN
+	dpkg-shlibdeps -Tdebian/fastx-toolkit.substvars debian/fastx-toolkit/usr/bin/fastx_trimmer debian/fastx-toolkit/usr/bin/fastx_reverse_complement debian/fastx-toolkit/usr/bin/fastx_uncollapser debian/fastx-toolkit/usr/bin/fastq_to_fasta debian/fastx-toolkit/usr/bin/fastx_clipper debian/fastx-toolkit/usr/bin/fastq_quality_filter debian/fastx-toolkit/usr/bin/fastx_artifacts_filter debian/fastx-toolkit/usr/bin/fastx_collapser debian/fastx-toolkit/usr/bin/fastq_quality_trimmer debian/fastx-toolkit/usr/bin/fasta_nucleotide_changer debian/fastx-toolkit/usr/bin/fastx_quality_stats debian/fastx-toolkit/usr/bin/fasta_formatter debian/fastx-toolkit/usr/bin/fastq_quality_converter debian/fastx-toolkit/usr/bin/fastq_masker debian/fastx-toolkit/usr/bin/fastx_renamer
+   dh_installdeb
+   dh_gencontrol
+	echo misc:Depends= >> debian/fastx-toolkit.substvars
+	dpkg-gencontrol -ldebian/changelog -Tdebian/fastx-toolkit.substvars -Pdebian/fastx-toolkit
+dpkg-gencontrol: warning: File::FcntlLock not available; using flock which is not NFS-safe
+dpkg-gencontrol: warning: package fastx-toolkit: unused substitution variable ${perl:Depends}
+	chmod 644 debian/fastx-toolkit/DEBIAN/control
+	chown 0:0 debian/fastx-toolkit/DEBIAN/control
+   dh_md5sums
+	(cd debian/fastx-toolkit >/dev/null ; find . -type f  ! -regex './DEBIAN/.*' -printf '%P\0' | LC_ALL=C sort -z | xargs -r0 md5sum > DEBIAN/md5sums) >/dev/null
+	chmod 644 debian/fastx-toolkit/DEBIAN/md5sums
+	chown 0:0 debian/fastx-toolkit/DEBIAN/md5sums
+   dh_builddeb
+	dpkg-deb --build debian/fastx-toolkit ..
+dpkg-deb: building package `fastx-toolkit' in `../fastx-toolkit_0.0.13.2-2_amd64.deb'.
+ dpkg-genchanges  >../fastx-toolkit_0.0.13.2-2_amd64.changes
+dpkg-genchanges: not including original source code in upload
+ dpkg-source -i.git -I.git -i.git -I.git --after-build fastx-toolkit-0.0.13.2
+dpkg-buildpackage: binary and diff upload (original source NOT included)
+W: no hooks of type B found -- ignoring
+I: Copying back the cached apt archive contents
+I: unmounting dev/pts filesystem
+I: unmounting run/shm filesystem
+I: unmounting proc filesystem
+I: Current time: Thu Oct 24 08:18:25 CEST 2013
+I: pbuilder-time-stamp: 1382595505
+uncollapser
+	strip --remove-section=.comment --remove-section=.note debian/fastx-toolkit/usr/bin/fastq_to_fasta
+	strip --remove-section=.comment --remove-section=.note debian/fastx-toolkit/usr/bin/fastx_clipper
+	strip --remove-section=.comment --remove-section=.note debian/fastx-toolkit/usr/bin/fastq_quality_filter
+	strip --remove-section=.comment --remove-section=.note debian/fastx-toolkit/usr/bin/fastx_artifacts_filter
+	strip --remove-section=.comment --remove-section=.note debian/fastx-toolkit/usr/bin/fastx_collapser
+	strip --remove-section=.comment --remove-section=.note debian/fastx-toolkit/usr/bin/fastq_quality_trimmer
+	strip --remove-section=.comment --remove-section=.note debian/fastx-toolkit/usr/bin/fasta_nucleotide_changer
+	strip --remove-section=.comment --remove-section=.note debian/fastx-toolkit/usr/bin/fastx_quality_stats
+	strip --remove-section=.comment --remove-section=.note debian/fastx-toolkit/usr/bin/fasta_formatter
+	strip --remove-section=.comment --remove-section=.note debian/fastx-toolkit/usr/bin/fastq_quality_converter
+	strip --remove-section=.comment --remove-section=.note debian/fastx-toolkit/usr/bin/fastq_masker
+	strip --remove-section=.comment --remove-section=.note debian/fastx-toolkit/usr/bin/fastx_renamer
+   dh_makeshlibs
+	rm -f debian/fastx-toolkit/DEBIAN/shlibs
+   dh_shlibdeps
+	install -o 0 -g 0 -d debian/fastx-toolkit/DEBIAN
+	dpkg-shlibdeps -Tdebian/fastx-toolkit.substvars debian/fastx-toolkit/usr/bin/fastx_trimmer debian/fastx-toolkit/usr/bin/fastx_reverse_complement debian/fastx-toolkit/usr/bin/fastx_uncollapser debian/fastx-toolkit/usr/bin/fastq_to_fasta debian/fastx-toolkit/usr/bin/fastx_clipper debian/fastx-toolkit/usr/bin/fastq_quality_filter debian/fastx-toolkit/usr/bin/fastx_artifacts_filter debian/fastx-toolkit/usr/bin/fastx_collapser debian/fastx-toolkit/usr/bin/fastq_quality_trimmer debian/fastx-toolkit/usr/bin/fasta_nucleotide_changer debian/fastx-toolkit/usr/bin/fastx_quality_stats debian/fastx-toolkit/usr/bin/fasta_formatter debian/fastx-toolkit/usr/bin/fastq_quality_converter debian/fastx-toolkit/usr/bin/fastq_masker debian/fastx-toolkit/usr/bin/fastx_renamer
+   dh_installdeb
+   dh_gencontrol
+	echo misc:Depends= >> debian/fastx-toolkit.substvars
+	dpkg-gencontrol -ldebian/changelog -Tdebian/fastx-toolkit.substvars -Pdebian/fastx-toolkit
+dpkg-gencontrol: warning: File::FcntlLock not available; using flock which is not NFS-safe
+dpkg-gencontrol: warning: package fastx-toolkit: unused substitution variable ${perl:Depends}
+	chmod 644 debian/fastx-toolkit/DEBIAN/control
+	chown 0:0 debian/fastx-toolkit/DEBIAN/control
+   dh_md5sums
+	(cd debian/fastx-toolkit >/dev/null ; find . -type f  ! -regex './DEBIAN/.*' -printf '%P\0' | LC_ALL=C sort -z | xargs -r0 md5sum > DEBIAN/md5sums) >/dev/null
+	chmod 644 debian/fastx-toolkit/DEBIAN/md5sums
+	chown 0:0 debian/fastx-toolkit/DEBIAN/md5sums
+   dh_builddeb
+	dpkg-deb --build debian/fastx-toolkit ..
+dpkg-deb: building package `fastx-toolkit' in `../fastx-toolkit_0.0.13.2-2_amd64.deb'.
+ dpkg-genchanges  >../fastx-toolkit_0.0.13.2-2_amd64.changes
+dpkg-genchanges: not including original source code in upload
+ dpkg-source -i.git -I.git -i.git -I.git --after-build fastx-toolkit-0.0.13.2
+dpkg-buildpackage: binary and diff upload (original source NOT included)
+W: no hooks of type B found -- ignoring
+I: Copying back the cached apt archive contents
+I: unmounting dev/pts filesystem
+I: unmounting run/shm filesystem
+I: unmounting proc filesystem
+I: Current time: Thu Oct 24 08:18:25 CEST 2013
+I: pbuilder-time-stamp: 1382595505
+ -> Cleaning COW directory
+  forking: rm -rf /var/cache/pbuilder/build//cow.32125 
+ signfile /home/tillea/debian-maintain/alioth/debian-med_git/build-area/fastx-toolkit_0.0.13.2-2.dsc Andreas Tille <tille@debian.org>
+
+ signfile /home/tillea/debian-maintain/alioth/debian-med_git/build-area/fastx-toolkit_0.0.13.2-2_amd64.changes Andreas Tille <tille@debian.org>
+
+Successfully signed dsc and changes files
