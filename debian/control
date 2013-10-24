@@ -32,4 +32,3 @@ Description: FASTQ/A short nucleotide reads pre-processing tools
  before mapping the sequences to the genome—manipulating the sequences to
  produce better mapping results. The FASTX-Toolkit tools perform some of these
  preprocessing tasks. 
-
