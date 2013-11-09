@@ -1,4 +1,4 @@
-# Copyright (C) 2008 Assaf Gordon <gordon@cshl.edu>
+# Copyright (C) 2008-2013 Assaf Gordon <assafgordon@gmail.com>
 #  
 # This file is free software; as a special exception the author gives
 # unlimited permission to copy and/or distribute it, with or without 
@@ -9,8 +9,8 @@
 # implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 
 AC_INIT([FASTX Toolkit],
-        [0.0.13.2],
-        [Assaf Gordon gordon@cshl.edu],
+        [0.0.14-rc1],
+        [Assaf Gordon assafgordon@gmail.com],
         [fastx_toolkit])
 AC_CONFIG_AUX_DIR(config)
 AC_CONFIG_MACRO_DIR([m4])
@@ -54,10 +54,10 @@ esac],[debug=true])
 if test "$debug" = "true"
 then
   CFLAGS="${CFLAGS} -DDEBUG -g -O1"
-  CXXFLAGS="${CFLAGS} -DDEBUG -g -O1"
+  CXXFLAGS="${CXXFLAGS} -DDEBUG -g -O1"
 else
   CFLAGS="${CFLAGS} -O3"
-  CXXFLAGS="${CFLAGS} -O3"
+  CXXFLAGS="${CXXFLAGS} -O3"
 fi
 
 dnl 'all-static' marco copied from subversion's configure.ac
@@ -102,7 +102,6 @@ AC_CONFIG_FILES([
    galaxy/Makefile
    galaxy/tools/Makefile
    galaxy/tools/fastx_toolkit/Makefile
-   galaxy/tools/cshl_custom_fastx_toolkit/Makefile
    galaxy/test-data/Makefile
    galaxy/static/Makefile
    galaxy/static/fastx_icons/Makefile

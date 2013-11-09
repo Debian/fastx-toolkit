@@ -1,6 +1,6 @@
 /*
     FASTX-toolkit - FASTA/FASTQ preprocessing tools.
-    Copyright (C) 2009  A. Gordon (gordon@cshl.edu)
+    Copyright (C) 2009-2013  A. Gordon (assafgordon@gmail.com)
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU Affero General Public License as
@@ -46,7 +46,8 @@ static int validate_nucleotides_string(int allowed_nucleotides[256], const char*
 {
 	int match = 1 ;
 	while (*seq != '\0' && match) {
-		match &=  allowed_nucleotides[ (int) *seq ];
+		unsigned char c = *seq;
+		match &=  allowed_nucleotides[ c ];
 		seq++;
 	}
 	return match;
@@ -320,7 +321,7 @@ int fastx_read_next_record(FASTX *pFASTX)
 		errx(1,"Internal error: pFASTX==NULL (%s:%d)", __FILE__,__LINE__);
 
 	pFASTX->input_line_number++;
-	if (fgets(pFASTX->dummy_read_id_buffer, MAX_SEQ_LINE_LENGTH, pFASTX->input) == NULL)
+	if (fgets(pFASTX->input_sequence_id_prefix, MAX_SEQ_LINE_LENGTH, pFASTX->input) == NULL)
 		return 0; //assume end-of-file, if we couldn't read the first line of the foursome
 
 	chomp(pFASTX->name);
@@ -356,13 +357,17 @@ int fastx_read_next_record(FASTX *pFASTX)
 
 	chomp(pFASTX->nucleotides);
 
+	/* Disallow empty nucleotide strings */
+	if (strlen(pFASTX->nucleotides)==0)
+		errx(1,"found empty nucleotide sequence on line %lld\n",pFASTX->input_line_number);
+
 	if (!validate_nucleotides_string(pFASTX->allowed_nucleotides, pFASTX->nucleotides)) 
 		errx(1,"found invalid nucleotide sequence (%s) on line %lld\n",
 				pFASTX->nucleotides,pFASTX->input_line_number);
 	
 	if (pFASTX->read_fastq) {
 		pFASTX->input_line_number++;
-		if (fgets(pFASTX->dummy_read_id2_buffer,  MAX_SEQ_LINE_LENGTH, pFASTX->input) == NULL) 
+		if (fgets(pFASTX->input_name2_prefix,  MAX_SEQ_LINE_LENGTH, pFASTX->input) == NULL) 
 			errx(1,"Failed to read complete record, missing 3rd line (name-2), on line %lld\n",
 				pFASTX->input_line_number);
 		

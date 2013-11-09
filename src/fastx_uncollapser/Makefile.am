@@ -1,4 +1,4 @@
-# Copyright (C) 2008 Assaf Gordon <gordon@cshl.edu>
+# Copyright (C) 2008-2013 Assaf Gordon <assafgordon@gmail.com>
 #
 # This file is free software; as a special exception the author gives
 # unlimited permission to copy and/or distribute it, with or without
@@ -13,9 +13,9 @@ bin_PROGRAMS = fastx_uncollapser
 
 AM_CPPFLAGS = \
 	$(CC_WARNINGS) \
-	-I../libfastx
+	$(GTEXTUTILS_CFLAGS) \
+	-I$(top_srcdir)/src/libfastx
 
-INCLUDES = $(GTEXTUTILS_CFLAGS) -I../libfastx
 LDADD = $(GTEXTUTILS_LIBS) ../libfastx/libfastx.a $(LT_LDFLAGS)
 
 fastx_uncollapser_SOURCES = fastx_uncollapser.cpp

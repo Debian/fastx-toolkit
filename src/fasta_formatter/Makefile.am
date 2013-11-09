@@ -1,4 +1,4 @@
-# Copyright (C) 2008 Assaf Gordon <gordon@cshl.edu>
+# Copyright (C) 2008-2013 Assaf Gordon <assafgordon@gmail.com>
 #  
 # This file is free software; as a special exception the author gives
 # unlimited permission to copy and/or distribute it, with or without 
@@ -11,9 +11,9 @@
 
 bin_PROGRAMS = fasta_formatter
 
-AM_CPPFLAGS = $(CC_WARNINGS) 
-	
-INCLUDES = $(GTEXTUTILS_CFLAGS) -I../libfastx
+AM_CPPFLAGS = $(CC_WARNINGS) $(GTEXTUTILS_CFLAGS) \
+	-I$(top_srcdir)/src/libfastx
+
 LDADD = $(GTEXTUTILS_LIBS) ../libfastx/libfastx.a $(LT_LDFLAGS)
 
 fasta_formatter_SOURCES = fasta_formatter.cpp \

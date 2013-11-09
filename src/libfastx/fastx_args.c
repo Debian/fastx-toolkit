@@ -1,6 +1,6 @@
 /*
     FASTX-toolkit - FASTA/FASTQ preprocessing tools.
-    Copyright (C) 2009  A. Gordon (gordon@cshl.edu)
+    Copyright (C) 2009-2013  A. Gordon (assafgordon@gmail.com)
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU Affero General Public License as
@@ -40,7 +40,7 @@ const char* input_filename = "-";
 const char* output_filename = "-";
 int verbose = 0;
 int compress_output = 0 ;
-int fastq_ascii_quality_offset = 64 ;
+int fastq_ascii_quality_offset = 33 ;
 FILE* report_file;
 
 int get_fastq_ascii_quality_offset()

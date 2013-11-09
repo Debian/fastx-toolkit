@@ -1,4 +1,4 @@
-# Copyright (C) 2008 Assaf Gordon <gordon@cshl.edu>
+# Copyright (C) 2008-2013 Assaf Gordon <assafgordon@gmail.com>
 #  
 # This file is free software; as a special exception the author gives
 # unlimited permission to copy and/or distribute it, with or without 
@@ -8,4 +8,4 @@
 # WITHOUT ANY WARRANTY, to the extent permitted by law; without even the
 # implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 
-SUBDIRS = fastx_toolkit cshl_custom_fastx_toolkit
+SUBDIRS = fastx_toolkit

@@ -1,4 +1,4 @@
-# Copyright (C) 2008 Assaf Gordon <gordon@cshl.edu>
+# Copyright (C) 2008-2013 Assaf Gordon <assafgordon@gmail.com>
 #  
 # This file is free software; as a special exception the author gives
 # unlimited permission to copy and/or distribute it, with or without 
@@ -13,7 +13,7 @@ noinst_PROGRAMS = seqalign_test
 
 AM_CPPFLAGS = \
 	$(CC_WARNINGS) \
-	-I../libfastx
+	-I$(top_srcdir)/src/libfastx
 
 seqalign_test_SOURCES = seqalign_test.cpp
 
