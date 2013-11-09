@@ -1,5 +1,5 @@
 Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
-Source: http://hannonlab.cshl.edu/fastx_toolkit/fastx_toolkit-0.0.13.2.tar.bz2
+Source: https://github.com/agordon/fastx_toolkit
 Comment: FASTX-Toolkit LICENSE
   =====================
  .  
@@ -13,11 +13,11 @@ Comment: FASTX-Toolkit LICENSE
  See the GALAXY-LICENSE file.
 
 Files: *
-Copyright: 2008–2009, Assaf Gordon <gordon@cshl.edu>
+Copyright: 2008–2013 Assaf Gordon <assafgordon@gmail.com>
 License: AGPL-3+
 
 Files: galaxy/*
-Copyright: 2008–2009, Assaf Gordon <gordon@cshl.edu>
+Copyright: 2008–2013 Assaf Gordon <assafgordon@gmail.com>
 License: MIT
  Permission is hereby granted, free of charge, to any person obtaining 
  a copy of this software and associated documentation files (the 
