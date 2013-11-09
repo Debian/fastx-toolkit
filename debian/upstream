@@ -1,6 +1,10 @@
-Contact: Assaf Gordon <gordon@cshl.edu>
+Archive: GitHub
+Contact: Assaf Gordon <assafgordon@gmail.com>
 Name: FASTX-Toolkit
 Homepage: http://hannonlab.cshl.edu/fastx_toolkit/
+Repository: https://github.com/agordon/fastx_toolkit.git
+Repository-Browse: https://github.com/agordon/fastx_toolkit
 Watch: |
  version=3
- http://hannonlab.cshl.edu/fastx_toolkit/download.html fastx_toolkit-(.*)\.tar\.bz2
+ opts=filenamemangle=s/.+\/v?(\d\S*)\.tar\.gz/fastx_toolkit-$1.tar.gz/ \
+  https://github.com/agordon/fastx_toolkit/tags .*/v?(\d\S*)\.tar\.gz
