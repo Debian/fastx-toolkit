@@ -13,7 +13,7 @@ Build-Depends: debhelper (>= 9),
                libperlio-gzip-perl
 Standards-Version: 3.9.4
 Vcs-Browser: http://anonscm.debian.org/gitweb/?p=debian-med/fastx-toolkit.git
-Vcs-Git: git://anonscm.debian.org/debian-med/fastx-toolkit.git
+Vcs-Git: git://anonscm.debian.org/debian-med/fastx-toolkit.git -b debian/unstable
 Homepage: http://hannonlab.cshl.edu/fastx_toolkit/
 
 Package: fastx-toolkit
