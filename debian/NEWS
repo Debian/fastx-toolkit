@@ -1,0 +1,12 @@
+fastx-toolkit (0.0.14-1) UNRELEASED; urgency=low
+
+  Backwards-incompatible changes upstream:
+
+  * Default quality is now Sanger(33) instead of Illumina (64). No need for
+    "-Q33" anymore.
+  
+  * Disallow empty nucleotide strings: fail on FASTA/FASTX files with empty
+    (zero-length) nucleotide strings.  This might break old-pipelines, but
+    those FASTAs are invalid anyhow and processing them should not succeed.
+
+ -- Charles Plessy <plessy@debian.org>  Sat, 09 Nov 2013 16:46:38 +0900
