@@ -11,10 +11,9 @@ bindir := $(CURDIR)/debian/$(pkg)/usr/bin
 %:
 	dh $@ --with autotools_dev
 
-override_dh_auto_build:
+override_dh_auto_configure:
 	./reconf
-	./configure
-	dh_auto_build
+	dh_auto_configure
 
 override_dh_install:
 	dh_install
