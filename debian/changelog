@@ -7,7 +7,6 @@ fastx-toolkit (0.0.14~rc2-1) UNRELEASED; urgency=low
   450b05d debian/watch: follow GitHub.
   d2de0ee Build-depend on libtool.
   ee94435 debian/rules: adapt for building from Git repository.
-  2c5e12e Use the version 1.0 source package format.
   6d9b972 Document backward-incompatible changes in debian/NEWS.
   d0c8ed5 Mangle upstream version number for release candidates.
   58a04c9 Document the repository structure in ‘debian/gbp.conf’.
