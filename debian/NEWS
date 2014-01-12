@@ -9,4 +9,4 @@ fastx-toolkit (0.0.14-1) unstable; urgency=low
     (zero-length) nucleotide strings.  This might break old-pipelines, but
     those FASTAs are invalid anyhow and processing them should not succeed.
 
- -- Charles Plessy <plessy@debian.org>  Sat, 09 Nov 2013 16:46:38 +0900
+ -- Charles Plessy <plessy@debian.org>  Sun, 12 Jan 2014 15:52:14 +0900

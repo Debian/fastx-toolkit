@@ -1,5 +1,5 @@
 Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
-Source: https://github.com/agordon/fastx_toolkit
+Source: https://github.com/agordon/fastx_toolkit/archive/0.0.14.tar.gz
 Comment: FASTX-Toolkit LICENSE
   =====================
  .  

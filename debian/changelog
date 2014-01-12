@@ -1,8 +1,7 @@
-fastx-toolkit (0.0.14~rc2-1) UNRELEASED; urgency=low
+fastx-toolkit (0.0.14-1) unstable; urgency=low
 
-  [ Charles Plessy ]
   53f820d New upstream release (Closes: 715887, 715888)
-  6a99f79 Default branch of the source package repository is now ‘debian/unstable’.
+  6a99f79 Default source package branch is now ‘debian/unstable’.
   5028533 Conforms with the Policy version 3.9.5.
   450b05d debian/watch: follow GitHub.
   d2de0ee Build-depend on libtool.
@@ -10,8 +9,9 @@ fastx-toolkit (0.0.14~rc2-1) UNRELEASED; urgency=low
   6d9b972 Document backward-incompatible changes in debian/NEWS.
   d0c8ed5 Mangle upstream version number for release candidates.
   58a04c9 Document the repository structure in ‘debian/gbp.conf’.
+  4786502 Build-depend on automake.
 
- -- Charles Plessy <plessy@debian.org>  Sat, 09 Nov 2013 16:16:23 +0900
+ -- Charles Plessy <plessy@debian.org>  Sun, 12 Jan 2014 15:52:14 +0900
 
 fastx-toolkit (0.0.13.2-2) unstable; urgency=low
 
