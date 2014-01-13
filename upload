@@ -1,11 +1,6 @@
-2013-10-24 08:19:46,517 - dput[18033]: uploader.invoke_dput - Uploading fastx-toolkit using ftp to ftp-master (host: ftp.upload.debian.org; directory: /pub/UploadQueue/)
-2013-10-24 08:19:46,523 - dput[18033]: hook.run_hook - running allowed-distribution: check whether a local profile permits uploads to the target distribution
-2013-10-24 08:19:46,527 - dput[18033]: hook.run_hook - running protected-distribution: warn before uploading to distributions where a special policy applies
-2013-10-24 08:19:46,528 - dput[18033]: hook.run_hook - running checksum: verify checksums before uploading
-2013-10-24 08:19:46,530 - dput[18033]: hook.run_hook - running suite-mismatch: check the target distribution for common errors
-2013-10-24 08:19:46,532 - dput[18033]: hook.run_hook - running check-debs: makes sure the upload contains a binary package
-2013-10-24 08:19:46,533 - dput[18033]: hook.run_hook - running gpg: check GnuPG signatures before the upload
-2013-10-24 08:19:48,800 - dput[18033]: uploader.invoke_dput - Uploading fastx-toolkit_0.0.13.2-2.dsc
-2013-10-24 08:19:49,444 - dput[18033]: uploader.invoke_dput - Uploading fastx-toolkit_0.0.13.2-2.debian.tar.gz
-2013-10-24 08:19:50,554 - dput[18033]: uploader.invoke_dput - Uploading fastx-toolkit_0.0.13.2-2_amd64.deb
-2013-10-24 08:19:51,832 - dput[18033]: uploader.invoke_dput - Uploading fastx-toolkit_0.0.13.2-2_amd64.changes
+u fastx-toolkit_0.0.14.orig.tar.gz ftp.upload.debian.org Sun Jan 12 16:03:31 2014
+u fastx-toolkit_0.0.14-1_amd64.deb ftp.upload.debian.org Sun Jan 12 16:03:33 2014
+u fastx-toolkit_0.0.14-1.dsc ftp.upload.debian.org Sun Jan 12 16:03:34 2014
+u fastx-toolkit_0.0.14-1.debian.tar.gz ftp.upload.debian.org Sun Jan 12 16:03:37 2014
+u fastx-toolkit_0.0.14-1_amd64.changes ftp.upload.debian.org Sun Jan 12 16:03:38 2014
+s fastx-toolkit_0.0.14-1_amd64.changes ftp.upload.debian.org Sun Jan 12 16:03:38 2014

@@ -1,45 +1,62 @@
 -----BEGIN PGP SIGNED MESSAGE-----
-Hash: SHA1
+Hash: SHA512
 
 Format: 1.8
-Date: Wed, 10 Jul 2013 09:31:59 +0900
+Date: Sun, 12 Jan 2014 15:52:14 +0900
 Source: fastx-toolkit
 Binary: fastx-toolkit
 Architecture: source amd64
-Version: 0.0.13.2-2
+Version: 0.0.14-1
 Distribution: unstable
 Urgency: low
 Maintainer: Debian Med Packaging Team <debian-med-packaging@lists.alioth.debian.org>
 Changed-By: Charles Plessy <plessy@debian.org>
 Description: 
  fastx-toolkit - FASTQ/A short nucleotide reads pre-processing tools
-Closes: 727377
+Closes: 715887 715888
 Changes: 
- fastx-toolkit (0.0.13.2-2) unstable; urgency=low
+ fastx-toolkit (0.0.14-1) unstable; urgency=low
  .
-   20c23bd debian/control normalised with config-model-edit.
-   e23d327 Conforms with Policy 3.9.4.
-   bd520ae Removed obsolete DM-Upload-Allowed field.
-   ef94fe2 Added upstream metadata.
-   5303f09 Use normalised VCS URLs.
-   381489a Refresh autotools files via dh. (Closes: #727377)
+   53f820d New upstream release (Closes: 715887, 715888)
+   6a99f79 Default source package branch is now ‘debian/unstable’.
+   5028533 Conforms with the Policy version 3.9.5.
+   450b05d debian/watch: follow GitHub.
+   d2de0ee Build-depend on libtool.
+   ee94435 debian/rules: adapt for building from Git repository.
+   6d9b972 Document backward-incompatible changes in debian/NEWS.
+   d0c8ed5 Mangle upstream version number for release candidates.
+   58a04c9 Document the repository structure in ‘debian/gbp.conf’.
+   4786502 Build-depend on automake.
 Checksums-Sha1: 
- edb1cbd2e62687050a1e934e689b079bdc99f62c 1500 fastx-toolkit_0.0.13.2-2.dsc
- 16866a54ccef96087c4e8404df0f0440132b791f 17018 fastx-toolkit_0.0.13.2-2.debian.tar.gz
- 798c450823e07314f646c8ddba9e8e059c2afdbf 88188 fastx-toolkit_0.0.13.2-2_amd64.deb
+ d563cfde0f5b21c0101129d40edf679c1e1a871a 2161 fastx-toolkit_0.0.14-1.dsc
+ ce008d34469afd48f4012d37797f91972a8f72cf 259576 fastx-toolkit_0.0.14.orig.tar.gz
+ 523894518e02cb9e98e186df45574e2a2c13cbc0 17829 fastx-toolkit_0.0.14-1.debian.tar.gz
+ 9db4bb88e155c0337742ef6322e4bff2368b0163 85164 fastx-toolkit_0.0.14-1_amd64.deb
 Checksums-Sha256: 
- 64d628c16d5ccad0abd532b53b750eea0bdb60624c317e06fc74465928105313 1500 fastx-toolkit_0.0.13.2-2.dsc
- c0bc6d4f56d360df845efa50f0f964a16c8862b29b19fe23063fd6deec7fea3b 17018 fastx-toolkit_0.0.13.2-2.debian.tar.gz
- 23b969c56149d566be0424a9a3901e3a258309c4dd4bdaebe2713dca2e1c9cbe 88188 fastx-toolkit_0.0.13.2-2_amd64.deb
+ b9b98830b92c261782dc9aa6da15f80644f4b222ea022170cf3c54e44161581e 2161 fastx-toolkit_0.0.14-1.dsc
+ af4f9fe59f8c91bdd2d735bdac1fd89f0549b2bc759313fe3b86948056aad1aa 259576 fastx-toolkit_0.0.14.orig.tar.gz
+ cb21e6e14c34c2f123a54438a541e1531bc58106a3010aaedf4a21eab23eb325 17829 fastx-toolkit_0.0.14-1.debian.tar.gz
+ f555c515fc98823714b517363e3382b1253ebcbb210427bd0e16ab7102ab1d48 85164 fastx-toolkit_0.0.14-1_amd64.deb
 Files: 
- 1060bd28252fb8d1d612a00bfba211d2 1500 science optional fastx-toolkit_0.0.13.2-2.dsc
- 3aa6aa75120d08e0582d30fbbe702b1d 17018 science optional fastx-toolkit_0.0.13.2-2.debian.tar.gz
- 27cc1d6466988d5bcb7ca66199b096c7 88188 science optional fastx-toolkit_0.0.13.2-2_amd64.deb
+ 6e2bd6975ec2bf7e4f504ec39d72ad91 2161 science optional fastx-toolkit_0.0.14-1.dsc
+ e252d6330b17774d47966cf24ba80afd 259576 science optional fastx-toolkit_0.0.14.orig.tar.gz
+ 2f647e1e405cefe8d3e569a281f0aeca 17829 science optional fastx-toolkit_0.0.14-1.debian.tar.gz
+ e44f39dc25d7b75bce8915c22aa89f38 85164 science optional fastx-toolkit_0.0.14-1_amd64.deb
 
 -----BEGIN PGP SIGNATURE-----
-Version: GnuPG v1.4.15 (GNU/Linux)
+Version: GnuPG v1.4.14 (GNU/Linux)
 
-iEYEARECAAYFAlJou70ACgkQYDBbMcCf01oKKwCgjBhwCELCIOdQUSyYIod+R0WR
-xz0AoKgTjdeNFv9xSpPR/Pju41jIOD1U
-=pui9
+iQIcBAEBCgAGBQJS0jy6AAoJEMW9bI8ildUCVXEP/jfbRxXFVMA6QiSHWPkMPHcl
++RKa41fnBLdZ7RGagB//Gfro/QbpAyRsXKxb375nQDopdan09kRwEox1PZuLWIqM
+VAayOsALU4vKGwg6tIBKbJhC5mcGzGkOdCAhCGhQDqp+TZ+mUS4J0Rws8/MlBnhB
+1EAYlb9ryb0mIiskoLBCPuZ7WvIYJtI5Pti7ta8XavJxjGZlBMFmD/WkE+bhviLH
+I1KGdg8nv6hxhV6dw1sp+lu8F9iBM1KIfiDlKAA8Rce3L0aB0/o20cSiwuPRMesa
+zXlwDi/ngkPuhmCYxxOx+Hr1BJ8+seGcSHLMVsFSKIh9aQptvmbQUs4qvxvO6OeX
+WUv9wrbhbMNm9eaQN5KnHH8LBpmRn1WbWpU9mYT45MqDhpyarWQC94e1IwJUbYhw
+1CDyeryFBvbi/Blr3yp12KJtaogsgim31Ckw2jTjRzdMxtntKc0m8UEkkAWai2Rt
+1yE8KUbc+XRhdJ+Fb4qz9mVznn/VWGRi6//Sz48OIeJOuflp/YE4yqEpOpOFQLPB
+t9CNYfoHe+F8rtKBvOSW0XZyVxV1BQC+tTTt5c73PNhWx20Kcn8oYwuTzYGoFC5j
+hy50N01zCvKo+VmAX4hboV2Jkjg/GKgpCc8tExpN5e/Sd8If2onaykwkeAL0ucRA
+fl1E1kT7ZUqnllk3FHcq
+=TBsS
 -----END PGP SIGNATURE-----
